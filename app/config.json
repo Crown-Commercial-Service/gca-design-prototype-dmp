@@ -1,5 +1,5 @@
 {
-  "serviceName": "Service name goes here",
+  "serviceName": "Government Commercial Agency (GCA) Prototypes",
   "useServiceNavigation": true,
   "plugins": {
     "govuk-frontend": {

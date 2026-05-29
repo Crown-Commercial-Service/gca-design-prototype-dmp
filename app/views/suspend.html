@@ -1,0 +1,31 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Suspended – {{ serviceName }} – GOV.UK Prototype Kit
+
+{% endblock %}
+
+
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container">
+    <div style="background:#1d70b8;color:#fff;padding:20px;border-radius:3px;margin-bottom:20px;">
+      <h3 class="govuk-heading-m" style="margin:0 0 8px 0;color:#fff;font-weight:bold;font-family:Arial, sans-serif;">Suspended by 79066@user.marketplace.team on Wednesday 27 May 2026.</h3>
+      <p style="margin:0;line-height:1.4;color:#fff;">
+        <strong>Reason:</strong> Business closure<br>
+        <strong>Further details:</strong> Due to the company's decision to cease operations, services and support have been discontinued immediately. Customers should migrate critical workloads as soon as possible; archived records will remain accessible for a limited period while administrative processes complete. Please contact your account manager for assistance with migration planning and data retrieval.
+      </p>
+      <p style="margin:8px 0 0 0;color:#fff;"><u>Unsuspend service</u></p>
+    </div>
+
+    <h3 class="govuk-heading-s">AVOLUTION (UK) LIMITED</h3>
+    <h1 class="govuk-heading-xl">ABACUS - Enterprise Architecture</h1>
+  </div>
+{% endblock %}
