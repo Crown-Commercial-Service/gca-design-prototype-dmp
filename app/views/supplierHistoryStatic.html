@@ -1,0 +1,143 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+  <h1 class="govuk-heading-xl">AVOLUTION (UK) LIMITED — History</h1>
+
+  <p class="govuk-hint govuk-!-margin-bottom-4">Scroll down to see more history items or use the pagination controls to navigate through the list.</p>
+
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Date</th>
+        <th scope="col" class="govuk-table__header">Transaction</th>
+        <th scope="col" class="govuk-table__header">Owner</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">30/11/2024</td>
+        <td class="govuk-table__cell">Added service XXXXX</td>
+        <td class="govuk-table__cell">CSS Admin</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">22/10/2024</td>
+        <td class="govuk-table__cell">Amended Price</td>
+        <td class="govuk-table__cell">Supplier</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">24/09/2024</td>
+        <td class="govuk-table__cell">Removed MAC</td>
+        <td class="govuk-table__cell">Emma Shanks</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">18/08/2024</td>
+        <td class="govuk-table__cell">Contract updated</td>
+        <td class="govuk-table__cell">Procurement</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">12/07/2024</td>
+        <td class="govuk-table__cell">Price review</td>
+        <td class="govuk-table__cell">Supplier</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">05/06/2024</td>
+        <td class="govuk-table__cell">Added new contact</td>
+        <td class="govuk-table__cell">CSS Admin</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">23/05/2024</td>
+        <td class="govuk-table__cell">Service suspended</td>
+        <td class="govuk-table__cell">Supplier</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">17/04/2024</td>
+        <td class="govuk-table__cell">Metadata updated</td>
+        <td class="govuk-table__cell">System</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">08/03/2024</td>
+        <td class="govuk-table__cell">Pricing corrected</td>
+        <td class="govuk-table__cell">Finance</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">26/02/2024</td>
+        <td class="govuk-table__cell">Added service XXXXX</td>
+        <td class="govuk-table__cell">CSS Admin</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">15/01/2024</td>
+        <td class="govuk-table__cell">Amended Price</td>
+        <td class="govuk-table__cell">Supplier</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">03/12/2023</td>
+        <td class="govuk-table__cell">Removed MAC</td>
+        <td class="govuk-table__cell">Emma Shanks</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">29/11/2023</td>
+        <td class="govuk-table__cell">Contract archived</td>
+        <td class="govuk-table__cell">Records</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">10/11/2023</td>
+        <td class="govuk-table__cell">New supplier onboarding</td>
+        <td class="govuk-table__cell">Onboarding</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">01/10/2023</td>
+        <td class="govuk-table__cell">Price review</td>
+        <td class="govuk-table__cell">Supplier</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">21/09/2023</td>
+        <td class="govuk-table__cell">Added service XXXXX</td>
+        <td class="govuk-table__cell">CSS Admin</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">22/09/2023</td>
+        <td class="govuk-table__cell">Amended Price</td>
+        <td class="govuk-table__cell">Supplier</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">24/09/2023</td>
+        <td class="govuk-table__cell">Removed MAC</td>
+        <td class="govuk-table__cell">Emma Shanks</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">20/09/2023</td>
+        <td class="govuk-table__cell">Documentation updated</td>
+        <td class="govuk-table__cell">Docs</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <nav class="govuk-pagination" role="navigation" aria-label="Pagination" style="margin-top: 24px;">
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item govuk-pagination__item--previous">
+        <a class="govuk-link" href="?page=1">Previous</a>
+      </li>
+      <li class="govuk-pagination__item"><a class="govuk-link" href="?page=1">1</a></li>
+      <li class="govuk-pagination__item"><a class="govuk-link" href="?page=2">2</a></li>
+      <li class="govuk-pagination__item"><a class="govuk-link" href="?page=3">3</a></li>
+      <li class="govuk-pagination__item govuk-pagination__item--next">
+        <a class="govuk-link" href="?page=2">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  <p class="govuk-!-margin-top-4"><a class="govuk-link" href="/supplierTabs">Return to company details</a></p>
+
+{% endblock %}
