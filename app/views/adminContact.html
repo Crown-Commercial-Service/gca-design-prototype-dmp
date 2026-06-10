@@ -1,0 +1,54 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+        <span class="govuk-phase-banner__text">Help us improve the Digital Marketplace - <a class="govuk-link" href="#">send your feedback</a></span>
+      </p>
+    </div>
+
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Admin home</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">G-Cloud 15 application messages</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Start a new message thread</a></li>
+        <li class="govuk-breadcrumbs__list-item">Select category</li>
+      </ol>
+    </nav>
+
+    <h1 class="govuk-heading-xl">Start a new message thread</h1>
+
+    <h2 class="govuk-heading-l">Select category</h2>
+
+    <p class="govuk-body">Select the appropriate category for your message thread</p>
+
+    <form>
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="category-hint">
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="category-1" name="category" type="radio" checked>
+            <label class="govuk-label govuk-radios__label" for="category-1">Compliance Clarification</label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="category-2" name="category" type="radio">
+            <label class="govuk-label govuk-radios__label" for="category-2">Admin contact supplier</label>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <a class="govuk-button govuk-!-margin-top-6" href="#">Continue</a>
+
+    <p class="govuk-body govuk-!-margin-top-3">Next step: Subject</p>
+
+  </div>
+</div>
+{% endblock %}
