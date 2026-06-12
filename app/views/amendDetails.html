@@ -1,0 +1,112 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Amend details – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .amend-details-panel {
+      border: 1px solid #0b0c0c;
+      margin-bottom: 1.5rem;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .amend-details-panel__header {
+      background: #f3f2f1;
+      padding: 16px 20px;
+      border-bottom: 1px solid #b1b4b6;
+    }
+    .amend-details-panel__header h2 {
+      margin: 0;
+    }
+    .amend-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 0;
+      border-top: 1px solid #b1b4b6;
+    }
+    .amend-details-row {
+      display: contents;
+    }
+    .amend-details-label,
+    .amend-details-value {
+      padding: 16px 20px;
+      border-bottom: 1px solid #b1b4b6;
+    }
+    .amend-details-label {
+      font-weight: 600;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    .amend-details-value {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    .amend-details-grid > div:last-child {
+      border-bottom: none;
+    }
+    .amend-details-textarea {
+      min-height: 160px;
+    }
+  </style>
+
+  <h1 class="govuk-heading-xl">Amend details</h1>
+
+  <p class="govuk-body">Edit the details below and click on Save and continue to save the changes, or Cancel to return to the previous page.</p>
+
+  <form id="amend-details-form" action="#" method="post">
+    <div class="amend-details-panel">
+      <div class="amend-details-panel__header">
+        <h2 class="govuk-heading-s govuk-!-margin-0">What buyers will see for G-Cloud</h2>
+      </div>
+      <div class="amend-details-grid">
+        <div class="amend-details-label govuk-body-s">Contact name</div>
+        <div class="amend-details-value">
+          <input class="govuk-input govuk-!-width-two-thirds" id="contact-name" name="contact-name" type="text" value="&lt;removed&gt;">
+        </div>
+
+        <div class="amend-details-label govuk-body-s">Contact email</div>
+        <div class="amend-details-value">
+          <input class="govuk-input govuk-!-width-two-thirds" id="contact-email" name="contact-email" type="email" value="&lt;removed&gt;@c07124d4-21d2-4ad0-9c39-d82fe9e659bb.com">
+        </div>
+
+        <div class="amend-details-label govuk-body-s">Contact phone number</div>
+        <div class="amend-details-value">
+          <input class="govuk-input govuk-!-width-two-thirds" id="contact-phone" name="contact-phone" type="tel" value="&lt;removed&gt;">
+        </div>
+
+        <div class="amend-details-label govuk-body-s">Summary</div>
+        <div class="amend-details-value">
+          <textarea class="govuk-textarea govuk-!-width-full amend-details-textarea" id="summary" name="summary">The Changing Workplace (CWP) are Computer Assisted Facilities Management (CAFM) specialists. CWP was established after developing our space management platform. WebCoRE is a CAD/CAFM Software that centralises facility management data and helps manage day-to-day operations and long-term planning. WebCoRE’s primary function is space recharging and occupancy management.</textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-button-group">
+<button type="submit" class="govuk-button">Save and continue</button>
+    <a href="javascript:window.history.back()" class="govuk-button govuk-button--secondary">Cancel</a>
+  </div>
+  </form>
+
+  <script>
+    document.getElementById('amend-details-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var values = {
+        contactName: document.getElementById('contact-name').value,
+        contactEmail: document.getElementById('contact-email').value,
+        contactPhone: document.getElementById('contact-phone').value,
+        summary: document.getElementById('summary').value
+      };
+      localStorage.setItem('novationAmendValues', JSON.stringify(values));
+      window.history.back();
+    });
+  </script>
+{% endblock %}

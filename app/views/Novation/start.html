@@ -1,0 +1,244 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  THE CHANGING WORKPLACE LIMITED – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Admin home"
+      },
+      {
+        text: "THE CHANGING WORKPLACE LIMITED"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .custom-data-panel {
+      border: 1px solid #0b0c0c;
+      margin-bottom: 1.5rem;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .custom-data-panel__header {
+      background: #f3f2f1;
+      padding: 16px 20px;
+      margin: 0;
+      color: #0b0c0c;
+      border-bottom: 1px solid #b1b4b6;
+    }
+    .custom-data-panel__header h2 {
+      margin: 0;
+    }
+    .custom-data-panel__content {
+      margin: 0;
+      padding: 0;
+    }
+    .custom-summary-list {
+      margin: 0;
+    }
+    .custom-summary-list__row {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      padding: 16px 20px;
+      border-top: 1px solid #b1b4b6;
+      align-items: center;
+    }
+    .custom-summary-list__row:first-child {
+      border-top: none;
+    }
+    .custom-summary-list__key,
+    .custom-summary-list__value {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    .custom-summary-list__key {
+      white-space: nowrap;
+    }
+    .custom-summary-list__key {
+      font-weight: 600;
+    }
+    .custom-govuk-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #0b0c0c;
+      margin-bottom: 1.5rem;
+    }
+    .custom-govuk-table th,
+    .custom-govuk-table td {
+      padding: 16px 20px;
+      border-top: 1px solid #b1b4b6;
+      text-align: left;
+    }
+    .custom-govuk-table th {
+      background: #f3f2f1;
+      font-weight: 600;
+      border-top: none;
+    }
+    .custom-govuk-table tbody tr:first-child td {
+      border-top: none;
+    }
+  </style>
+
+  <h1 class="govuk-heading-xl">THE CHANGING WORKPLACE LIMITED</h1>
+
+  <p class="govuk-body-s govuk-!-margin-bottom-6">
+    <a class="govuk-link" href="#">Edit supplier name</a>
+  </p>
+
+  <div class="custom-data-panel">
+    <div class="custom-data-panel__header">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <h2 class="govuk-heading-s govuk-!-margin-0">What buyers will see for G-Cloud</h2>
+        <a class="govuk-link" href="/amendDetails">Edit</a>
+      </div>
+    </div>
+    <div class="custom-data-panel__content">
+      <dl class="govuk-summary-list custom-summary-list">
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Contact name</dt>
+          <dd id="contact-name-value" class="govuk-summary-list__value govuk-body-s">&lt;removed&gt;</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Contact email</dt>
+          <dd id="contact-email-value" class="govuk-summary-list__value govuk-body-s">&lt;removed&gt;@c07124d4-21d2-4ad0-9c39-d82fe9e659bb.com</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Contact phone number</dt>
+          <dd id="contact-phone-value" class="govuk-summary-list__value govuk-body-s">&lt;removed&gt;</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Summary</dt>
+          <dd id="summary-value" class="govuk-summary-list__value govuk-body-s">The Changing Workplace (CWP) are Computer Assisted Facilities Management (CAFM) specialists. CWP was established after developing our space management platform. WebCoRE is a CAD/CAFM Software that centralises facility management data and helps manage day-to-day operations and long-term planning. WebCoRE’s primary function is space recharging and occupancy management.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('novationAmendValues');
+      if (saved) {
+        try {
+          var values = JSON.parse(saved);
+          if (values.contactName) {
+            document.getElementById('contact-name-value').textContent = values.contactName;
+          }
+          if (values.contactEmail) {
+            document.getElementById('contact-email-value').textContent = values.contactEmail;
+          }
+          if (values.contactPhone) {
+            document.getElementById('contact-phone-value').textContent = values.contactPhone;
+          }
+          if (values.summary) {
+            document.getElementById('summary-value').textContent = values.summary;
+          }
+        } catch (e) {
+          console.error('Unable to load amendments', e);
+        }
+        localStorage.removeItem('novationAmendValues');
+      }
+
+      var companySaved = localStorage.getItem('novationCompanyValues');
+      if (companySaved) {
+        try {
+          var companyValues = JSON.parse(companySaved);
+          if (companyValues.registeredCompanyName) {
+            document.getElementById('registered-company-name-value').textContent = companyValues.registeredCompanyName;
+          }
+          if (companyValues.registeredCompanyAddress) {
+            document.getElementById('registered-company-address-value').innerHTML = companyValues.registeredCompanyAddress.replace(/\n/g, '<br>');
+          }
+          if (companyValues.registrationNumber) {
+            document.getElementById('registration-number-value').textContent = companyValues.registrationNumber;
+          }
+          if (companyValues.tradingStatus) {
+            document.getElementById('trading-status-value').textContent = companyValues.tradingStatus;
+          }
+          if (companyValues.companySize) {
+            document.getElementById('company-size-value').textContent = companyValues.companySize;
+          }
+          if (companyValues.dunsNumber) {
+            document.getElementById('duns-number-value').textContent = companyValues.dunsNumber;
+          }
+        } catch (e) {
+          console.error('Unable to load company details', e);
+        }
+        localStorage.removeItem('novationCompanyValues');
+      }
+    })();
+  </script>
+
+  <div class="custom-data-panel">
+    <div class="custom-data-panel__header"><h2 class="govuk-heading-s govuk-!-margin-0">What buyers will see for Digital Outcomes and Specialists</h2></div>
+    <div class="custom-data-panel__content">
+      <dl class="govuk-summary-list custom-summary-list">
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Summary (optional)</dt>
+          <dd class="govuk-summary-list__value govuk-body-s">Not available</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="custom-data-panel">
+    <div class="custom-data-panel__header">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <h2 class="govuk-heading-s govuk-!-margin-0">Company details for your framework applications</h2>
+        <a class="govuk-link" href="/novationCreate">Edit</a>
+      </div>
+    </div>
+    <div class="custom-data-panel__content">
+      <dl class="govuk-summary-list custom-summary-list">
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Registered company name</dt>
+          <dd id="registered-company-name-value" class="govuk-summary-list__value govuk-body-s">The Changing Workplace Limited</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Registered company address</dt>
+          <dd id="registered-company-address-value" class="govuk-summary-list__value govuk-body-s">Supplier #720715 Contact Address 1<br>Supplier #720715 Contact City<br>AA11 1AA<br>United Kingdom</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Registration number</dt>
+          <dd id="registration-number-value" class="govuk-summary-list__value govuk-body-s">03614433</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Trading status</dt>
+          <dd id="trading-status-value" class="govuk-summary-list__value govuk-body-s">Limited company (LTD)</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Company size</dt>
+          <dd id="company-size-value" class="govuk-summary-list__value govuk-body-s">Small</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">DUNS number (Registered Office)</dt>
+          <dd id="duns-number-value" class="govuk-summary-list__value govuk-body-s">236172552</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <h2 class="govuk-heading-l">Frameworks</h2>
+
+  <table class="custom-govuk-table govuk-table">
+    <thead>
+      <tr>
+        <th scope="col" class="govuk-body-s">Framework</th>
+        <th scope="col" class="govuk-body-s">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="govuk-body-s">G-Cloud 13</td>
+        <td class="govuk-body-s"><a class="govuk-link" href="#">View application</a></td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

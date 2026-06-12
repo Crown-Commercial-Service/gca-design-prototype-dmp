@@ -1,0 +1,16 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Are you sure? – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <h1 class="govuk-heading-xl">Are you sure?</h1>
+{% endblock %}

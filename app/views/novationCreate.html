@@ -1,0 +1,160 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Company details – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .custom-data-panel {
+      border: 1px solid #0b0c0c;
+      margin-bottom: 1.5rem;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .custom-data-panel__header {
+      background: #f3f2f1;
+      padding: 16px 20px;
+      margin: 0;
+      color: #0b0c0c;
+      border-bottom: 1px solid #b1b4b6;
+    }
+    .custom-data-panel__header h2 {
+      margin: 0;
+    }
+    .custom-summary-list {
+      margin: 0;
+    }
+    .custom-summary-list__row {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      padding: 16px 20px;
+      border-top: 1px solid #b1b4b6;
+      align-items: center;
+    }
+    .custom-summary-list__row:first-child {
+      border-top: none;
+    }
+    .custom-summary-list__key,
+    .custom-summary-list__value {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    .custom-summary-list__key {
+      white-space: nowrap;
+      font-weight: 600;
+    }
+    .custom-summary-list__key--wrap {
+      white-space: normal;
+    }
+  </style>
+
+  <h1 class="govuk-heading-xl">Company details for your framework applications</h1>
+
+  <p class="govuk-body">Edit the company details below and click on Save and continue to save the changes, or Cancel to return to the previous page.</p>
+
+  <form id="company-details-form" action="#" method="post">
+    <div class="custom-data-panel">
+      <div class="custom-data-panel__header">
+        <h2 class="govuk-heading-s govuk-!-margin-0">Company details for your framework applications</h2>
+      </div>
+      <div class="custom-data-panel__content">
+        <dl class="govuk-summary-list custom-summary-list">
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Novated company name</dt>
+            <dd class="govuk-summary-list__value govuk-body-s"><input class="govuk-input govuk-!-width-two-thirds" id="novated-company-name" name="novated-company-name" type="text" value=""></dd>
+          </div>
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Registered company name</dt>
+            <dd id="registered-company-name-display" class="govuk-summary-list__value govuk-body-s">The Changing Workplace Limited</dd>
+          </div>
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Registered company address</dt>
+            <dd id="registered-company-address-display" class="govuk-summary-list__value govuk-body-s">Supplier #720715 Contact Address 1<br>Supplier #720715 Contact City<br>AA11 1AA<br>United Kingdom</dd>
+          </div>
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Registration number</dt>
+            <dd id="registration-number-display" class="govuk-summary-list__value govuk-body-s">03614433</dd>
+          </div>
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Trading status</dt>
+            <dd id="trading-status-display" class="govuk-summary-list__value govuk-body-s">Limited company (LTD)</dd>
+          </div>
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s">Company size</dt>
+            <dd id="company-size-display" class="govuk-summary-list__value govuk-body-s">Small</dd>
+          </div>
+          <div class="govuk-summary-list__row custom-summary-list__row">
+            <dt class="govuk-summary-list__key custom-summary-list__key custom-summary-list__key--wrap govuk-body-s">DUNS number<br>(Registered Office)</dt>
+            <dd id="duns-number-display" class="govuk-summary-list__value govuk-body-s">236172552</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="govuk-button-group">
+      <button type="submit" class="govuk-button">Save and continue</button>
+      <a href="javascript:window.history.back()" class="govuk-button govuk-button--secondary">Cancel</a>
+    </div>
+  </form>
+
+  <script>
+    (function () {
+      var form = document.getElementById('company-details-form');
+      var saved = localStorage.getItem('novationCompanyValues');
+      if (saved) {
+        try {
+          var values = JSON.parse(saved);
+          if (values.novatedCompanyName) {
+            document.getElementById('novated-company-name').value = values.novatedCompanyName;
+          }
+          if (values.registeredCompanyName) {
+            document.getElementById('registered-company-name-display').textContent = values.registeredCompanyName;
+          }
+          if (values.registeredCompanyAddress) {
+            document.getElementById('registered-company-address-display').innerHTML = values.registeredCompanyAddress.replace(/\n/g, '<br>');
+          }
+          if (values.registrationNumber) {
+            document.getElementById('registration-number-display').textContent = values.registrationNumber;
+          }
+          if (values.tradingStatus) {
+            document.getElementById('trading-status-display').textContent = values.tradingStatus;
+          }
+          if (values.companySize) {
+            document.getElementById('company-size-display').textContent = values.companySize;
+          }
+          if (values.dunsNumber) {
+            document.getElementById('duns-number-display').textContent = values.dunsNumber;
+          }
+        } catch (e) {
+          console.error('Unable to load saved company details', e);
+        }
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var values = {
+          novatedCompanyName: document.getElementById('novated-company-name').value,
+          registeredCompanyName: document.getElementById('registered-company-name-display').textContent,
+          registeredCompanyAddress: document.getElementById('registered-company-address-display').innerText,
+          registrationNumber: document.getElementById('registration-number-display').textContent,
+          tradingStatus: document.getElementById('trading-status-display').textContent,
+          companySize: document.getElementById('company-size-display').textContent,
+          dunsNumber: document.getElementById('duns-number-display').textContent
+        };
+        localStorage.setItem('novationCompanyValues', JSON.stringify(values));
+        window.location.href = '/novationConfirmation';
+      });
+    })();
+  </script>
+{% endblock %}
