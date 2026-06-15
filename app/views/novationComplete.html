@@ -1,0 +1,20 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Novation complete – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <h1 class="govuk-heading-xl">Novation complete</h1>
+
+  <p class="govuk-body">Your novation request has been submitted successfully. You can now close this page or continue with other tasks.</p>
+
+  <a href="/" class="govuk-button govuk-button--secondary">Home</a>
+{% endblock %}

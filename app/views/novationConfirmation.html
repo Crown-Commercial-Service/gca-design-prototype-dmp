@@ -13,4 +13,27 @@
 
 {% block content %}
   <h1 class="govuk-heading-xl">Are you sure?</h1>
+
+  <p class="govuk-body">You are about to submit the novation request. Please check the details below and confirm that they are correct.</p>
+  <div class="custom-data-panel" style="border:1px solid #0b0c0c;margin-top:1.5rem;border-radius:0;overflow:hidden;">
+    <div class="custom-data-panel__header" style="background:#f3f2f1;padding:16px 20px;margin:0;color:#0b0c0c;border-bottom:1px solid #b1b4b6;">
+      <h2 class="govuk-heading-s govuk-!-margin-0">Company details for your framework applications</h2>
+    </div>
+    <div class="custom-data-panel__content">
+      <dl class="govuk-summary-list custom-summary-list" style="margin:0;">
+        <div class="govuk-summary-list__row custom-summary-list__row" style="display:grid;grid-template-columns:1fr 2fr;gap:1rem;padding:16px 20px;border-top:1px solid #b1b4b6;align-items:center;">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s" style="white-space:nowrap;text-align:left;">Current registered company name</dt>
+          <dd id="registered-company-name-display" class="govuk-summary-list__value govuk-body-s">The Changing Workplace Limited</dd>
+        </div>
+        <div class="govuk-summary-list__row custom-summary-list__row" style="display:grid;grid-template-columns:1fr 2fr;gap:1rem;padding:16px 20px;border-top:1px solid #b1b4b6;align-items:center;">
+          <dt class="govuk-summary-list__key custom-summary-list__key govuk-body-s" style="white-space:nowrap;text-align:left;">Novated company name</dt>
+          <dd class="govuk-summary-list__value govuk-body-s"><input class="govuk-input govuk-!-width-two-thirds" id="novated-company-name" name="novated-company-name" type="text" value=""></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="govuk-button-group" style="margin-top:1rem;">
+    <a href="/novationComplete" id="save-and-continue" class="govuk-button" style="background-color:#00703c;border-color:#00703c;color:#ffffff;">Save and continue</a>
+    <a href="/supplierEdit" class="govuk-button govuk-button--secondary" style="margin-left:8px;">Cancel</a>
+  </div>
 {% endblock %}
