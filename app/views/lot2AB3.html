@@ -1,0 +1,95 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	G-Cloud 15 application – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	<div class="gca-back-link">
+		{{ govukBackLink({
+			text: "Back",
+			href: "/adminSupplierApplications"
+		}) }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			{{ govukBreadcrumbs({
+				classes: "gca-breadcrumbs",
+				items: [
+					{
+						text: "Admin home",
+						href: "/content"
+					},
+					{
+						text: "WORKDAY LIMITED",
+						href: "/adminSupplierApplications"
+					},
+					{
+						text: "G-Cloud 15 application"
+					}
+				]
+			}) }}
+
+			<h2 class="govuk-heading-s gca-eyebrow gca-eyebrow--muted">WORKDAY LIMITED</h2>
+			<h1 class="govuk-heading-xl gca-page-title">G-Cloud 15 application</h1>
+
+			<div class="gca-row-table">
+				<div class="gca-row-table__row gca-row-table__row--title">
+					<p class="gca-row-table__key">Application status</p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--active">Application made</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key">Assessment summary results</p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--coming">Coming</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key">Framework agreement</p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--coming">Coming</span></p>
+				</div>
+			</div>
+
+			<h3 class="govuk-heading-s gca-section-title">Application parts</h3>
+			<div class="gca-row-table">
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="#">Company details for framework application</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="#">Supplier declaration</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="#">Draft services</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">13 draft services</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key">Financial Viability Risk Assessment (FVRA)</p>
+					<p class="gca-row-table__value"><span class="gca-status">Not started</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="#">Technical Ability Certificate (TAC)</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="#">Quality award questions</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="#">Pricing</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="/isoParts">CE</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--grace">12 months grace</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key"><a href="/insurance">Insurance</a></p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Partially complete</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
