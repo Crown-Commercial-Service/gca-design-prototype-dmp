@@ -1,0 +1,83 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "CSS template" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="gca-eyebrow">Template</p>
+    <h1 class="gca-page-title">CSS style template</h1>
+
+    <h2 class="gca-section-title">Row table example</h2>
+    <div class="gca-row-table">
+      <div class="gca-row-table__row gca-row-table__row--title">
+        <p class="gca-row-table__key">Section</p>
+        <p class="gca-row-table__value">Status</p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Supplier details</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--active">Active</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Application checks</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Complete</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Contract novation</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--coming">Coming soon</span></p>
+      </div>
+    </div>
+
+    <h2 class="gca-section-title">Table example</h2>
+    <table class="gca-table">
+      <thead>
+        <tr>
+          <th scope="col">Supplier</th>
+          <th scope="col">Type</th>
+          <th scope="col">Last updated</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Atlas Foods Ltd</td>
+          <td>Primary</td>
+          <td>14 June 2026</td>
+          <td><span class="gca-status gca-status--active">Active</span></td>
+        </tr>
+        <tr>
+          <td>Northgate Produce</td>
+          <td>Secondary</td>
+          <td>12 June 2026</td>
+          <td><span class="gca-status gca-status--complete">Complete</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="gca-section-title">Compact table example</h2>
+    <table class="gca-table gca-table--compact">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Action</th>
+          <th scope="col">User</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>18 June 2026</td>
+          <td>Application submitted</td>
+          <td>Admin user</td>
+        </tr>
+        <tr>
+          <td>17 June 2026</td>
+          <td>Supplier profile updated</td>
+          <td>Caseworker 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

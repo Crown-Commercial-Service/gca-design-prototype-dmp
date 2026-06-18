@@ -1,0 +1,41 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	Insurance – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	<div class="gca-back-link">
+		{{ govukBackLink({
+			text: "Back",
+			href: "/lot1AB"
+		}) }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl gca-page-title">Insurance</h1>
+
+			<div class="gca-row-table">
+				<div class="gca-row-table__row gca-row-table__row--title">
+					<p class="gca-row-table__key">Item</p>
+					<p class="gca-row-table__value govuk-!-font-weight-bold">Status</p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key">Employers liability</p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key">Public liability</p>
+					<p class="gca-row-table__value"><span class="gca-status gca-status--complete">Partially complete</span></p>
+				</div>
+				<div class="gca-row-table__row">
+					<p class="gca-row-table__key">Professional indemnity</p>
+					<p class="gca-row-table__value"><span class="gca-status">Not started</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
