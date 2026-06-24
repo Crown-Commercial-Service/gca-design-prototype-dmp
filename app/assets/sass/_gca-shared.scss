@@ -98,6 +98,65 @@
   padding-bottom: 6px;
 }
 
+.gca-services-panel {
+  margin: 0 0 30px;
+  border: 1px solid #b1b4b6;
+  background: #f3f2f1;
+}
+
+.gca-services-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #d0d3d6;
+  background: #f3f2f1;
+}
+
+.gca-services-panel__title {
+  margin: 0;
+}
+
+.gca-services-panel__body {
+  padding: 10px 16px 0;
+  background: #ffffff;
+}
+
+.gca-services-table {
+  margin-bottom: 12px;
+  background: #ffffff;
+}
+
+.gca-services-table th,
+.gca-services-table td {
+  border-bottom-color: #b1b4b6;
+}
+
+.gca-services-table th {
+  font-family: sans-serif;
+}
+
+.gca-services-table th:nth-child(2),
+.gca-services-table td:nth-child(2) {
+  font-family: sans-serif;
+}
+
+.gca-services-table th:nth-child(3),
+.gca-services-table td:nth-child(3) {
+  font-family: sans-serif;
+}
+
+.gca-services-table th:nth-child(4),
+.gca-services-table td:nth-child(4) {
+  font-family: sans-serif;
+}
+
+.gca-services-table th:last-child,
+.gca-services-table td:last-child {
+  text-align: right;
+}
+
 .gca-status {
   display: inline-block;
   margin: 0;
@@ -154,5 +213,16 @@
   .gca-status {
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  .gca-services-panel__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .gca-services-panel__body {
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow-x: auto;
   }
 }

@@ -1,0 +1,96 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	Services – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			{{ govukBreadcrumbs({
+				classes: "gca-breadcrumbs",
+				items: [
+					{
+						text: "Admin home",
+						href: "/content"
+					},
+					{
+						text: "WORKDAY LIMITED",
+						href: "/adminSupplierApplications"
+					},
+					{
+						text: "Services"
+					}
+				]
+			}) }}
+
+			<h1 class="govuk-heading-xl gca-page-title">Services</h1>
+			<h2 class="govuk-heading-m">There are 13 services listed.</h2>
+
+			<section class="gca-services-panel" aria-labelledby="gcloud14-heading">
+				<div class="gca-services-panel__header">
+					<h2 class="govuk-heading-m gca-services-panel__title" id="gcloud14-heading">G-Cloud 15</h2>
+					<a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Suspend services</a>
+				</div>
+
+				<div class="gca-services-panel__body">
+					<table class="gca-table gca-table--compact gca-services-table">
+						<thead>
+							<tr>
+								<th scope="col">Name</th>
+								<th scope="col">ID</th>
+								<th scope="col">Lot</th>
+								<th scope="col">Status</th>
+								<th scope="col" class="govuk-visually-hidden">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Workday</a></td>
+								<td>332738008670764</td>
+								<td>Cloud software</td>
+								<td>Public</td>
+								<td><a class="govuk-link govuk-link--no-visited-state" href="#">Edit</a></td>
+							</tr>
+							<tr>
+								<td><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Workday Adaptive Planning</a></td>
+								<td>873910538581789</td>
+								<td>Cloud software</td>
+								<td>Public</td>
+								<td><a class="govuk-link govuk-link--no-visited-state" href="#">Edit</a></td>
+							</tr>
+							<tr>
+								<td><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Workday Peakon Employee Voice</a></td>
+								<td>571438267625250</td>
+								<td>Cloud software</td>
+								<td>Public</td>
+								<td><a class="govuk-link govuk-link--no-visited-state" href="#">Edit</a></td>
+							</tr>
+							<tr>
+								<td><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Workday Adaptive Planning Professional Services</a></td>
+								<td>393582883568923</td>
+								<td>Cloud Support Service</td>
+								<td>Public</td>
+								<td><a class="govuk-link govuk-link--no-visited-state" href="#">Edit</a></td>
+							</tr>
+							<tr>
+								<td><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Workday Peakon Employee Voice Professional Services</a></td>
+								<td>701634778963395</td>
+								<td>Cloud Support Service</td>
+								<td>Public</td>
+								<td><a class="govuk-link govuk-link--no-visited-state" href="#">Edit</a></td>
+							</tr>
+							<tr>
+								<td><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Workday Professional Services</a></td>
+								<td>189997827066988</td>
+								<td>Cloud Support Service</td>
+								<td>Public</td>
+								<td><a class="govuk-link govuk-link--no-visited-state" href="#">Edit</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+	</div>
+{% endblock %}
