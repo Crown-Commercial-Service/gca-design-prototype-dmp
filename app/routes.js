@@ -10,3 +10,7 @@ const router = govukPrototypeKit.requests.setupRouter()
 router.get('/lotSummary', (req, res) => {
 	res.render('lotSummary')
 })
+
+router.get('/itaAssessment', (req, res) => {
+	res.render('itaAssessment')
+})
