@@ -14,11 +14,367 @@
 {% endblock %}
 
 {% block content %}
-	<div class="govuk-grid-row">
-		<div class="govuk-grid-column-two-thirds">
-			<h1 class="govuk-heading-xl gca-page-title">ITA assessment</h1>
+	<style>
+		.ita-assessment,
+		.ita-assessment * {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
 
-			<p class="govuk-body">This page is ready for the ITA assessment content.</p>
+		.ita-assessment {
+			line-height: 1.4;
+		}
+
+		.ita-assessment__paper {
+			max-width: 880px;
+			margin: 0 auto;
+			background: #ffffff;
+			border: 1px solid #d8d8d8;
+			padding: 28px;
+		}
+
+		.ita-assessment .gca-page-title {
+			font-size: 30px;
+			line-height: 1.2;
+			margin-bottom: 20px;
+		}
+
+		.ita-assessment .govuk-heading-m {
+			font-size: 22px;
+			line-height: 1.25;
+			margin-bottom: 12px;
+		}
+
+		.ita-assessment .govuk-body,
+		.ita-assessment .govuk-list,
+		.ita-assessment .ita-assessment__table {
+			font-size: 16px;
+		}
+
+		.ita-assessment .govuk-body {
+			margin-bottom: 12px;
+		}
+
+		.ita-assessment__address {
+			margin-bottom: 24px;
+		}
+
+		.ita-assessment__table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 18px;
+		}
+
+		.ita-assessment__table--equal-cols {
+			table-layout: fixed;
+		}
+
+		.ita-assessment__table--equal-cols th:first-child,
+		.ita-assessment__table--equal-cols td:first-child {
+			width: 49%;
+		}
+
+		.ita-assessment__table--equal-cols th:nth-child(2),
+		.ita-assessment__table--equal-cols td:nth-child(2),
+		.ita-assessment__table--equal-cols th:nth-child(3),
+		.ita-assessment__table--equal-cols td:nth-child(3),
+		.ita-assessment__table--equal-cols th:nth-child(4),
+		.ita-assessment__table--equal-cols td:nth-child(4) {
+			width: 17%;
+		}
+
+		.ita-assessment__table th,
+		.ita-assessment__table td {
+			border: 1px solid #6f777b;
+			padding: 8px 10px;
+			vertical-align: top;
+			line-height: 1.3;
+		}
+
+		.ita-assessment__table th {
+			background: #ffffff;
+			font-weight: 700;
+		}
+
+		.ita-assessment__section {
+			margin-top: 26px;
+		}
+
+		.ita-assessment__link-wrap {
+			word-break: break-word;
+		}
+
+		.ita-assessment__stacked-text p {
+			line-height: 1.6;
+			margin-bottom: 12px;
+		}
+
+		.ita-assessment__stacked-text p:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (max-width: 48.0525em) {
+			.ita-assessment__paper {
+				padding: 18px;
+			}
+
+			.ita-assessment .gca-page-title {
+				font-size: 24px;
+			}
+
+			.ita-assessment .govuk-heading-m {
+				font-size: 20px;
+			}
+		}
+	</style>
+
+	<div class="govuk-grid-row ita-assessment">
+		<div class="govuk-grid-column-full">
+			<div class="ita-assessment__paper">
+				<h1 class="govuk-heading-xl gca-page-title">Digital Marketplace Assessment Summary Results Page</h1>
+
+			<div class="ita-assessment__address">
+				<p class="govuk-body govuk-!-margin-bottom-1">[Supplier registered name]</p>
+				<p class="govuk-body govuk-!-margin-bottom-1">[Suppliers registered address]</p>
+				<p class="govuk-body govuk-!-margin-bottom-1">[Supplier email address]</p>
+				<p class="govuk-body govuk-!-margin-bottom-0">[DUNS number]</p>
+			</div>
+
+			<p class="govuk-body">We write to thank you for submitting your tender(s) for this competition. The assessment of the tenders is now concluded, and we can tell you the result.</p>
+			<p class="govuk-body">We are pleased to inform you that you were successful in the following lot(s):</p>
+
+			<ul class="govuk-list govuk-list--bullet">
+				<li>Lot 1a Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)</li>
+				<li>Lot 1b Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL</li>
+				<li>Lot 2a Infrastructure Software (I-SaaS)</li>
+				<li>Lot 2b Software as a Service (SaaS)</li>
+				<li>Lot 3 Cloud support services (Additional Services)</li>
+			</ul>
+
+			<div class="ita-assessment__section">
+				<h2 class="govuk-heading-m">Accessing the Contract Award Notice</h2>
+				<p class="govuk-body">GCA will publish the Contract Award Notice shortly. Upon publication, you will be able to access it at:</p>
+				<p class="govuk-body ita-assessment__link-wrap"><a href="https://www.find-tender.service.gov.uk/Search" target="_blank" rel="noreferrer noopener">https://www.find-tender.service.gov.uk/Search</a></p>
+				<p class="govuk-body">You must access and read the content provided within the Contract Award Notice, which contains important information on the procurement process, including information on the standstill period.</p>
+			</div>
+
+			<div class="ita-assessment__section">
+				<h2 class="govuk-heading-m">Included documentation</h2>
+				<p class="govuk-body">Included with this assessment summary is:</p>
+				<ul class="govuk-list govuk-list--bullet">
+					<li>Attachment 2 How to tender</li>
+					<li>Attachment 2d Quality questionnaire</li>
+				</ul>
+				<p class="govuk-body">As the award criteria, including the assessment methodology, is not set out in full within this document, we have provided the web link for Attachment 2 How to tender and Attachment 2d Quality questionnaire, which includes the award criteria and assessment methodology in full:</p>
+				<p class="govuk-body ita-assessment__link-wrap"><a href="https://www.gca.gov.uk/rm1557-15-g-cloud-15-tender-documents" target="_blank" rel="noreferrer noopener">https://www.gca.gov.uk/rm1557-15-g-cloud-15-tender-documents</a></p>
+			</div>
+
+			<div class="ita-assessment__section">
+				<h2 class="govuk-heading-m">Annex 1 - Debrief report</h2>
+				<p class="govuk-body">Annex 1 shows how your tender was assessed against the award criteria.</p>
+				<p class="govuk-body">Section A provides the mark determined for each sub-criterion and an explanation for that mark by reference to relevant information in the tender.</p>
+				<p class="govuk-body">Section B provides the quality and price scores and the final score.</p>
+			</div>
+
+			<div class="ita-assessment__section">
+				<h2 class="govuk-heading-m">Section A - Quality</h2>
+
+				<table class="ita-assessment__table ita-assessment__table--equal-cols">
+					<thead>
+						<tr>
+							<th scope="col">Award criteria and sub criteria<br>Understanding social value</th>
+							<th scope="col">Marks available</th>
+							<th scope="col">Maximum mark</th>
+							<th scope="col">Your mark</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&nbsp;</td>
+							<td>0/100</td>
+							<td>100</td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td colspan="4">Pass - The bidder selected "Yes" confirming that they will unreservedly satisfy in full all of the social value requirements.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="ita-assessment__table ita-assessment__table--equal-cols">
+					<thead>
+						<tr>
+							<th scope="col">Quality cloud services - Applicable to lots 1a and 1b</th>
+							<th scope="col">Marks available</th>
+							<th scope="col">Maximum mark</th>
+							<th scope="col">Your mark</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&nbsp;</td>
+							<td>0/50/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="4" class="ita-assessment__stacked-text">
+								<p class="govuk-body">The bidder's response fully addresses all 3 sub criteria (a to c).</p>
+								<p class="govuk-body">The response fully addresses sub criteria a [insert rationale].</p>
+								<p class="govuk-body">The response fully addresses sub criteria b [insert rationale].</p>
+								<p class="govuk-body">The response fully addresses sub criteria c [insert rationale].</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="ita-assessment__table ita-assessment__table--equal-cols">
+					<thead>
+						<tr>
+							<th scope="col">Maximising buyer value - Applicable to lots 1a and 1b</th>
+							<th scope="col">Marks available</th>
+							<th scope="col">Maximum mark</th>
+							<th scope="col">Your mark</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&nbsp;</td>
+							<td>0/50/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="4" class="ita-assessment__stacked-text">
+								<p class="govuk-body">The bidder's response fully addresses all 3 sub criteria (a to c).</p>
+								<p class="govuk-body">The response fully addresses sub criteria a [insert rationale].</p>
+								<p class="govuk-body">The response fully addresses sub criteria b [insert rationale].</p>
+								<p class="govuk-body">The response fully addresses sub criteria c [insert rationale].</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="ita-assessment__table ita-assessment__table--equal-cols">
+					<thead>
+						<tr>
+							<th scope="col">Criteria - Lots 2a and 2b</th>
+							<th scope="col">Marks available</th>
+							<th scope="col">Maximum mark</th>
+							<th scope="col">Your mark</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>User support</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Asset protection</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Penetration testing</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Data sanitisation</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="ita-assessment__table ita-assessment__table--equal-cols">
+					<thead>
+						<tr>
+							<th scope="col">Criteria - Lot 3</th>
+							<th scope="col">Marks available</th>
+							<th scope="col">Maximum mark</th>
+							<th scope="col">Your mark</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>User support</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Managing staff security clearance</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Level of security clearance</td>
+							<td>0/33/66/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Cyber essentials</td>
+							<td>0/100</td>
+							<td>100</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+				<div class="ita-assessment__section">
+					<h2 class="govuk-heading-m">Section B - Score</h2>
+					<table class="ita-assessment__table ita-assessment__table--equal-cols">
+					<thead>
+						<tr>
+							<th scope="col">Lot</th>
+							<th scope="col">Quality score (incl. 10% for social value)</th>
+							<th scope="col">Price score</th>
+							<th scope="col">Final score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Lot 1a</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Lot 1b</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Lot 2a</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Lot 2b</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Lot 3</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 	</div>
 {% endblock %}
