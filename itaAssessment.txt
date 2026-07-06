@@ -136,7 +136,7 @@
 				<p class="govuk-body govuk-!-margin-bottom-1">[Supplier registered name]</p>
 				<p class="govuk-body govuk-!-margin-bottom-1">[Suppliers registered address]</p>
 				<p class="govuk-body govuk-!-margin-bottom-1">[Supplier email address]</p>
-				<p class="govuk-body govuk-!-margin-bottom-0">[PPON Number]</p>
+				<p class="govuk-body govuk-!-margin-bottom-0">[DUNS number]</p>
 			</div>
 
 			<p class="govuk-body">We write to thank you for submitting your tender(s) for this competition. The assessment of the tenders is now concluded, and we can tell you the result.</p>
@@ -159,7 +159,11 @@
 
 			<div class="ita-assessment__section">
 				<h2 class="govuk-heading-m">Included documentation</h2>
-				
+				<p class="govuk-body">Included with this assessment summary is:</p>
+				<ul class="govuk-list govuk-list--bullet">
+					<li>Attachment 2 How to tender</li>
+					<li>Attachment 2d Quality questionnaire</li>
+				</ul>
 				<p class="govuk-body">As the award criteria, including the assessment methodology, is not set out in full within this document, we have provided the web link for Attachment 2 How to tender and Attachment 2d Quality questionnaire, which includes the award criteria and assessment methodology in full:</p>
 				<p class="govuk-body ita-assessment__link-wrap"><a href="https://www.gca.gov.uk/rm1557-15-g-cloud-15-tender-documents" target="_blank" rel="noreferrer noopener">https://www.gca.gov.uk/rm1557-15-g-cloud-15-tender-documents</a></p>
 			</div>
