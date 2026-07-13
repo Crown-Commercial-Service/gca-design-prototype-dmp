@@ -14,3 +14,7 @@ router.get('/lotSummary', (req, res) => {
 router.get('/itaAssessment', (req, res) => {
 	res.render('itaAssessment')
 })
+
+router.get('/itaAssessmentToSign', (req, res) => {
+	res.render('itaAssessmentToSign')
+})

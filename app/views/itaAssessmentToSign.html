@@ -1,0 +1,200 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Supplier appointment terms – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	<div class="gca-back-link">
+		{{ govukBackLink({
+			text: "Back",
+			href: "javascript:window.history.back()"
+		}) }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	<style>
+		.ita-sign,
+		.ita-sign * {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+
+		.ita-sign {
+			color: #0b0c0c;
+			line-height: 1.45;
+		}
+
+		.ita-sign__paper {
+			max-width: 640px;
+			margin: 0 auto;
+		}
+
+		.ita-sign__kicker {
+			margin: 0 0 6px;
+			font-size: 20px;
+			line-height: 1.2;
+			font-weight: 700;
+		}
+
+		.ita-sign__title {
+			margin: 0 0 10px;
+			font-size: 44px;
+			line-height: 1.05;
+			font-weight: 700;
+		}
+
+		.ita-sign__notice {
+			margin: 0 0 22px;
+			font-size: 14px;
+			line-height: 1.4;
+		}
+
+		.ita-sign__notice strong {
+			font-weight: 700;
+		}
+
+		.ita-sign__notice-link {
+			color: #d4351c;
+		}
+
+		.ita-sign__section-title {
+			margin: 26px 0 14px;
+			font-size: 24px;
+			line-height: 1.2;
+			font-weight: 700;
+		}
+
+		.ita-sign__subheading {
+			margin: 0 0 12px;
+			font-size: 16px;
+			font-weight: 700;
+		}
+
+		.ita-sign__body {
+			margin: 0 0 12px;
+			font-size: 14px;
+		}
+
+		.ita-sign__body--compact {
+			margin-bottom: 8px;
+		}
+
+		.ita-sign__clause {
+			margin: 0 0 12px;
+			font-size: 14px;
+		}
+
+		.ita-sign__definition {
+			display: block;
+			margin-top: 2px;
+		}
+
+		.ita-sign__sign-link {
+			display: inline-block;
+			margin: 0 0 24px;
+			font-size: 14px;
+		}
+
+		.ita-sign__field {
+			margin-bottom: 18px;
+		}
+
+		.ita-sign__label {
+			display: block;
+			margin-bottom: 6px;
+			font-size: 16px;
+			font-weight: 700;
+		}
+
+		.ita-sign__input {
+			max-width: 520px;
+		}
+
+		.ita-sign__checkbox {
+			margin: 10px 0 18px;
+		}
+
+		.ita-sign__checkbox .govuk-checkboxes__label {
+			font-size: 12px;
+			line-height: 1.35;
+		}
+
+		.ita-sign__actions {
+			margin-top: 6px;
+		}
+
+		@media (max-width: 40.0625em) {
+			.ita-sign__title {
+				font-size: 34px;
+				line-height: 1.08;
+			}
+
+			.ita-sign__section-title {
+				font-size: 21px;
+			}
+
+			.ita-sign__input {
+				max-width: 100%;
+			}
+		}
+	</style>
+
+	<div class="govuk-grid-row ita-sign">
+		<div class="govuk-grid-column-full">
+			<div class="ita-sign__paper">
+				<p class="ita-sign__kicker">G-Cloud 14 Framework Agreement</p>
+				<h1 class="ita-sign__title">Supplier appointment terms</h1>
+
+				<p class="ita-sign__notice"><strong>Using this information about your company is incorrect contact GCA using an <a class="ita-sign__notice-link" href="#">application messaging</a> with subject: 'Outcome letter update' before signing.</strong></p>
+
+				<h2 class="ita-sign__section-title">1. The Appointment</h2>
+				<p class="ita-sign__subheading">This section includes terms about the Supplier appointment.</p>
+
+				<p class="ita-sign__clause"><strong>1.1 Appointment</strong><br>Under the terms of this Framework Agreement (RM1557.14) and the Supplier's Application, the Minister for the Cabinet Office, represented by the Government Commercial Agency (GCA, 9th Floor, The Capital, Old Hall Street, Liverpool, L3 9PP), appoints:</p>
+
+				<p class="ita-sign__body ita-sign__body--compact"><strong>Company number:</strong> 92330738</p>
+				<p class="ita-sign__body ita-sign__body--compact"><strong>Registered address:</strong> 123 Fake Road, Madeupolis, A11 1AA</p>
+
+				<p class="ita-sign__clause">(<span class="ita-sign__definition">the "Supplier"</span>), as a Framework Agreement Supplier of Cloud Services who can be considered for Call-Off Contracts as outlined in the Contract Notice in the Find a Tender Service reference (2024/S 000-005327).</p>
+
+				<p class="ita-sign__clause"><strong>1.2 Appointment to lots:</strong> Lot 2 Cloud software, Lot 3: Cloud Support Service</p>
+				<p class="ita-sign__clause"><strong>1.3 Appointment starts at:</strong> 29 October 2024</p>
+				<p class="ita-sign__clause"><strong>1.4 Appointment ends at:</strong> 28 April 2026</p>
+				<p class="ita-sign__clause"><strong>1.5 Framework Agreement extension:</strong> N/A</p>
+				<p class="ita-sign__clause"><strong>1.6 Framework Agreement term:</strong> From and including the date at 1.3 above (Appointment starts at ) to and including the date at 1.4 above (Appointment ends at).</p>
+				<p class="ita-sign__clause"><strong>1.7 Call-Off Contract length:</strong> Up to 36 months plus an optional extension period of up to 12 months.</p>
+				<p class="ita-sign__clause"><strong>1.8</strong> The Parties agree that they have read this Framework Agreement and by signing below agree to be bound by its terms.</p>
+				<p class="ita-sign__clause"><strong>1.9</strong> All notices, including the Invitation to Tender and Schedules to this Framework Agreement are expressly part of this Framework Agreement.</p>
+				<p class="ita-sign__clause"><strong>1.10</strong> GCA will pay LT to the Supplier to perform its obligations under this Framework Agreement, receipt of which is acknowledged by the Supplier signing this Framework Agreement.</p>
+				<p class="ita-sign__clause"><strong>1.11</strong> The Installed Framework Agreement includes an electronically signed Framework Agreement. It is electronically signed by the Supplier when they make it legally declarant confirming their agreement to the G-Cloud 14 Framework Agreement, and countersigned by Government Commercial Agency.</p>
+
+				<p class="ita-sign__body">Agent.</p>
+				<a class="ita-sign__sign-link" href="#">Read the G-Cloud 14 contract terms and conditions</a>
+
+				<div class="ita-sign__field">
+					<label class="ita-sign__label" for="full-name">Your full name</label>
+					<input class="govuk-input ita-sign__input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
+				</div>
+
+				<div class="ita-sign__field">
+					<label class="ita-sign__label" for="company-role">Your role in the company</label>
+					<input class="govuk-input ita-sign__input" id="company-role" name="company-role" type="text" spellcheck="false" autocomplete="organization-title">
+				</div>
+
+				<div class="govuk-checkboxes govuk-checkboxes--small ita-sign__checkbox" data-module="govuk-checkboxes">
+					<div class="govuk-checkboxes__item">
+						<input class="govuk-checkboxes__input" id="terms-agreement" name="terms-agreement" type="checkbox" value="accepted">
+						<label class="govuk-label govuk-checkboxes__label" for="terms-agreement">
+							I accept the terms and conditions of the framework agreement
+						</label>
+					</div>
+				</div>
+
+				<div class="ita-sign__actions">
+					<a href="#" class="govuk-button" data-module="govuk-button">Sign agreement</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
