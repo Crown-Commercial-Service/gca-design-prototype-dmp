@@ -1,0 +1,229 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Framework award form - {{ serviceName }} - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  <div class="gca-back-link">
+    {{ govukBackLink({
+      text: "Back",
+      href: "javascript:window.history.back()"
+    }) }}
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Framework award form</h1>
+
+    <p class="govuk-body">Complete this form to create Framework Contract RM1557.15 (G-Cloud 15).</p>
+    <p class="govuk-body">This captures CCS and supplier details, lots, dates, incorporated documents and any framework special terms.</p>
+
+    <form action="#" method="post" novalidate>
+      <h2 class="govuk-heading-l">1. Parties</h2>
+
+      <div class="govuk-inset-text">
+        <p class="govuk-body govuk-!-margin-bottom-2"><strong>CCS</strong></p>
+        <p class="govuk-body govuk-!-margin-bottom-0">The Minister for the Cabinet Office represented by Crown Commercial Service (CCS), 9th Floor, The Capital, Old Hall Street, Liverpool, L3 9PP.</p>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="supplier-name">Supplier legal name</label>
+        <input class="govuk-input" id="supplier-name" name="supplier-name" type="text" autocomplete="organization">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="company-number">Company number</label>
+        <input class="govuk-input govuk-input--width-20" id="company-number" name="company-number" type="text" spellcheck="false">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="registered-address">Registered address</label>
+        <textarea class="govuk-textarea" id="registered-address" name="registered-address" rows="4"></textarea>
+      </div>
+
+      <h2 class="govuk-heading-l">2. Framework contract details</h2>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="framework-reference">Framework reference</label>
+        <input class="govuk-input govuk-input--width-20" id="framework-reference" name="framework-reference" type="text" value="RM1557.15" spellcheck="false">
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="lots-awarded-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Lots awarded</legend>
+          <div id="lots-awarded-hint" class="govuk-hint">Select all lots that apply. The supplier cannot deliver under unselected lots.</div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lot-1a" name="lots-awarded" type="checkbox" value="1a">
+              <label class="govuk-label govuk-checkboxes__label" for="lot-1a">Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lot-1b" name="lots-awarded" type="checkbox" value="1b">
+              <label class="govuk-label govuk-checkboxes__label" for="lot-1b">Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lot-2a" name="lots-awarded" type="checkbox" value="2a">
+              <label class="govuk-label govuk-checkboxes__label" for="lot-2a">Lot 2a: Infrastructure Software (I-SaaS)</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lot-2b" name="lots-awarded" type="checkbox" value="2b">
+              <label class="govuk-label govuk-checkboxes__label" for="lot-2b">Lot 2b: Software as a Service (SaaS)</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lot-3" name="lots-awarded" type="checkbox" value="3">
+              <label class="govuk-label govuk-checkboxes__label" for="lot-3">Lot 3: Cloud support services (additional services)</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="appointment-dates-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Framework period</legend>
+          <div id="appointment-dates-hint" class="govuk-hint">Enter framework start and expiry dates.</div>
+
+          <div class="govuk-date-input" id="appointment-start-date">
+            <p class="govuk-body govuk-!-margin-bottom-2"><strong>Framework start date</strong></p>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="start-day">Start day</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="start-day" name="start-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="start-month">Start month</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="start-month" name="start-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="start-year">Start year</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="start-year" name="start-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-date-input" id="appointment-end-date">
+            <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-3"><strong>Framework expiry date</strong></p>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="end-day">End day</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="end-day" name="end-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="end-month">End month</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="end-month" name="end-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="end-year">End year</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="end-year" name="end-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="framework-period-notes">Framework period notes</label>
+        <textarea class="govuk-textarea" id="framework-period-notes" name="framework-period-notes" rows="4" aria-describedby="framework-period-notes-hint">Initial Framework Contract Period of 18 months. Framework to be opened at the end of the Initial Framework Contract Period to run for a further 18 months.</textarea>
+        <div id="framework-period-notes-hint" class="govuk-hint">Include reopening points and any extension wording from the award form.</div>
+      </div>
+
+      <h2 class="govuk-heading-l">3. Maximum call-off durations</h2>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Call-off limits by lot group</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Lot group</th>
+            <th scope="col" class="govuk-table__header">Initial period</th>
+            <th scope="col" class="govuk-table__header">Optional extension</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Lots 1a and 1b</td>
+            <td class="govuk-table__cell">Up to 5 years</td>
+            <td class="govuk-table__cell">Up to 3 years total</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Lots 2a, 2b and 3</td>
+            <td class="govuk-table__cell">Up to 4 years</td>
+            <td class="govuk-table__cell">Up to 2 years total</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-l">4. Incorporated documents</h2>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="documents-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Included by default</legend>
+          <div id="documents-hint" class="govuk-hint">Confirm the framework schedules and call-off schedules included in this award.</div>
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="doc-award-form" name="documents" type="checkbox" value="award-form" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="doc-award-form">This Framework Award Form</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="doc-special-terms" name="documents" type="checkbox" value="special-terms" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="doc-special-terms">Framework Special Terms (if any)</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="doc-schedule-6" name="documents" type="checkbox" value="schedule-6" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="doc-schedule-6">Framework Schedule 6 (Order Form template and call-off schedules)</label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="doc-schedule-7" name="documents" type="checkbox" value="schedule-7" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="doc-schedule-7">Framework Schedule 7 (Call-off award procedure)</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="framework-special-terms">Framework special terms</label>
+        <textarea class="govuk-textarea" id="framework-special-terms" name="framework-special-terms" rows="8" aria-describedby="framework-special-terms-hint"></textarea>
+        <div id="framework-special-terms-hint" class="govuk-hint">Paste special terms exactly as approved for RM1557.15.</div>
+      </div>
+
+      <h2 class="govuk-heading-l">5. Signatures and declaration</h2>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="ccs-signatory">CCS signatory name</label>
+        <input class="govuk-input" id="ccs-signatory" name="ccs-signatory" type="text" autocomplete="name">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="supplier-signatory">Supplier signatory name</label>
+        <input class="govuk-input" id="supplier-signatory" name="supplier-signatory" type="text" autocomplete="name">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="supplier-role">Supplier signatory role</label>
+        <input class="govuk-input" id="supplier-role" name="supplier-role" type="text" autocomplete="organization-title">
+      </div>
+
+      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="terms-confirmation" name="terms-confirmation" type="checkbox" value="confirmed">
+          <label class="govuk-label govuk-checkboxes__label" for="terms-confirmation">I confirm this Framework Award Form is ready for signature and issue.</label>
+        </div>
+      </div>
+
+      <div class="govuk-button-group">
+        <button type="submit" class="govuk-button" data-module="govuk-button">Save and continue</button>
+        <a class="govuk-link" href="/content.html">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
