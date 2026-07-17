@@ -617,11 +617,13 @@
       row.appendChild(sectionContentCell);
       table.appendChild(row);
 
+      const firstContentElement = heading.nextElementSibling;
+
       root.insertBefore(table, heading);
 
       sectionHeadingCell.appendChild(heading);
 
-      let current = heading.nextElementSibling;
+      let current = firstContentElement;
       while (current && !(current.classList && current.classList.contains(sectionClass))) {
         const next = current.nextElementSibling;
         sectionContentCell.appendChild(current);
