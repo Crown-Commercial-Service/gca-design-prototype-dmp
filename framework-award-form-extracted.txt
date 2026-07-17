@@ -1,0 +1,497 @@
+﻿Framework Award FormFramework Award Form
+
+
+
+
+
+
+
+Framework 
+Award Form
+
+
+
+
+
+
+
+
+Framework 
+Award Form
+
+
+This Framework Award Form creates the Framework Contract RM1557.15 G-Cloud 15. It summarises the main features of the procurement and includes CCS and the Supplier’s contact details.
+
+CCS 
+The Minister for the Cabinet Office represented by its executive agency the Crown Commercial Service (CCS). 
+Its offices are on: 9th Floor, The Capital, Old Hall Street, Liverpool L3 9PP.
+
+Supplier
+Name: 
+[Insert name (registered name if registered)]
+Address: 
+[Insert address registered address if registered]
+Registry:
+
+[Insert name of register, for example, “Companies House”.]
+Registration number:    
+[Insert registration number]
+
+
+Framework Details
+This Framework Contract has been entered into between CCS and the Supplier in respect of the Framework. The Framework was advertised in a Tender Notice published on the central digital platform with reference [Insert Tender Notice Reference]. 
+This Framework is a framework within a scheme of an “Open Framework” within the meaning of section 49 of the Procurement Act 2023.
+The unique identifier (OCID) for this Framework is ocds-h6vhtk-0504a3. 
+
+Framework Contract
+This Framework Contract between CCS and the Supplier allows the Supplier to be considered for Call-Off Contracts to supply the Deliverables in the following Lot(s) [Delete as applicable]:
+[Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) (RM1557.15.1a)]
+[Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL (RM1557.15.1b)] 
+[Lot 2a: Infrastructure Software (I-SaaS) (RM1557.15.2a)] 
+[Lot 2b: Software as a Service (SaaS) (RM1557.15.2b)]
+[Lot 3: Cloud support services (Additional Services) (RM1557.15.3)] 
+The Supplier cannot deliver in any other Lot under this Framework Contract. Any references made to other Lots in this Framework Contract do not apply.
+
+Deliverables 
+See Framework Schedule 1 (Specification) for further details of the Deliverables under each of:
+Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)
+Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL 
+Lot 2a: Infrastructure Software (I-SaaS) 
+Lot 2b: Software as a Service (SaaS)
+Lot 3: Cloud support services (Additional Services)
+
+Framework Start Date
+29 October 2026 
+
+Framework Expiry Date
+29 October 2030
+
+Framework Optional Extension Period
+Initial Framework Contract Period of 18 months. Framework to be opened at the end of the Initial Framework Contract Period to run for a further 18 months. 
+Framework to be re-opened at the end of such 18 month period to run for a further 12 months.
+
+Maximum Call-Off Duration
+Maximum Call-Off Contract Period that applies to Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) and Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL is as follows:
+The Call-Off Initial Period shall be a maximum of five (5) years from the Call-Off Start Date.
+(If used) the Call-Off Optional Extension Period shall be: 
+comprised of one or more extensions of up to twelve (12) months per extension; and 
+in total, no greater than three (3) years from the end of the Call-Off Initial Period.
+Maximum Call-Off Contract Duration that applies to Lot 2a: Infrastructure Software (I-SaaS), Lot 2b: Software as a Service (SaaS) and Lot 3: Cloud support services (Additional Services) is as follows:
+The Call-Off Initial Period shall be a maximum of four (4) years from the Call-Off Start Date.
+(If used) the Call-Off Optional Extension Period shall be: 
+comprised of one or more extensions; and 
+in total, no greater than two (2) years from the end of the Call-Off Initial Period.
+
+Order Procedure
+Award Without Competition
+Two Stage Competitive Selection Process
+Multi Stage Competitive Selection Process
+See Framework Schedule 7 (Call-Off Award Procedure) for definitions of the above term(s) and descriptions of the relevant processes.
+
+Framework Incorporated Terms 
+(together these documents form the "Framework Contract")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The following documents are incorporated into the Framework Contract. Where numbers are missing we are not using these schedules. If the documents conflict, the following order of precedence applies:
+This Framework Award Form
+Any Framework Special Terms (see Section 12 ‘Framework Special Terms’ in this Framework Award Form) 
+Joint Schedule 1 (Definitions) RM1557.15 
+Joint Schedule 10 (Processing Data) RM1557.15
+The following Schedules for RM1557.15 (in equal order of precedence):
+Framework Schedule 1 (Specification) 
+Framework Schedule 3 (Framework Prices)
+Framework Schedule 4 (Framework Management)
+Framework Schedule 5 (Management Charges and Information)
+Framework Schedule 6 (Order Form Template and Call-Off Schedules) including the following template Call-Off Schedules: 
+Call-Off Schedule 1 (Intellectual Property Rights)
+Call-Off Schedule 2 (Staff Transfer)
+Call-Off Schedule 3 (Continuous Improvement)
+Call-Off Schedule 4 (Call-Off Tender)
+Call-Off Schedule 5 (Pricing Details)
+Call-Off Schedule 6 (ICT Services)
+Call-Off Schedule 7 (Key Supplier Staff)
+For Framework Contracts under Lot 1a, Lot 1b or Lot 3 only, Call-Off Schedule 8 (Business Continuity and Disaster Recovery)
+Call-Off Schedule 9 (Security) (i.e. Call-Off Schedule 9A (Security: Short Form), Call-Off Schedule 9B (Security: Consultancy), Call-Off Schedule 9C (Security: Development), Call-Off Schedule 9D (Security: Supplier-led Assurance), and Call-Off Schedule 9E (Security: Buyer-led Assurance))
+Call-Off Schedule 10 (Exit Management)
+Call-Off Schedule 11 (Installation Works)
+For Framework Contracts under Lot 1a or Lot 1b only, Call-Off Schedule 11A (Installation Works – Crown Hosting (Lot 1a and Lot 1b only))
+Call-Off Schedule 12 (Clustering)
+Call-Off Schedule 13 (Implementation Plan and Testing)
+Call-Off Schedule 14 (Performance Levels)
+Call-Off Schedule 15 (Call-Off Contract Management)
+Call-Off Schedule 16 (Benchmarking)
+Call-Off Schedule 17 (MOD Terms)              
+Call-Off Schedule 18 (Background Checks)
+Call-Off Schedule 19 (Scottish Law)      
+Call-Off Schedule 20 (Call-Off Specification) 
+Call-Off Schedule 21 (Northern Ireland Law)
+Call-Off Schedule 22 (Lease Terms)
+Call-Off Schedule 23 (HMRC Terms) 
+Call-Off Schedule 24 (Corporate Resolution Planning)
+Call-Off Schedule 25 (Additional Sustainability Requirements)
+Call-Off Schedule 26 (Carbon Reduction)
+Call-Off Schedule 27 (Cyber Essentials Scheme)
+For Framework Contracts under Lot 1a or Lot 1b only, Call-Off Schedule 28 (Special Call-Off Schedule for Lot 1a and Lot 1b)
+Framework Schedule 7 (Call-Off Award Procedure)
+Framework Schedule 8 (Self Audit Certificate)
+Joint Schedule 2 (Variation Form)
+Joint Schedule 3 (Insurance Requirements)
+Joint Schedule 4 (Commercially Sensitive Information)
+Joint Schedule 5 (Sustainability)
+Joint Schedule 6 (Key Subcontractors)
+Joint Schedule 7 (Financial Difficulties)
+Joint Schedule 8 (Guarantee)
+Joint Schedule 9 (Rectification Plan)
+CCS General Terms for RM1557.15
+Framework Schedule 2 (Framework Tender) RM1557.15 as long as any part of the Framework Tender that offers a better commercial position for CCS or Buyers (as decided by CCS) take precedence over the documents above.
+
+Framework Special Terms
+
+
+Framework Special Terms that apply to all Lots: 
+Special Term 1 – Clause 2.5 in Clause 2 (How the Contract Works) of the General Terms is amended as follows:
+new Clause 2.5.4 is included as follows:
+"2.5.4 shall be subject to, and shall not exceed, the applicable Maximum Call-Off Duration; and";
+the existing Clause 2.5.4 is retained and re-numbered accordingly to Clause 2.5.5; and
+the final "and" in Clause 2.5.3 is deleted.
+
+Special Term 2 – New Clauses 2.11 to 2.15 shall be included in Clause 2 (How the contract works) of the General Terms as follows:
+"2.11 Supplier Terms and Supplier Service Descriptions
+2.11.1 The Supplier Terms and Supplier Service Descriptions which shall apply to a Call-Off Contract, and are therefore incorporated into the Call-Off Contract subject to Clauses 2.11 to 2.15, are restricted to those Supplier Terms and Supplier Service Descriptions which are set out or expressly referred to in the relevant Order Form (including any attachments to it), and as such Supplier Terms and Supplier Service Descriptions may be modified strictly in accordance with the provisions of the Call-Off Contract.
+2.11.2 Except as expressly set out in the Call-Off Contract, the Supplier Terms and Supplier Service Descriptions cannot be amended during the Call-Off Contract Period without the Buyer’s prior written consent.
+2.11.3   The Supplier Terms (if any) set out under the heading of "Supplier Terms" in the Order Form shall:
+(a) only be applicable to the Call-Off Contract to the extent that they directly relate to the permitted subject matter of the relevant Supplier Terms, as set out in the definitions of Supplier Acceptable Use Policy, Supplier Data Processing Agreement, Supplier Specific Shared Responsibility Model, Supplier SLA or Supplier Licence Terms (as applicable) in Joint Schedule 1 (Definitions); and 
+(b) not be applicable to the Call-Off Contract (and shall be deemed to be ineffective) to the extent that they include:
+(i) any Additional Third Party Terms and/or Inapplicable Additional Terms;
+(ii) any indemnities (or clauses of a similar nature to indemnities); and/or
+(iii) any provisions which would have any material impact on: 
+(A) the potential liability of either Party under the Call-Off Contract; and/or 
+(B) the balance of risks under the Call-Off Contract from the Buyer’s perspective (including the creation of new or increased potential liabilities, new or materially different operational responsibilities for the Buyer and/or any Buyer Users and/or new or increased constraints on the Buyer's rights of termination), 
+in each case of (A) and/or (B) when compared to the other terms of the Call-Off Contract (i.e. other than the Supplier Terms) as listed under the heading of "Call-Off Incorporated Terms" in the Order Form.
+2.12 Hyperlinks
+2.12.1 Where in any:
+(a) Supplier Terms; and/or
+(b) Supplier Service Descriptions,
+a third party standard, policy, list, terms and conditions or any other document (“Additional Third Party Terms”) is incorporated (by reference to a hyperlink or otherwise), then subject to Clauses 2.12.2 and 2.12.3 such hyperlink shall be deemed ineffective and any Additional Third Party Terms shall be deemed unenforceable and shall not apply to the Call-Off Contract and the Call-Off Contract shall apply as if such hyperlink to the Additional Third Party Terms was not included.
+2.12.2 Clause 2.12.1 is without prejudice to the inclusion as at the Call-Off Start Date of hyperlinks to the Supplier’s own relevant online versions of the applicable Supplier Terms and Supplier Service Descriptions that are referred to the Order Form, which hyperlinks shall be effective where and to the extent only they incorporate by reference the relevant Supplier Service Descriptions and Supplier Terms (and no Additional Third Party Terms).
+2.12.3 Where any hyperlinks to any online:
+(a) Supplier Terms; or
+(b) Supplier Service Descriptions,
+are set out in the Order Form or notified to the Buyer Authorised Representative in accordance with the Call-Off Contract and such hyperlinks either:
+(c) no longer provide access directly to the relevant Supplier Terms and/or Supplier Service Descriptions in full and in a clear and transparent manner; or
+(d) provide a hyperlink to another source,
+(in either case a “broken hyperlink”) then the Supplier shall notify the Buyer Authorised Representative and the Parties shall update the Contract with a variation in writing with a reference to the relevant replacement hyperlink (if any) to replace the broken hyperlink or failing which as otherwise agreed by the Parties.
+2.13 Inapplicable Additional Terms
+2.13.1 Save for the Supplier Terms (as amended in accordance with the Call-Off Contract), where the Buyer and/or any Buyer User in the course of submitting Service Requests (or otherwise making requests for Services and/or Deliverables) and/or in accessing and using the Services and/or Deliverables supplied under the Contract, accepts or is deemed to have accepted (whether intentionally or otherwise):
+(a) any other terms and conditions including any other terms proposed by or on behalf of a Supplier (whether in addition to or in replacement of the Supplier Terms) and/or any third party software licence terms not set out in Supplier Terms (including whether purported to have been accepted online by clicking on the Supplier Portal or otherwise); and/or
+(b) the terms of any business forms (such as purchase orders and invoices),
+(together the “Inapplicable Additional Terms”), the Parties agree that any such Inapplicable Additional Terms shall be deemed invalid and shall be unenforceable under the Contract.
+2.14 Variations to Supplier Terms and Supplier Service Descriptions at Framework level 
+2.14.1The Supplier may at any time during the Framework Contract Period and in accordance with the Variation Procedure request a variation to the Supplier Standard Terms. Where CCS and the Supplier agree to a Variation of the Supplier Standard Terms such Variation will only be effective in relation to future Call-Off Contracts entered into under this Framework following the effective date of such agreed Variation. For the avoidance of any doubt such agreed Variation shall not vary the Supplier Standard Terms as they are set out in the relevant Order Form in any Call-Off Contracts (between the Supplier and the relevant Buyer) already in existence prior to the effective date of such agreed Variation.
+2.14.2 The Supplier may at any time during the Framework Contract Period and in accordance with the procedure set out in Paragraph 4 of Annex E (Operation and Update of the Digital Platform) of Framework Schedule 7 (Call-Off Award Procedure) request amendments to the Supplier Service Specific Terms and/or Supplier Service Description applicable to particular Digital Platform Item(s). Where CCS approves any amendment(s) to any Supplier Service Specific Terms and/or Supplier Service Description in accordance with Paragraph 4 of Annex E (Operation and Update of the Digital Platform) of Framework Schedule 7 (Call-Off Award Procedure) such amendment(s) will only be effective in relation to future Call-Off Contracts entered into under this Framework following the effective date of such approved amendment(s). For the avoidance of any doubt such agreed amendment(s) shall not vary the relevant Supplier Service Specific Terms and/or Supplier Service Description(s) as they are set out in the relevant Order Form in any Call-Off Contracts (between the Supplier and the relevant Buyer) already in existence prior to the effective date of such approved amendment(s).
+2.15 Call-Off Special Terms
+2.15.1 Call-Off Special Terms shall only apply to a Call-Off Contract if they: 
+(a) are set out in full in the section of the Order Form entitled “Call-Off Special Terms”; and 
+(b) augment and supplement the Contract and in particular do not amend the Call-Off Contract to any material extent, 
+and provided always that any attempt to incorporate by reference any Supplier Terms (and/or any other terms or documents proposed by the Supplier) as Call-Off Special Terms shall be ineffective."
+
+Special Term 3 – New Clause 3.1.3 shall be included in Clause 3 (What needs to be delivered) of the General Terms as follows:
+"Collaborative Working Principles
+3.1.3The Supplier must co-operate and provide reasonable assistance to any supplier(s) to the Buyer (other than the Supplier) notified to the Supplier by the Buyer from time to time ("Buyer Third Parties"), and the Supplier shall act at all times in accordance with the following principles:
+(a)proactively leading on, mitigating and contributing to the resolution of problems or issues irrespective of its contractual obligations, acting in accordance with the principle of "fix first, settle later";
+(b)being open, transparent and responsive in sharing relevant and accurate information with Buyer Third Parties;
+(c)where reasonable, adopting common working practices, terminology, standards and technology and a collaborative approach to service development and resourcing with Buyer Third Parties;
+(d)providing reasonable cooperation, support, information and assistance to Buyer Third Parties in a proactive, transparent and open way and in a spirit of trust and mutual confidence; and
+(e)identifying, implementing and capitalising on opportunities to improve deliverables and deliver better solutions and performance throughout the relationship lifecycle."
+
+Special Term 4 - A new Clause 3.3.9 shall be included in Clause 3.3 (Services clauses) of the General Terms as follows:
+"3.3.9 The Supplier confirms that it has in place, and will implement as required, a robust plan (prepared in accordance with Good Industry Practice) to ensure: 
+(a) continuity of the Supplier's business processes and operations that support the provision of the Services following any failure or disruption of any element of the Services and/or Deliverables; and 
+(b) the recovery of the Services and/or Deliverables in the event of a Disaster. 
+The Supplier will provide a copy of such plan to CCS and to any Buyer on request, subject to redaction by the Supplier (acting reasonably) of any commercially sensitive information contained in the plan. Unless expressly agreed and set out in the relevant Order Form, the Supplier shall not be expected to produce a version of such plan which is bespoke to a Call-Off Contract. This Clause 3.3.9 is without prejudice to the terms of Call-Off Schedule 8 (Business Continuity and Disaster Recovery), if that Call-Off Schedule 8 applies to the Call-Off Contract."
+
+Special Term 5 – New Clauses 3.4, 3.5, 3.6 and 3.7 shall be included in Clause 3 (What needs to be delivered) of the General Terms as follows:
+"3.4 Standards
+3.4.1 The Supplier shall comply with the Standards at all times during the performance by the Supplier of this Framework Agreement and any Call-Off Contract, including the Standards set out in Framework Schedule 1 (Specification). 
+3.4.2 Throughout the Contract Period, the Parties shall notify each other of any new or emergent standards which could affect the Supplier’s provision, or the receipt by a Buyer under a Call-Off Contract, of the Services. The adoption of any such new or emergent standard, or changes to existing Standards, shall be agreed in accordance with the Variation Procedure or (where applicable) implemented in accordance with Clause 3.4.4. 
+3.4.3 Where a new or emergent standard is to be developed or introduced by CCS or the Buyer, or where a new or emergent standard is to be developed or introduced by the Supplier and such new or emergent standard does not fall within the scope of Clause 3.4.4, the Supplier shall be responsible for ensuring that the potential impact on the Supplier’s provision, or a Buyer’s receipt under a Call-Off Contract, of the Services is explained to CCS and the Buyer (within a reasonable timeframe), prior to the implementation of the new or emergent Standard in accordance with the Variation Procedure. 
+3.4.4 Where a new or emergent standard is to be developed or introduced by the Supplier and that standard that will apply on a uniform basis to all customers in respect of the relevant Services or Deliverables: 
+(a) the Supplier shall give the Buyer Authorised Representative and CCS not less than thirty (30) days’ prior written notice by email (or by another Buyer-authorised form of notification made in accordance with the terms of the Order Form) of the proposed new or emergent standard, such notice to include a hyperlink directly to a URL setting out in full and in a clear and transparent manner the proposed new or emergent standard; 
+(b) the Supplier shall demonstrate to the Buyer and CCS that the implementation of the proposed new or emergent standard will not result in a reduction in functionality and/or service, and/or loss of compatibility with any vendor supported operating systems used by the Buyer; 
+(c) where the Buyer reasonably believes the proposed new or emergent standard has, or is likely to have, a materially adverse impact on:
+(i)the Buyer’s use and benefit of the Services and/or Deliverables under the Call-Off Contract;
+(ii)the commercial benefits of the Call-Off Contract to the Buyer (including in relation to pricing and performance of the Services and/or Deliverables); and/or
+(iii)the balance of risks under the Call-Off Contract from the Buyer’s perspective (including the creation of new or increased potential liabilities and/or new or materially different operational responsibilities for the Buyer and/or any Buyer Users),
+the Buyer may, acting reasonably, object to the Supplier’s proposed new or emergent standard by notifying the Supplier in writing within thirty (30) days’ of the Buyer’s receipt of the Supplier’s notice pursuant to Clause 3.4.4(a). If the Parties (acting reasonably) are unable within the next ten (10) days to resolve the Buyer’s objection to its reasonable satisfaction the Buyer may terminate the Call-Off Contract (in whole or in part, at the Buyer's discretion) with immediate effect and without any liability (including, for the avoidance of doubt, pursuant to Clause 4.12) by giving notice in writing to the Supplier; and
+(d) where the Buyer:
+(i)does not object to a proposed new or emergent standard within the thirty (30) day period referred to in Clause 3.4.4(c); or
+(ii)having objected the Buyer subsequently agrees to the proposed new or emergent standard,
+and subject to the conditions in Clause 3.4.4(a) and (b) being satisfied, the definition of the Standards are deemed modified, to reflect the new or emergent standard notified to the Buyer in accordance with Clause 3.4.4(a), with effect from the effective date set out in the relevant notice or where no effective date is specified thirty (30) days following the Buyer’s receipt of the notice of the proposed new or emergent standards. Where any of the conditions in Clauses 3.4.4(a) or (b) are not satisfied the proposed new or emergent standard are deemed invalid and shall not modify the then current definition of Standards applying to the Call-Off Contract.
+3.4.5 Where Standards referenced conflict with each other or with best professional or industry practice adopted after the Framework Start Date, then the later Standard or best practice shall be adopted by the Supplier. Any such alteration to any Standard(s) pursuant to this Clause 3.4.5 shall be handled in accordance with the Variation Procedure or, where applicable, Clause 3.4.4. 
+3.4.6 The Supplier should note (when delivering Services to CCS and any Buyer which is a Crown Body) the intention of CCS to conform to HM Government’s ICT Strategy and the set of standards (such as those associated with the adoption of cross government cloud services) related to that strategy. 
+3.4.7 Where a standard, policy or document is referred to in Framework Schedule 1 (Specification) by reference to a hyperlink or where any such standard, policy or document contains a hyperlink to another source, then if the hyperlink is changed or no longer provides access to the relevant standard, policy or document or source within any such standard, policy or document, the Supplier shall notify CCS and the Parties shall update the Framework Contract in accordance with the Variation Procedure with a reference to the relevant replacement hyperlink (if any) or failing which as otherwise agreed by the Parties.
+3.5 Buyer Content and security 
+3.5.1 The Supplier shall not access, store, copy, disclose or use any of the Buyer Content uploaded to the relevant cloud platform(s) other than for the sole purpose and to the extent necessary to provide the Services or as otherwise approved in advance and in writing by the Buyer, unless the Supplier is required to do so by Law. If it is so required the Supplier shall promptly notify the Buyer before doing so unless prohibited by Law. 
+3.5.2 If the Supplier becomes aware of a breach of Suppliers’ security that has or may result in either (a) any unlawful access to any Buyer Content stored on Supplier equipment or facilities, or (b) any unauthorised access to such equipment or facilities, which in either case such access results in loss, disclosure, destruction or alteration of Buyer Content, then the Supplier will notify the Buyer without undue delay and within 48 hours of becoming aware and will promptly take reasonable steps to mitigate the effects of such breach.
+3.5.3 The Supplier will use all reasonable endeavours, software and the most up-to-date antivirus definitions available from an industry-accepted antivirus software seller to minimise the impact of Malicious Software. 
+3.5.4 If Malicious Software causes loss of operational efficiency or loss or corruption of Buyer Content, the Supplier will assist and support the Buyer to mitigate any Losses and restore the Services to operating efficiency as soon as possible. 
+3.5.5 Responsibility for costs will be at the: 
+(a) Supplier’s expense if the Malicious Software originates from the Supplier’s technology infrastructure or the Buyer Content where and to the extent that the Buyer Content was under the control of the Supplier, unless the Supplier can demonstrate that it was already present, not quarantined or identified by the Buyer when provided; or 
+(b) Buyer’s expense if the Malicious Software originates from the Buyer’s technology infrastructure or the Buyer Content, while the Buyer Content was under the Buyer’s control. 
+3.5.6 The Supplier shall comply with the security requirements set out or referred to in the Order Form including: 
+(a) any specific security or compliance requirements described in the Order Form under the heading “Security Requirements (If Applicable)”; and
+(b) those protective measures set out or referred to (but not by way of hyperlinks) in the Supplier DPA (if applicable). 
+3.5.7 The Buyer acknowledges it has responsibilities in relation to security where and to the extent described in the relevant applicable Supplier Terms and applicable Supplier Service Descriptions.
+3.6 Service Requests
+3.6.1Where the Buyer and/or Buyer Users submit Service Requests (through any Supplier Portal or any other agreed means for submitting Service Requests that is set out in the Order Form), the Buyer shall be committed to purchase and pay for such Services and/or Deliverables and the Supplier shall be obliged to provide such Services and/or Deliverables under the terms of the Call-Off Contract subject to the following conditions:
+(a)Service Requests must be submitted in accordance with the agreed process for requesting Services and/or Deliverables set out or referred to in the Order Form under the heading “Service Request Process” (including any restrictions on who is authorised to submit Service Requests as specified in the Order Form);
+(b)in accordance with Clause 2.13, Inapplicable Additional Terms shall be deemed to be invalid and shall be unenforceable under the Call-Off Contract;
+(c)the aggregate value of all Service Requests submitted (together with any other Charges payable by the Buyer under the Call-Off Contract) may not exceed the value set out under the “Anticipated Contract Value” heading in the Order Form as at the Call-Off Start Date without the prior written approval of the Buyer Authorised Representative;
+(d)the Supplier is not permitted under the Call-Off Contract to provide any professional or managed services, other than professional or managed services that relate directly to Services that are within the scope of Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)), Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL), Lot 2a (Infrastructure Software (I-SaaS)) and/or Lot 2b (Software as a Service (SaaS)) (as applicable) as set out Framework Schedule 1 (Specification) (“Out of Scope Deliverables”); and
+(e)notwithstanding the Buyer and/or any Buyer User submitting Service Requests or otherwise making requests to purchase Out of Scope Deliverables, any such requests are deemed invalid and shall be without legal effect in transactions under the Call-Off Contract. Accordingly, the Buyer shall not be liable for any charges, costs or expenses incurred by the Supplier and/or any other third party in providing any Out of Scope Deliverables.
+3.7 Withdrawal of Cloud Products and COTS Software 
+3.7.1 The Supplier warrants, represents and undertakes that, as at the Call-Off Start Date, it is not aware that any of the Cloud Products and/or COTS Software will be withdrawn, and/or no longer maintained or supported, by the relevant provider or developer during the Call-Off Contract Period. 
+3.7.2 The Supplier shall notify the Buyer in writing in accordance with this Clause 3.7 if it becomes aware at any time during the Call-Off Contract Period that any Cloud Products and/or COTS Software:
+(a)will no longer be maintained or supported by the relevant provider or developer; and/or
+(b)will no longer be made commercially available by the relevant provider or developer.
+3.7.3 The Supplier shall be required to notify the Supplier under Clause 3.7.2 within seven (7) days of becoming aware of either of the events referred to in Clause 3.7.2(a) and/or (b), and in any event no later than nine (9) months (or such other period as may be specified in the Order Form) prior to the relevant Cloud Products and/or COTS Software being withdrawn, and/or no longer maintained or supported, by the relevant provider or developer.
+3.7.4 The Supplier's notice under Clause 3.7.2 must include, as a minimum:
+(a) an assessment of the impact of the withdrawal and/or loss of maintenance and support of the relevant Cloud Product or COTs Software on the provision of the Services and/or Deliverables; and
+(b) the Supplier's proposals (if any) for the provision of a replacement Cloud Product or COTS Software that would not result in a reduction in functionality and/or service, and/or loss of compatibility with any vendor supported operating systems used by the Buyer, and which would be implemented and supplied at no additional cost to the Buyer.
+3.7.5 Unless the Parties are able to reach agreement on the provision of an alternative Cloud Product or COTS Software pursuant to Clause 3.7.4 within one (1) month of the Supplier's notice under Clause 3.7.2, the Buyer may terminate the Call-Off Contract (in whole or in part, at the Buyer's discretion) with immediate effect and without any liability (including, for the avoidance of doubt, without any liability pursuant to Clause 4.12) by giving notice in writing to the Supplier."
+
+Special Term 6 – A new Clause 4.12 shall be included in Clause 4 (Pricing and payments) of the General Terms as follows:
+"4.12 Quantities and Minimum Commitments
+4.12.1Subject to Clause 4.12.2, due to the nature of the Services and/or Deliverables it is not practicable in a static Order Form to agree in detail exactly the quantity and rate of consumption of the Services and/or Deliverables during the Call-Off Contract Period. Accordingly, the Charges due under the Call-Off Contract are calculated (in accordance with the process set out in the Order Form) by reference to the Buyer’s actual consumption of Services and/or Deliverables as a result of the Buyer and/or Buyer Users submitting Service Requests (through any Supplier Portal or any other agreed means for submitted Service Requests that is set out in the Order Form) during the Call-Off Contract Period. Accordingly, the Supplier agrees that the Buyer’s anticipated quantities and rates of consumption of Services and/or Deliverables stated in the Order Form (if any) are indicative only, except to the extent they are expressly reflected as Minimum Commitments in the Order Form.
+4.12.2The Buyer may commit under the Call-Off Contract to purchase relevant Services and/or Deliverables for a minimum period or other agreed commitment (for example in respect of a Reserved Instance, or a commitment to purchase a fixed quantity of Services or other Deliverables) in order to secure a commitment related discount to the Charges (a “Minimum Commitment”). The Buyer may agree to do this by either: 
+(a)expressly specifying the relevant details of the Minimum Commitment in the Order Form (under the heading “Call-Off Contract Charges”); or 
+(b)subject to Clause 4.12.3, submitting a Service Request (by a person appropriately authorised to do so on behalf of the Buyer or Buyer User) and such Service Request sets out a clear and unambiguous statement that the Buyer is agreeing to be bound by a Minimum Commitment together with details of the relevant Minimum Commitment. 
+4.12.3 It is a condition of the Call-Off Contract that: 
+(a)Service Requests submitted by or on behalf of the Buyer containing a Minimum Commitment are only valid and binding under the Call-Off Contract where and to the extent the relevant Minimum Commitment and/or the process for entering into such Minimum Commitment complies with any limits, settlement options or other requirements expressly set out in the Order Form under the heading “Call-Off Charges”; and 
+(b)where the aggregate total of: 
+(i)all valid and undisputed Charges actually incurred by or on behalf of the Buyer; and 
+(ii)any Charges which the Buyer has committed to pay as a result of the Buyer validly entering into Minimum Commitments during the Call-Off Contract Period, 
+(together the “Committed Charges”) exceeds the value set out under the heading "Anticipated Contract Value" in the Order Form, the Supplier may not invoice for and the Buyer shall not be required to pay for (without the Buyer’s prior written consent, which shall not be withheld unreasonably), that portion of any Committed Charges in excess of that anticipated contract value set out in the Order Form unless the Supplier has complied with Clause 4.12.4 below. 
+4.12.4 The Supplier shall provide to the Buyer such reports, dashboards, and other monitoring methods and capability to grant full visibility to the Buyer of its usage, spend, and consumption of the Services and/or Deliverables to the reasonable satisfaction of the Buyer. The Supplier shall notify the Buyer in writing upon the Committed Charges reaching 75% (seventy five per cent) of the anticipated contract value set out in the Order Form not later than thirty (30) days after such threshold is reached.
+4.12.5 If the Call-Off Contract is terminated by the Buyer pursuant to Clause 13.2.2 prior the end of any Minimum Commitment period specified in the Order Form, the Losses that are recoverable by the Supplier pursuant to Clause 13.5.3(b) shall be calculated as set out under the heading "Minimum Commitment(s) (If Applicable)" in the Order Form. This Clause 4.12.5 shall not apply where the Call-Off Contract is terminated for any reason other than by the Buyer under Clause 13.2.2."
+
+Special Term 7– New Clauses 5.3 to 5.10 shall be included in Clause 5 (The Buyer’s obligations to the Supplier) of the General Terms as follows: 
+"5.3The Buyer shall, and shall procure that Buyer Users’ shall, comply with any Supplier AUP that forms part of the Supplier Terms when accessing and using the relevant Services. 
+5.4Subject to Clause 5.5 and notwithstanding any provisions of the Supplier AUP and/or any other Supplier Terms, the Supplier may only suspend the Buyer’s access and use of all or the affected part of the Services as follows: 
+5.4.1 in relation to any provisions of the Supplier AUP and/or any other applicable Supplier Terms which allow for suspension and/or termination due to Buyer Content and/or use of the Services, these shall only apply to the extent such Buyer Content and/or use of the Services either results in the commission of a criminal offence under Law or represents a genuine risk to the security of the Supplier’s technology infrastructure; 
+5.4.2 where the Supplier is entitled to terminate the Call-Off Contract under Clause 13.5, the Supplier may suspend the Buyer’s access and use of all or the affected part of the Services subject to giving the Buyer not less than twenty (20) Working Days’ prior written notice of suspension and provided such notice includes a reference to late payment under Clause 13.5 as the reason for such suspension; 
+5.4.3 where the Supplier becomes aware that the Buyer and/or any Buyer User is in material breach of the Supplier AUP, the Supplier will give the Buyer written notice of the material breach and requiring the Buyer to remedy it. Except where for reasons of maintaining security of the Supplier’s technology infrastructure it is necessary to suspend immediately, the Buyer shall have a reasonable opportunity (in any event not less than 5 (five) days of being notified in writing to do so) to remedy the material breach and avoid suspension and failing which the Supplier may suspend with immediate effect the Buyer’s access and use of all or the affected part of the Services; and
+5.4.4 immediately and without prior written notice where the Supplier reasonably believes: 
+(a)it is required to suspend immediately the Buyer’s access and use of all or the affected part of the Services to comply with Law; 
+(b)the Buyer’s and/or any Buyer User’s access and use of all or the affected part of the Services is likely to have an imminent and material adverse impact on the Supplier’s other customers use of the same cloud services and/or the Supplier’s technology infrastructure used to provide such cloud services; or 
+(c)an unauthorised third party is accessing and/or using the Services. 
+5.5 Where pursuant to Clause 5.4 the Supplier exercises any right to suspend the Buyer’s access and use of all or the affected part of the Services the Supplier will, acting reasonably: 
+5.5.1 restrict, as far as reasonably practicable, the extent and duration of any suspension to that part of the access and use of the Services and for such temporary period as is reasonably necessary and appropriate in the circumstances; and 
+5.5.2 lift any suspension promptly when the circumstances giving rise to the suspension have been resolved to the reasonable satisfaction of the Supplier. 
+5.6 Where the Supplier suspends the Buyer’s access and use of all or the affected part of the Services pursuant to Clause 5.4.4, the Supplier will to the extent permitted by Law notify the Buyer, as soon as is reasonably possible following such immediate suspension, of the grounds relied on to suspend the Buyer’s access and use of all or the affected part of the Services immediately and without prior written notice.
+5.7 In its receipt and use of the Services the Buyer shall at all times comply with the provisions of the Call-Off Contract. 
+5.8 Where the Buyer uploads third party software to cloud environments provided as part of the Services the Buyer will comply with the relevant license(s) applicable to such software. 
+5.9 In their dealings under this Contract the Parties shall at all times behave and act reasonably and in good faith towards each other. 
+5.10 The Buyer will not attempt to access or manipulate in any way the source code of any software used by or on behalf of the Supplier to provide the Services."
+
+Special Term 8 - Clause 6.10 (Record Keeping and reporting) shall be deleted and replaced in the General Terms as follows: 
+"6.10 If requested by CCS, the Supplier must provide CCS with a Self Audit Certificate supported by an audit report. The Self Audit Certificate will not be requested more than once per Contract Year. The report must contain:
+6.10.1 the methodology of the review; 
+6.10.2 the sampling techniques applied;
+6.10.3 details of any issues; and 
+6.10.4 any remedial action taken."
+
+Special Term 9 – New Clauses 9.1.6 and 9.1.7 shall be included, and the existing Clauses 9.1.6, 9.1.7 and 9.1.8 are retained and re-numbered accordingly to Clauses 9.1.8, 9.1.9 and 9.1.10 respectively, in Clause 9 (Rights and Protections) as follows:
+"9.1.6 it shall take all steps, in accordance with Good Industry Practice, to prevent the introduction, creation or propagation of any disruptive elements (including any virus, worms and/or trojans, spyware or other malware) into systems, data, software or the Relevant Authority’s Confidential Information (held in electronic form) owned by or under the control of, or used by, any Relevant Authority;
+9.1.7 in performing its obligations under the Framework Contract and any Call-Off Contract, the Supplier shall not (to the extent possible in the circumstances) discriminate between Buyers on the basis of their respective sizes;"
+
+Special Term 10 – New Clauses 10.8 to 10.10 shall be included in Clause 10 (Intellectual Property Rights) as follows:
+"10.8Subject to Clauses 10.9 and 10.10, the Supplier grants to: 
+10.8.1the Buyer; and 
+10.8.2the Buyer Users (if any), 
+the licence and right to use the Cloud Products specified in the relevant Order Form on the Supplier Licence Terms. 
+10.9 The Supplier Licence Terms must, as a minimum, grant the Buyer and any Buyer Users a non-exclusive, non-transferable, royalty-free licence during the Call-Off Contract Period to use the Supplier’s or its relevant licensor’s IPR solely to the extent necessary to access and use the Services in accordance with the Call-Off Contract, and any inconsistent or conflicting provisions in the Supplier Licence Terms will not be effective under the Call-Off Contract.
+10.10 Where no Supplier Licence Terms are set out or referred to in the Order Form, the Supplier Licence Terms shall be deemed to grant the Buyer and any Buyer Users a non-exclusive, non-transferable, royalty-free licence during the Call-Off Contract Period to use the Supplier’s or its relevant licensor’s IPR solely to the extent necessary to access and use the Services in accordance with the Call-Off Contract."
+
+Special Term 11 – Clause 13.2.2 in Clause 13.2 (Ending the contract without a reason) shall be amended as follows:
+In Clause 13.2.2, the reference to "ninety (90) days' written notice" is replaced with "thirty (30) days' written notice".
+
+Special Term 12 – Clauses 14.1 and 14.2 (How much you can be held responsible for) of the General Terms shall be amended as follows:
+In Clause 14.1 the reference to “one million pounds (£1,000,000)” is replaced with “the greater of one hundred and fifty thousand pounds (£150,000) and 125% of the Management Charge paid, due or payable in respect of the relevant Contract Year”.
+Clause 14.2 is replaced with the following:
+"14.2 Each Party's total aggregate liability in each Contract Year under each Call-Off Contract (whether in tort, contract or otherwise) is: 
+in respect of a Call-Off Contract awarded under Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)), Lot 2a (Infrastructure Software (I-SaaS)), Lot 2b (Software as a Service (SaaS)) or Lot 3 (Cloud support services (Additional Services)), no more than the greater of five hundred thousand pounds (£500,000) or 125% of the Estimated Yearly Charges unless specified otherwise in the Call-Off Order Form; or
+in respect of a Call-Off Contract awarded under Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL), no more than the greater of twenty million pounds (£20,000,000) or 125% of the Estimated Yearly Charges unless specified otherwise in the Call-Off Order Form."
+
+Special Term 13 – A new Clause 17.7 shall be included in Clause 17 (Data protection and security) as follows:
+"17.7 The Supplier shall:
+17.7.1 obtain advice from the Relevant Authority before any assets that contain, or have forwarded, stored and/or processed, Government protectively marked information are reused, decommissioned, disposed of, and/or sent for repair, as they shall require security sanitisation as mandated by Government policy; and
+17.7.2 comply with the National Protective Security Authority guidance (which can be found at https://www.npsa.gov.uk/system-information-security/sensitive-information-assets/secure-destruction) in respect to the disposal of any assets that contain or have forwarded, stored and/or processed Government protectively marked information."
+
+Special Term 14 - New Clauses 18.8 and 18.9 shall be included in Clause 18 (What you must keep confidential) of the General Terms as follows:
+"18.8 Without prejudice to Clause 18.6, the name of the Supplier and all information provided by the Supplier in relation to the Supplier's products and/or services that are to be made available to Buyers and potential buyers under the Framework (including, but not limited to, Supplier Terms, Supplier Service Descriptions, Framework Prices and calculations/rates for determining Charges), and the details of the Supplier Authorised Representative, shall: 
+18.8.1 in the case of a Contract awarded under Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)), Lot 2a (Infrastructure Software (I-SaaS)), Lot 2b (Software as a Service (SaaS)) and Lot 3 (Cloud support services (Additional Services)), be made publicly available on the Digital Platform for those Lots 1a, 2a, 2b and 3, and any such information is not Confidential Information of the Supplier for the purposes of any Contract under any of those Lots 1a, 2a, 2b and 3 or otherwise; and
+18.8.2 in the case of a Contract awarded under Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL), be made available on the non-publicly available Digital Platform for that Lot 1b, and any such information is the Confidential Information of the Supplier for the purposes of any Contract under Lot 1b.
+18.9 In the case of a Contract awarded under Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL), the Parties agree that:
+18.9.1 in spite of terms of Clause 18.7, the Supplier shall not be permitted to make any press announcement or publicise any such Contract or any part of them in any way, and must ensure that the Supplier Staff do not do so; 
+18.9.2 in spite of the terms of Clauses 18.6 and 19.2.1, the Authority does not intend to publish into the public domain any Transparency Information (or information that would otherwise constitute Transparency Information if it was not exempt from disclosure under the Procurement Act 2023) in connection with any Contract awarded under that Lot 1b, and the Supplier must also ensure that it does not publish any such information; and
+18.9.3 in any Self Audit Certificate that is provided by the Supplier pursuant to Clause 6.10 in connection with any Contract awarded under that Lot 1b, the Supplier shall anonymise the information contained in the "audit report" that is to accompany the Self Audit Certificate (as referred to in paragraph 4 of the form of Self Audit Certificate in Framework Schedule 8 (Self Audit Certificate)) in order that it does not identify any particular Buyer."
+
+
+Framework Special Terms that apply to Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)), Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL), Lot 2a (Infrastructure Software (I-SaaS)) and Lot 2b (Software as a Service (SaaS))
+Special Term 15 - New Clauses 2.16 and 2.17 shall be included in Clause 2 (How the Contract Works) of the General Terms as follows:
+"2.16 Modifications to Supplier Service Specific Terms
+2.16.1 Subject to the Buyer’s right to terminate under Clause 2.16.2 or any other relevant provision of the Call-Off Contract, the Supplier may, from time to time during the Call-Off Contract Period, propose a modification to the Supplier Service Specific Terms forming part of the Supplier Terms, provided in each case the following conditions are satisfied:
+(a) the Supplier has given the Buyer Authorised Representative not less than thirty (30) days’ prior notice (or such other applicable period of prior notice as may be specified in the Order Form) of any proposed modifications to such Supplier Service Specific Terms using a Buyer-authorised form of notification permitted under Order Form of any modifications to such Supplier Service Specific Terms, such notice to include a hyperlink directly to a URL setting out in full and in a clear and transparent manner the proposed modified Supplier Service Specific Terms;
+(b) the proposed modified Supplier Service Specific Terms:
+(i) apply on a uniform basis to all customers in respect of the relevant Services; 
+(ii) do not contain:
+(A) any indemnities (or clauses of a similar nature to indemnities); or
+(B) any provisions which would have any material impact on (1) the potential liability of either Party under this Contract; and/or (2) the balance of risks under the Contract from the Buyer’s perspective (including the creation of new or increased potential liabilities, new or materially different operational responsibilities for the Buyer and/or any Buyer Users and/or new or increased constraints on the Buyer's rights of termination); and
+(iii) do not negatively impact on the security, performance, resilience, functionality or backward compatibility of the relevant affected Services and/or Deliverables, which the Supplier must be able to demonstrate through an impact assessment that can be made available to the Buyer on request;
+(c) any proposed modifications to such Supplier Service Specific Terms do not constitute a "substantial modification" to the Call-Off Contract (including to the Supplier Service Specific Terms set out or referred to in the Order Form as at the Call-Off Start Date) and/or the Framework Contract within the meaning of section 74(3) of the Procurement Act 2023.
+2.16.2 Where the Buyer reasonably believes a proposed modification of the Supplier Service Specific Terms has, or is likely to have, a materially adverse impact on:
+(a) the Buyer’s use and/or receipt of the Services under the Call-Off Contract;
+(b) the commercial benefits of the Call-Off Contract to the Buyer (including in relation to pricing and performance of the Services); and/or
+(c) the balance of risks under the Call-Off Contract from the Buyer’s perspective (including the creation of new or increased potential liabilities, new or materially different operational responsibilities for the Buyer and/or any Buyer Users, and/or new or increased constraints on the Buyer's rights of termination),
+the Buyer may, acting reasonably, object to the Supplier’s proposed modification to the Supplier Service Specific Terms by notifying the Supplier in writing within thirty (30) days’ of the Buyer’s receipt of the Supplier’s notice of such modification pursuant to Clause 2.16.1. If the Parties (acting reasonably) are unable within the next ten (10) days to resolve the Buyer’s objection to its reasonable satisfaction the Buyer may terminate the Call-Off Contract with immediate effect and without any liability (including, for the avoidance of doubt, pursuant to Clause 4.12) by giving notice in writing to the Supplier.
+2.16.3 Where the Buyer:
+(a) does not object to a proposed modification to the Supplier Service Specific Terms within the thirty (30) day period referred to in Clause 2.16.2; or
+(b) having objected the Buyer subsequently agrees to the proposed modification to the Supplier Service Specific Terms,
+and subject to the conditions in Clause 2.16.2(a) to (c) being satisfied, the relevant Supplier Service Specific Terms are deemed modified, to reflect the modified Supplier Service Specific Terms notified to the Buyer in accordance with Clause 2.16.2, with effect from the effective date set out in the relevant notice or where no effective date is specified thirty (30) days following the Buyer’s receipt of the notice of the proposed modification. Where any of the conditions in Clause 2.16.2(a) to (c) are not satisfied the proposed modification to the Supplier Service Specific Terms is deemed invalid and shall not modify the then current Supplier Service Specific Terms applying to the Call-Off Contract, save in the case of failure to satisfy only Clause 2.16.2(a) in which event the relevant provision(s) which fail this condition are deemed invalid and shall not modify the then current Supplier Service Specific Terms applying to the Call-Off Contract but the remainder of the proposed modified Supplier Service Specific Terms are deemed modified in accordance with this Clause 2.16.3.
+2.17 Modifications to the Services 
+2.17.1 The Buyer acknowledges that the Services are provided by the Supplier using hardware and software systems made available to customers on a multi-tenant basis and accordingly the Supplier may need to modify the Services during the Call-Off Contract Period, for example to introduce new and improved functionality and may also include discontinuing and replacing some elements of the Services.
+2.17.2 Subject to the Buyer’s right to terminate under Clause 2.17.4 or any other relevant provision of the Call-Off Contract, the Supplier may, from time to time during the Call-Off Contract Period, propose a modification to the Services (“Service Modification”), provided in each case the following conditions are satisfied:
+(a) subject to Clause 2.17.3, the Supplier has given the Buyer Authorised Representative no less than thirty (30) days’ prior notice (or such other applicable period of prior notice as may be specified in the Order Form) of the proposed Service Modification using a Buyer-authorised form of notification permitted under the Order Form, such notice to include a hyperlink directly to a URL setting out in full and in a clear and transparent manner the relevant modified Supplier Service Description(s) for the proposed Service Modification;
+(b) the proposed Service Modification applies on a uniform basis to all customers in respect of the affected Services; 
+(c) the proposed Service Modification does not negatively impact on the security, performance, resilience, functionality or backward compatibility of the relevant affected Services and/or Deliverables, which the Supplier must be able to demonstrate through an impact assessment that can be made available to the Buyer on request; and
+(d) the proposed Service Modification does not constitute a "substantial modification" to the Call-Off Contract (including to the Supplier Service Description(s) set out or referred to in the Order Form as at the Call-Off Start Date) and/or the Framework Contract within the meaning of section 74(3) of the Procurement Act 2023.
+2.17.3 The Supplier is not required to provide prior notice of Service Modifications under Clause 2.17.2 where the service modifications, enhancements or upgrades to the Buyer (and other buyers under the Framework) do not result in a reduction in functionality and/or service, and/or loss of compatibility with any vendor supported operating systems used by the Buyer; and to the extent a Service Modification is reasonably necessary to enable the Supplier to:
+(a) comply with Law and such requirement to comply is imminent and was reasonably unforeseen by the Supplier in the circumstances; or
+(b) maintain the security of the Supplier’s technology infrastructure,
+(in each case an “Urgent Service Modification”) provided that as soon as is reasonably possible following completion of any Urgent Service Modification the Supplier gives the Buyer Authorised Representative written notice by email of the date on which such Urgent Service Modification was made and includes in such notice brief summary details of the Urgent Service Modification together with a hyperlink directly to a URL setting out in full and in a clear and transparent manner the relevant modified Supplier Service Descriptions for that Urgent Service Modification.
+2.17.4 Where the Buyer reasonably believes a Service Modification or Urgent Service Modification has, or is likely to have, a materially adverse impact on:
+(a) the Buyer’s use and enjoyment of the Services under the Call-Off Contract;
+(b) the commercial benefits of the Call-Off Contract to the Buyer (including in relation to pricing and performance of the Services); and/or
+(c) the balance of risks under the Call-Off Contract from the Buyer’s perspective (including the creation of new or increased potential liabilities and/or new or materially different operational responsibilities for the Buyer and/or any Buyer Users, and/or new or increased constraints on the Buyer's rights of termination),
+the Buyer may, acting reasonably, object to the Supplier’s proposed and/or actual modifications to the Services notified under Clause 2.17.2 (Service Modification) or Clause 2.17.3 (Urgent Service Modification) (as applicable) by notifying the Supplier in writing within 30 (thirty) days’ of the Buyer’s receipt of the Supplier’s notice of such Service Modification or Urgent Service Modification (as applicable). If the Parties (acting reasonably) are unable within the next ten (10) days to resolve the Buyer’s objection to its reasonable satisfaction the Buyer may terminate the Call-Off Contract with immediate effect and without any liability (including, for the avoidance of doubt, pursuant to Clause 4.12) by giving notice in writing to the Supplier.
+2.17.5 Where the Buyer:
+(a) does not object to a Service Modification or Urgent Service Modification within the thirty (30) day period referred to in Clause 2.17.4; or
+(b) having objected the Buyer subsequently agrees to the relevant Service Modification or Urgent Service Modification,
+and subject to the conditions in Clause 2.17.2(a) to (d) being satisfied, the relevant Supplier Service Descriptions are deemed modified to reflect the relevant modified Supplier Service Descriptions notified to the Buyer under either (as applicable):
+(c) Clause 2.17.2 (Service Modifications), with effect from the effective date set out in the relevant notice or where no effective date is specified thirty (30) days following the Buyer’s receipt of the notice; or
+(d) Clause 2.17.3 (Urgent Service Modifications), with effect from the effective date set out in the relevant notice or where no effective date is specified immediately upon the Buyer’s receipt of the notice,
+save where any of the conditions in Clause 2.17.2(a) to (d) are not satisfied, in which case the relevant Service Modification or Urgent Service Modification is deemed invalid and shall not modify the then current relevant Supplier Service Descriptions applying to the Call-Off Contract."
+
+
+Framework Special Terms that apply to both Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)) and Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL):
+Special Term 16 - New Clause 7.7 shall be included in Clause 7 (Supplier Staff) of the General Terms as follows:
+"In order to protect each other's legitimate business interests, neither the Buyer or Supplier shall (except with the prior written consent of the other) during the Call-Off Contract Period solicit or attempt to solicit or entice away any staff or individual of the other Party who has been engaged, directly or indirectly, or employed in the provision of the Services or the management of this Contract or any significant part thereof either as principal, agent, employee, independent contractor or in any other form of employment or engagement other than by means of an open national advertising campaign and not specifically targeted at such staff or individual of the other Party."
+
+Special Term 17 - New Clauses 6.13 and 6.14 shall be included in Clause 6 (Record Keeping and Reporting) of the General Terms as follows:
+“6.13 Subject to Clause 6.14, the Buyer acknowledges that the rights of audit or inspection under this Clause 6 shall not include the right to audit or inspect the Supplier’s physical infrastructure. 
+6.14 The rights of audit or inspection under this Clause 6 will include a right for CCS (or a third party or lead Buyer nominated or approved by CCS) to audit or inspect the Supplier’s physical infrastructure where the requirement for any audit or inspection has arisen from a known or reasonably suspected Default on the part of the Supplier. This Clause 6.14 shall apply, for example, where any known or reasonable suspected Default has been identified under any "Security Audit" conducted pursuant to Clause 3 of Call-Off Schedule 28 (Special Call-Off Schedule for Lot 1a and Lot 1b), as that term is defined in Call-Off Schedule 28). The Supplier acknowledges that CCS may share any reports or other documentation containing the outcome of any audit or inspection of the nature referred to in this Clause 6.14 on a confidential basis with the Buyer on the Buyer's request, provided that the relevant audit has been conducted within one year of the Buyer's request.”
+
+Special Term 18 – New Clause 13.4.4 shall be included in Clause 13.4 (What happens if the Contract ends) of the General Terms as follows:
+“13.4.4 The Supplier shall, within one (1) Month after the Start Date, deliver to the Buyer a detailed description of the process for a Buyer to recover any Buyer Content prior to and/or following expiry or earlier termination of the Call-Off Contract. Any further requirements with respect to (a) retention of Buyer Content by the Supplier for a period following expiry or earlier termination of the Call-Off Contract, and/or (b) any particular exit management assistance to be provided by the Supplier, shall be expressly agreed and set out in the relevant Order Form or agreed in accordance with the Variation Procedure. This Clause 13.4.4 is without prejudice to the terms of Call-Off Schedule 10 (Exit Management), if that Call-Off Schedule 10 applies to the Call-Off Contract.” 
+
+Framework Prices 
+Details in Framework Schedule 3 (Framework Prices)
+
+Insurance
+Details in Annex of Joint Schedule 3 (Insurance Requirements).
+
+Intellectual Property Rights
+Unless expressly stated otherwise in the Order Form, the following terms in Call-Off Schedule 1 (Intellectual Property Rights) shall apply to all Call-Off Contracts under each Lot of the Framework as follows:
+IPR Option B4 shall apply to Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)), Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL), Lot 2a (Infrastructure Software (I-SaaS)) and Lot 2b (Software as a Service (SaaS)); and
+IPR Option A4 shall apply to Lot 3 (Cloud Support Services (Additional Services))
+
+Management Charge
+The Supplier will pay, excluding VAT, 0.75% of all the Charges for the Deliverables invoiced to the Buyer under all Call-Off Contracts.
+
+Supplier Framework Manager
+[Insert name]
+[Insert job title]
+[Insert email address]
+[Insert phone number]
+
+Supplier Authorised Representative
+[Insert name]
+[Insert job title]
+[Insert email address]
+[Insert phone number]
+
+Supplier 
+Compliance Officer
+[Insert name]
+[Insert job title]
+[Insert email address]
+[Insert phone number]
+
+Supplier Data Protection 
+Officer
+[Insert name]
+[Insert job title]
+[Insert email address]
+[Insert phone number]
+
+Data Protection Liability Cap
+In respect of a Framework Contract or Call-Off Contract awarded under Lot 1a (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)), Lot 2a (Infrastructure Software (I-SaaS)), Lot 2b (Software as a Service (SaaS) or Lot 3 (Cloud Support Services (Additional Services)) is ten million pounds (£10,000,000).
+In respect of a Framework Contract awarded under Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL) is twenty million pounds (£20,000,000).
+In respect of a Call-Off Contract awarded under Lot 1b (Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) above OFFICIAL) is the greater of twenty million pounds (£20,000,000) or 125% of the Estimated Yearly Charges.
+
+Supplier 
+Marketing Contact
+[Insert name]
+[Insert job title]
+[Insert email address]
+[Insert phone number]
+
+Key Subcontractors
+Key Subcontractor 1
+Name (Registered name if registered) [insert name]
+Registration number (if registered) [insert number]
+Role of Subcontractor [insert role]
+[Category Guidance: copy above lines as needed]
+
+CCS 
+Authorised Representative
+[Insert name]
+[Insert job title]
+[Insert email address]
+[Insert phone number]
+
+
+For and on behalf of the Supplier:
+For and on behalf of CCS:
+Signature:
+
+Signature:
+
+Name:
+
+Name:
+
+Role:
+
+Role:
+
+Date:
+
+Date:
+
+
