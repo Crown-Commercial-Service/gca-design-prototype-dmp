@@ -102,6 +102,38 @@
     height: 6px;
   }
 
+  .framework-award-form__section-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 16px;
+    border: 1px solid #b1b4b6;
+  }
+
+  .framework-award-form__section-table th,
+  .framework-award-form__section-table td {
+    border: 1px solid #b1b4b6;
+    vertical-align: top;
+    padding: 12px;
+  }
+
+  .framework-award-form__section-table th {
+    width: 56px;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 700;
+    white-space: nowrap;
+    background: #f3f2f1;
+  }
+
+  .framework-award-form__section-table .framework-award-form__section-heading-cell {
+    width: 240px;
+    background: #f8f8f8;
+  }
+
+  .framework-award-form__section-table .framework-award-form__section-title {
+    margin-top: 0;
+  }
+
   @media (max-width: 40.0625em) {
     .framework-award-form__title {
       font-size: 30px;
@@ -551,4 +583,51 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    const sectionClass = 'framework-award-form__section-title';
+    const tableClass = 'framework-award-form__section-table';
+    const root = document.querySelector('.framework-award-form .govuk-grid-column-full');
+
+    if (!root || root.querySelector('.' + tableClass)) {
+      return;
+    }
+
+    const sectionHeadings = Array.from(root.children).filter((element) =>
+      element.classList && element.classList.contains(sectionClass)
+    );
+
+    sectionHeadings.forEach((heading, index) => {
+      const table = document.createElement('table');
+      table.className = tableClass;
+
+      const row = document.createElement('tr');
+      const sectionNumberCell = document.createElement('th');
+      sectionNumberCell.scope = 'row';
+      sectionNumberCell.textContent = (index + 1) + '.';
+
+      const sectionHeadingCell = document.createElement('td');
+      sectionHeadingCell.className = 'framework-award-form__section-heading-cell';
+
+      const sectionContentCell = document.createElement('td');
+
+      row.appendChild(sectionNumberCell);
+      row.appendChild(sectionHeadingCell);
+      row.appendChild(sectionContentCell);
+      table.appendChild(row);
+
+      root.insertBefore(table, heading);
+
+      sectionHeadingCell.appendChild(heading);
+
+      let current = heading.nextElementSibling;
+      while (current && !(current.classList && current.classList.contains(sectionClass))) {
+        const next = current.nextElementSibling;
+        sectionContentCell.appendChild(current);
+        current = next;
+      }
+    });
+  })();
+</script>
 {% endblock %}
