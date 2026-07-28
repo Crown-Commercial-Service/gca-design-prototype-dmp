@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Supplier details edit – {{ serviceName }} – GOV.UK Prototype Kit
+  Supplier details edit admin – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block containerStart %}
@@ -55,6 +55,12 @@
       margin-bottom: 0;
     }
 
+    .supplier-details-list .govuk-input,
+    .supplier-details-list .govuk-textarea {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
     .supplier-details-list ul {
       margin: 0;
       padding-left: 20px;
@@ -85,13 +91,16 @@
       <div class="supplier-details-panel">
         <div class="supplier-details-panel__header">
           <h1 class="govuk-heading-m">Supplier Details</h1>
-          <a class="govuk-link" href="/supplierDetailsEditAdmin">Edit</a>
+          <a class="govuk-link" href="#">Edit</a>
         </div>
 
-        <dl class="govuk-summary-list supplier-details-list">
+        <form action="#" method="post">
+          <dl class="govuk-summary-list supplier-details-list">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation name</dt>
-            <dd class="govuk-summary-list__value govuk-body-m">LIVINGSTON IT CONSULTING LTD</dd>
+            <dd class="govuk-summary-list__value govuk-body-m">
+              <input class="govuk-input" id="organisation-name" name="organisationName" type="text" value="LIVINGSTON IT CONSULTING LTD">
+            </dd>
           </div>
 
           <div class="govuk-summary-list__row">
@@ -99,12 +108,12 @@
             <dd class="govuk-summary-list__value govuk-body-m">
               <ul class="govuk-list govuk-list--bullet">
                 <li>
-                  <span>Companies House number</span><br>
-                  <span>SC572931</span>
+                  <label class="govuk-label" for="companies-house-number">Companies House number</label>
+                  <input class="govuk-input" id="companies-house-number" name="companiesHouseNumber" type="text" value="SC572931">
                 </li>
                 <li>
-                  <span>PPON</span><br>
-                  <span>PZBX-7324-ZMMT</span>
+                  <label class="govuk-label" for="ppon">PPON</label>
+                  <input class="govuk-input" id="ppon" name="ppon" type="text" value="PZBX-7324-ZMMT">
                 </li>
               </ul>
             </dd>
@@ -112,19 +121,22 @@
 
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation email</dt>
-            <dd class="govuk-summary-list__value govuk-body-m">simulate-delivered@notifications.service.gov.uk</dd>
+            <dd class="govuk-summary-list__value govuk-body-m">
+              <input class="govuk-input" id="organisation-email" name="organisationEmail" type="text" value="simulate-delivered@notifications.service.gov.uk">
+            </dd>
           </div>
 
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation address</dt>
             <dd class="govuk-summary-list__value govuk-body-m">
-              Supplier #719073 Contact Address 1<br>
-              Supplier #719073 Contact City<br>
-              AA11 1AA<br>
-              United Kingdom
+              <textarea class="govuk-textarea" id="organisation-address" name="organisationAddress" rows="4">Supplier #719073 Contact Address 1
+Supplier #719073 Contact City
+AA11 1AA
+United Kingdom</textarea>
             </dd>
           </div>
-        </dl>
+          </dl>
+        </form>
       </div>
     </div>
   </div>
