@@ -2,11 +2,13 @@
   "scripts": {
     "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
-    "start": "govuk-prototype-kit start"
+    "start": "govuk-prototype-kit start",
+    "export:ita-docx": "node scripts/export-ita-signature-docx.js"
   },
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "^3.0.0",
     "govuk-frontend": "^6.2.0",
-    "govuk-prototype-kit": "^13.20.1"
+    "govuk-prototype-kit": "^13.20.1",
+    "html-to-docx": "^1.8.0"
   }
 }
