@@ -1,0 +1,131 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Supplier details edit – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .supplier-details-panel {
+      border: 1px solid #b1b4b6;
+      margin-bottom: 30px;
+    }
+
+    .supplier-details-panel__header {
+      background: #f3f2f1;
+      border-bottom: 1px solid #b1b4b6;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 14px 20px;
+    }
+
+    .supplier-details-panel__header .govuk-heading-m {
+      margin-bottom: 0;
+    }
+
+    .supplier-details-list {
+      margin: 0;
+    }
+
+    .supplier-details-list .govuk-summary-list__row {
+      padding: 14px 20px;
+      border-bottom: 1px solid #b1b4b6;
+    }
+
+    .supplier-details-list .govuk-summary-list__row:last-child {
+      border-bottom: 0;
+    }
+
+    .supplier-details-list .govuk-summary-list__key {
+      width: 34%;
+      vertical-align: top;
+      padding-right: 30px;
+    }
+
+    .supplier-details-list .govuk-summary-list__value {
+      width: 66%;
+      margin-bottom: 0;
+    }
+
+    .supplier-details-list ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .supplier-details-list li + li {
+      margin-top: 10px;
+    }
+
+    .supplier-details-list .govuk-body {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 40.0625em) {
+      .supplier-details-panel__header {
+        align-items: flex-start;
+      }
+
+      .supplier-details-list .govuk-summary-list__key,
+      .supplier-details-list .govuk-summary-list__value {
+        width: auto;
+      }
+    }
+  </style>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <div class="supplier-details-panel">
+        <div class="supplier-details-panel__header">
+          <h1 class="govuk-heading-m">Supplier Details</h1>
+          <a class="govuk-link" href="#">Edit</a>
+        </div>
+
+        <dl class="govuk-summary-list supplier-details-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-body-m">Organisation name</dt>
+            <dd class="govuk-summary-list__value govuk-body-m">LIVINGSTON IT CONSULTING LTD</dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-body-m">Organisation identifiers</dt>
+            <dd class="govuk-summary-list__value govuk-body-m">
+              <ul class="govuk-list govuk-list--bullet">
+                <li>
+                  <span>Companies House number</span><br>
+                  <span>SC572931</span>
+                </li>
+                <li>
+                  <span>PPON</span><br>
+                  <span>PZBX-7324-ZMMT</span>
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-body-m">Organisation email</dt>
+            <dd class="govuk-summary-list__value govuk-body-m">simulate-delivered@notifications.service.gov.uk</dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-body-m">Organisation address</dt>
+            <dd class="govuk-summary-list__value govuk-body-m">
+              Supplier #719073 Contact Address 1<br>
+              Supplier #719073 Contact City<br>
+              AA11 1AA<br>
+              United Kingdom
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+{% endblock %}
