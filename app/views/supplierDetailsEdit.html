@@ -91,7 +91,7 @@
         <dl class="govuk-summary-list supplier-details-list">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation name</dt>
-            <dd class="govuk-summary-list__value govuk-body-m">LIVINGSTON IT CONSULTING LTD</dd>
+            <dd id="organisation-name-value" class="govuk-summary-list__value govuk-body-m">LIVINGSTON IT CONSULTING LTD</dd>
           </div>
 
           <div class="govuk-summary-list__row">
@@ -100,11 +100,11 @@
               <ul class="govuk-list govuk-list--bullet">
                 <li>
                   <span>Companies House number</span><br>
-                  <span>SC572931</span>
+                  <span id="companies-house-number-value">SC572931</span>
                 </li>
                 <li>
                   <span>PPON</span><br>
-                  <span>PZBX-7324-ZMMT</span>
+                  <span id="ppon-value">PZBX-7324-ZMMT</span>
                 </li>
               </ul>
             </dd>
@@ -112,12 +112,12 @@
 
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation email</dt>
-            <dd class="govuk-summary-list__value govuk-body-m">simulate-delivered@notifications.service.gov.uk</dd>
+            <dd id="organisation-email-value" class="govuk-summary-list__value govuk-body-m">simulate-delivered@notifications.service.gov.uk</dd>
           </div>
 
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation address</dt>
-            <dd class="govuk-summary-list__value govuk-body-m">
+            <dd id="organisation-address-value" class="govuk-summary-list__value govuk-body-m">
               Supplier #719073 Contact Address 1<br>
               Supplier #719073 Contact City<br>
               AA11 1AA<br>
@@ -128,4 +128,40 @@
       </div>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var storageKey = 'supplierDetailsEditValues';
+      var saved = localStorage.getItem(storageKey);
+      if (!saved) {
+        return;
+      }
+
+      try {
+        var values = JSON.parse(saved);
+
+        if (values.organisationName) {
+          document.getElementById('organisation-name-value').textContent = values.organisationName;
+        }
+        if (values.companiesHouseNumber) {
+          document.getElementById('companies-house-number-value').textContent = values.companiesHouseNumber;
+        }
+        if (values.ppon) {
+          document.getElementById('ppon-value').textContent = values.ppon;
+        }
+        if (values.organisationEmail) {
+          document.getElementById('organisation-email-value').textContent = values.organisationEmail;
+        }
+        if (values.organisationAddress) {
+          document.getElementById('organisation-address-value').innerHTML = values.organisationAddress
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\n/g, '<br>');
+        }
+      } catch (e) {
+        console.error('Unable to read supplier details values', e);
+      }
+    })();
+  </script>
 {% endblock %}

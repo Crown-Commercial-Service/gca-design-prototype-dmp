@@ -94,7 +94,7 @@
           <a class="govuk-link" href="#">Edit</a>
         </div>
 
-        <form action="#" method="post">
+        <form id="supplier-details-admin-form" action="#" method="post">
           <dl class="govuk-summary-list supplier-details-list">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation name</dt>
@@ -136,8 +136,65 @@ United Kingdom</textarea>
             </dd>
           </div>
           </dl>
+
+          <div class="govuk-button-group govuk-!-margin-top-6 govuk-!-margin-left-4">
+            <button type="submit" class="govuk-button govuk-button--green" data-module="govuk-button">
+              Save and continue
+            </button>
+            <a class="govuk-button govuk-button--secondary" href="/supplierDetailsEdit" role="button" draggable="false">
+              Cancel
+            </a>
+          </div>
         </form>
       </div>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var storageKey = 'supplierDetailsEditValues';
+      var form = document.getElementById('supplier-details-admin-form');
+
+      function getField(id) {
+        return document.getElementById(id);
+      }
+
+      function writeFieldValue(id, value) {
+        var field = getField(id);
+        if (field && typeof value === 'string') {
+          field.value = value;
+        }
+      }
+
+      var saved = localStorage.getItem(storageKey);
+      if (saved) {
+        try {
+          var values = JSON.parse(saved);
+          writeFieldValue('organisation-name', values.organisationName);
+          writeFieldValue('companies-house-number', values.companiesHouseNumber);
+          writeFieldValue('ppon', values.ppon);
+          writeFieldValue('organisation-email', values.organisationEmail);
+          writeFieldValue('organisation-address', values.organisationAddress);
+        } catch (e) {
+          console.error('Unable to read supplier details values', e);
+        }
+      }
+
+      if (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var payload = {
+            organisationName: getField('organisation-name') ? getField('organisation-name').value : '',
+            companiesHouseNumber: getField('companies-house-number') ? getField('companies-house-number').value : '',
+            ppon: getField('ppon') ? getField('ppon').value : '',
+            organisationEmail: getField('organisation-email') ? getField('organisation-email').value : '',
+            organisationAddress: getField('organisation-address') ? getField('organisation-address').value : ''
+          };
+
+          localStorage.setItem(storageKey, JSON.stringify(payload));
+          window.location.href = '/supplierDetailsEdit';
+        });
+      }
+    })();
+  </script>
 {% endblock %}
