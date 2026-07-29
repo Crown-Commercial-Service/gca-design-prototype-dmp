@@ -98,7 +98,7 @@
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-body-m">Organisation name</dt>
             <dd class="govuk-summary-list__value govuk-body-m">
-              <input class="govuk-input" id="organisation-name" name="organisationName" type="text" value="LIVINGSTON IT CONSULTING LTD">
+              <p class="govuk-body govuk-!-margin-bottom-0">LIVINGSTON IT CONSULTING LTD</p>
             </dd>
           </div>
 
@@ -107,12 +107,12 @@
             <dd class="govuk-summary-list__value govuk-body-m">
               <ul class="govuk-list govuk-list--bullet">
                 <li>
-                  <label class="govuk-label" for="companies-house-number">Companies House number</label>
-                  <input class="govuk-input" id="companies-house-number" name="companiesHouseNumber" type="text" value="SC572931">
+                  <span class="govuk-body govuk-!-font-weight-bold">Companies House number</span>
+                  <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-0">SC572931</p>
                 </li>
                 <li>
-                  <label class="govuk-label" for="ppon">PPON</label>
-                  <input class="govuk-input" id="ppon" name="ppon" type="text" value="PZBX-7324-ZMMT">
+                  <span class="govuk-body govuk-!-font-weight-bold">PPON</span>
+                  <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-0">PZBX-7324-ZMMT</p>
                 </li>
               </ul>
             </dd>
@@ -169,9 +169,6 @@ United Kingdom</textarea>
       if (saved) {
         try {
           var values = JSON.parse(saved);
-          writeFieldValue('organisation-name', values.organisationName);
-          writeFieldValue('companies-house-number', values.companiesHouseNumber);
-          writeFieldValue('ppon', values.ppon);
           writeFieldValue('organisation-email', values.organisationEmail);
           writeFieldValue('organisation-address', values.organisationAddress);
         } catch (e) {
@@ -183,9 +180,6 @@ United Kingdom</textarea>
         form.addEventListener('submit', function (event) {
           event.preventDefault();
           var payload = {
-            organisationName: getField('organisation-name') ? getField('organisation-name').value : '',
-            companiesHouseNumber: getField('companies-house-number') ? getField('companies-house-number').value : '',
-            ppon: getField('ppon') ? getField('ppon').value : '',
             organisationEmail: getField('organisation-email') ? getField('organisation-email').value : '',
             organisationAddress: getField('organisation-address') ? getField('organisation-address').value : ''
           };
