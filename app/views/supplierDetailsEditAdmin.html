@@ -91,7 +91,6 @@
       <div class="supplier-details-panel">
         <div class="supplier-details-panel__header">
           <h1 class="govuk-heading-m">Supplier Details</h1>
-          <a class="govuk-link" href="#">Edit</a>
         </div>
 
         <form id="supplier-details-admin-form" action="#" method="post">
@@ -136,16 +135,16 @@ United Kingdom</textarea>
             </dd>
           </div>
           </dl>
-
-          <div class="govuk-button-group govuk-!-margin-top-6 govuk-!-margin-left-4">
-            <button type="submit" class="govuk-button govuk-button--green" data-module="govuk-button">
-              Save and continue
-            </button>
-            <a class="govuk-button govuk-button--secondary" href="/supplierDetailsEdit" role="button" draggable="false">
-              Cancel
-            </a>
-          </div>
         </form>
+      </div>
+
+      <div class="govuk-button-group">
+        <button type="submit" form="supplier-details-admin-form" class="govuk-button govuk-button--green" data-module="govuk-button">
+          Save and continue
+        </button>
+        <a class="govuk-button govuk-button--secondary" href="/supplierDetailsEdit" role="button" draggable="false">
+          Cancel
+        </a>
       </div>
     </div>
   </div>
