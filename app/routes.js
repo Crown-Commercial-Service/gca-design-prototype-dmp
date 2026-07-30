@@ -18,3 +18,20 @@ router.get('/itaAssessment', (req, res) => {
 router.get('/itaAssessmentToSign', (req, res) => {
 	res.render('itaAssessmentToSign')
 })
+
+router.get('/suspend-all-cloud-software', (req, res) => {
+	req.session.data.cloudSoftwareSuspended = true
+	res.redirect('/suspendLot.html')
+})
+
+router.get('/suspendLot.html', (req, res) => {
+	const cloudSoftwareSuspended = Boolean(req.session.data.cloudSoftwareSuspended)
+	req.session.data.cloudSoftwareSuspended = false
+	res.render('suspendLot', { cloudSoftwareSuspended })
+})
+
+router.get('/suspendLot', (req, res) => {
+	const cloudSoftwareSuspended = Boolean(req.session.data.cloudSoftwareSuspended)
+	req.session.data.cloudSoftwareSuspended = false
+	res.render('suspendLot', { cloudSoftwareSuspended })
+})
