@@ -1,0 +1,73 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Unsuspend services – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-s gca-eyebrow gca-eyebrow--muted">WORKDAY LIMITED</h2>
+      <h1 class="govuk-heading-xl">Unsuspend G-Cloud 15 services<br>for Lot 1a - Cloud software</h1>
+
+      <form action="#" method="post" novalidate>
+        <p class="govuk-body">This won't change the status for services that 'WORKDAY LIMITED' suspended themselves.</p>
+
+        <div class="govuk-form-group govuk-!-margin-bottom-3">
+          <label class="govuk-label govuk-label--m" for="unsuspend-detail">Reason for unsuspension (optional)</label>
+          <div id="unsuspend-detail-hint" class="govuk-hint">Maximum 50 words</div>
+          <textarea
+            class="govuk-textarea"
+            id="unsuspend-detail"
+            name="unsuspend-detail"
+            rows="5"
+            aria-describedby="unsuspend-detail-hint words-remaining"
+          ></textarea>
+          <div id="words-remaining" class="govuk-hint govuk-!-margin-top-2">You have 50 words remaining</div>
+        </div>
+
+        <div class="govuk-button-group govuk-!-margin-top-5">
+          {{ govukButton({
+            text: "Confirm",
+            href: "/unsuspendAreYouSure.html"
+          }) }}
+
+          {{ govukButton({
+            text: "Cancel",
+            classes: "govuk-button--secondary",
+            href: "/suspendLot.html"
+          }) }}
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var textarea = document.getElementById('unsuspend-detail');
+      var remainingDisplay = document.getElementById('words-remaining');
+      var maxWords = 50;
+
+      function countWords(text) {
+        var matches = text.trim().match(/\S+/g);
+        return matches ? matches.length : 0;
+      }
+
+      function updateWordCount() {
+        var words = (textarea.value || '').trim().match(/\S+/g) || [];
+        if (words.length > maxWords) {
+          textarea.value = words.slice(0, maxWords).join(' ');
+          words = textarea.value.trim().match(/\S+/g) || [];
+        }
+
+        var remaining = Math.max(0, maxWords - countWords(textarea.value || ''));
+        remainingDisplay.textContent = 'You have ' + remaining + ' words remaining';
+      }
+
+      if (textarea && remainingDisplay) {
+        textarea.addEventListener('input', updateWordCount);
+        updateWordCount();
+      }
+    })();
+  </script>
+{% endblock %}

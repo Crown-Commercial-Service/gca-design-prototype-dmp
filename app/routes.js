@@ -20,8 +20,31 @@ router.get('/itaAssessmentToSign', (req, res) => {
 })
 
 router.get('/suspend-all-cloud-software', (req, res) => {
-	req.session.data.cloudSoftwareSuspended = true
-	res.redirect('/suspendLot.html')
+	res.redirect('/suspendLotsSuspended.html')
+})
+
+router.get('/suspendLotsSuspended.html', (req, res) => {
+	res.render('suspendLotsSuspended')
+})
+
+router.get('/suspendLotsSuspended', (req, res) => {
+	res.render('suspendLotsSuspended')
+})
+
+router.get('/unsuspendAreYouSure.html', (req, res) => {
+	res.render('unsuspendAreYouSure')
+})
+
+router.get('/unsuspendAreYouSure', (req, res) => {
+	res.render('unsuspendAreYouSure')
+})
+
+router.get('/suspendLotUnsuspended.html', (req, res) => {
+	res.render('suspendLotUnsuspended')
+})
+
+router.get('/suspendLotUnsuspended', (req, res) => {
+	res.render('suspendLotUnsuspended')
 })
 
 router.get('/suspendLot.html', (req, res) => {
