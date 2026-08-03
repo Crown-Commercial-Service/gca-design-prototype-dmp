@@ -1,0 +1,260 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Documents - {{ serviceName }} - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<style>
+  .admin-bulk-upload {
+    max-width: 760px;
+  }
+
+  .moj-multi-file-upload__dropzone {
+    border: 1px dashed #b1b4b6;
+    padding: 16px;
+    margin-top: 10px;
+    background: #f8f8f8;
+    cursor: pointer;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .moj-multi-file-upload__dropzone--active {
+    border-color: #1d70b8;
+    box-shadow: 0 0 0 3px #1d70b8;
+  }
+
+  .moj-multi-file-upload__list {
+    border-top: 1px solid #b1b4b6;
+  }
+
+  .moj-multi-file-upload__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #b1b4b6;
+    padding: 12px 0;
+  }
+
+  .moj-multi-file-upload__message {
+    word-break: break-word;
+  }
+
+  .moj-multi-file-upload__actions {
+    flex-shrink: 0;
+  }
+
+  .moj-multi-file-upload__delete {
+    margin-bottom: 0;
+  }
+
+  .moj-multi-file-upload__upload {
+    margin-top: 16px;
+  }
+
+  .moj-multi-file-upload__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+</style>
+
+<div class="govuk-grid-row admin-bulk-upload">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Bulk upload of documents</h1>
+
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">You can add the following documents:</h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Service definition</li>
+      <li>Terms and conditions</li>
+      <li>Pricing</li>
+      <li>Skills Framework for the Information Age (SFIA) - optional</li>
+    </ul>
+
+    <p class="govuk-body">Read the <a class="govuk-link" href="#" target="_blank" rel="noreferrer noopener">suppliers' guide (opens in new tab)</a> for guidance on what to include.</p>
+
+    <p class="govuk-body">These documents will not be indexed by search on the Digital Marketplace.</p>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">Your document should:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>be an Open Document Format (ODF) or PDF/A</li>
+      <li>have a maximum file size of 5MB</li>
+      <li>meet accessibility standards</li>
+    </ul>
+
+    <p class="govuk-body govuk-!-margin-bottom-7"><a class="govuk-link" href="#" target="_blank" rel="noreferrer noopener">Read the guidance on accessible documents (link opens in a new tab).</a></p>
+
+    <form action="#" method="post" enctype="multipart/form-data" novalidate>
+      <div id="multi-file-upload" class="moj-multi-file-upload" data-module="moj-multi-file-upload">
+        <div id="uploaded-files" class="moj-multi-file__uploaded-files moj-hidden" aria-live="polite">
+          <h3 class="govuk-heading-m govuk-!-margin-bottom-0">Files added</h3>
+          <div id="uploaded-files-list" class="govuk-summary-list moj-multi-file-upload__list"></div>
+        </div>
+
+        <div class="moj-multi-file-upload__upload">
+          <input class="govuk-file-upload moj-multi-file-upload__input" id="documents" name="documents" type="file" multiple>
+
+          <div id="documents-dropzone" class="moj-multi-file-upload__dropzone" aria-label="Drag and drop files here" role="button" tabindex="0">
+            <p class="govuk-body govuk-!-margin-bottom-0">Drag and drop files here</p>
+            <button id="choose-files-button" type="button" class="govuk-button govuk-button--secondary govuk-!-margin-top-3 govuk-!-margin-bottom-0">
+              Choose files
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="govuk-button govuk-!-margin-top-4">Continue</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var input = document.getElementById('documents')
+    var chooseFilesButton = document.getElementById('choose-files-button')
+    var list = document.getElementById('uploaded-files-list')
+    var uploadedFilesContainer = document.getElementById('uploaded-files')
+    var dropZone = document.getElementById('documents-dropzone')
+
+    if (!input || !chooseFilesButton || !list || !uploadedFilesContainer || !dropZone) {
+      return
+    }
+
+    var uploadedFiles = []
+
+    function fileSizeLabel(sizeInBytes) {
+      var sizeInMb = sizeInBytes / (1024 * 1024)
+      if (sizeInMb >= 1) {
+        return sizeInMb.toFixed(2).replace(/\.00$/, '') + 'MB'
+      }
+
+      var sizeInKb = sizeInBytes / 1024
+      return Math.max(1, Math.round(sizeInKb)) + 'KB'
+    }
+
+    function renderList() {
+      list.innerHTML = ''
+
+      if (uploadedFiles.length === 0) {
+        uploadedFilesContainer.classList.add('moj-hidden')
+        return
+      }
+
+      uploadedFilesContainer.classList.remove('moj-hidden')
+
+      uploadedFiles.forEach(function (file, index) {
+        var row = document.createElement('div')
+        row.className = 'govuk-summary-list__row moj-multi-file-upload__row'
+
+        var value = document.createElement('div')
+        value.className = 'govuk-summary-list__value moj-multi-file-upload__message'
+        value.textContent = file.name + ' (' + fileSizeLabel(file.size) + ')'
+
+        var actions = document.createElement('div')
+        actions.className = 'govuk-summary-list__actions moj-multi-file-upload__actions'
+
+        var deleteButton = document.createElement('button')
+        deleteButton.type = 'button'
+        deleteButton.className = 'moj-multi-file-upload__delete govuk-button govuk-button--secondary'
+        deleteButton.textContent = 'Delete'
+        deleteButton.setAttribute('data-file-index', String(index))
+        deleteButton.setAttribute('aria-label', 'Delete ' + file.name)
+
+        actions.appendChild(deleteButton)
+        row.appendChild(value)
+        row.appendChild(actions)
+        list.appendChild(row)
+      })
+    }
+
+    function addFiles(fileList) {
+      Array.prototype.forEach.call(fileList, function (file) {
+        uploadedFiles.push(file)
+      })
+
+      renderList()
+      input.value = ''
+    }
+
+    input.addEventListener('change', function () {
+      if (input.files && input.files.length) {
+        addFiles(input.files)
+      }
+    })
+
+    dropZone.addEventListener('click', function () {
+      input.click()
+    })
+
+    chooseFilesButton.addEventListener('click', function (event) {
+      event.preventDefault()
+      event.stopPropagation()
+      input.click()
+    })
+
+    dropZone.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault()
+        input.click()
+      }
+    })
+
+    list.addEventListener('click', function (event) {
+      var target = event.target
+      if (!target || !(target instanceof HTMLElement)) {
+        return
+      }
+
+      var index = target.getAttribute('data-file-index')
+      if (index === null) {
+        return
+      }
+
+      uploadedFiles.splice(Number(index), 1)
+      renderList()
+    })
+
+    function preventDefaults(event) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    ;['dragenter', 'dragover'].forEach(function (eventName) {
+      dropZone.addEventListener(eventName, function (event) {
+        preventDefaults(event)
+        dropZone.classList.add('moj-multi-file-upload__dropzone--active')
+      })
+    })
+
+    ;['dragleave', 'drop'].forEach(function (eventName) {
+      dropZone.addEventListener(eventName, function (event) {
+        preventDefaults(event)
+        dropZone.classList.remove('moj-multi-file-upload__dropzone--active')
+      })
+    })
+
+    dropZone.addEventListener('drop', function (event) {
+      var files = event.dataTransfer && event.dataTransfer.files
+      if (!files || !files.length) {
+        return
+      }
+
+      addFiles(files)
+    })
+  })()
+</script>
+{% endblock %}

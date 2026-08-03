@@ -19,6 +19,14 @@ router.get('/itaAssessmentToSign', (req, res) => {
 	res.render('itaAssessmentToSign')
 })
 
+router.get('/adminBulkUpload.html', (req, res) => {
+	res.render('adminBulkUpload')
+})
+
+router.get('/adminBulkUpload', (req, res) => {
+	res.render('adminBulkUpload')
+})
+
 router.get('/suspend-all-cloud-software', (req, res) => {
 	res.redirect('/suspendLotsSuspended.html')
 })
