@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7.2 add or remove lots" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body-s govuk-!-margin-bottom-5">
+      <a class="govuk-link" href="#">Digital Marketplace</a>
+      &gt;
+      <a class="govuk-link" href="#">Your account</a>
+      &gt;
+      <a class="govuk-link" href="#">Add to G-Cloud 15</a>
+      &gt;
+      <a class="govuk-link" href="#">Your G-Cloud 15 services (Lot 1a to 3)</a>
+      &gt;
+      Choose a service type
+    </p>
+
+    <form method="post" action="/DOS72AddRemoveLots">
+      {{ govukRadios({
+        name: "service-type-to-add",
+        fieldset: {
+          legend: {
+            text: "What type of service do you want to add?",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "lot-1a-iaas-paas",
+            html: "Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service<br>(PaaS)"
+          },
+          {
+            value: "lot-1b-iaas-paas-official",
+            html: "Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service<br>(PaaS) above OFFICIAL"
+          },
+          {
+            value: "lot-2-software",
+            text: "Lot 2a: Infrastructure Software as a Service (iSaaS)"
+          },
+          {
+            value: "lot-2-software-saas",
+            text: "Lot 2b: Software as a Service (SaaS)"
+          },
+          {
+            value: "lot-3-cloud-support",
+            text: "Lot 3: Cloud Support"
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Save and continue"
+      }) }}
+    </form>
+  </div>
+</div>
+{% endblock %}

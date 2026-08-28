@@ -42,7 +42,23 @@ router.post('/DOS72ReturningSupplierOptions', (req, res) => {
 		return res.redirect('/DOS72OptInOut')
 	}
 
+	if (selectedOption === 'option-2') {
+		return res.redirect('/DOS72AddRemoveLots')
+	}
+
 	res.redirect('/DOS72ReturningSupplierOptions')
+})
+
+router.get('/DOS72AddRemoveLots.html', (req, res) => {
+	res.render('DOS72AddRemoveLots')
+})
+
+router.get('/DOS72AddRemoveLots', (req, res) => {
+	res.render('DOS72AddRemoveLots')
+})
+
+router.post('/DOS72AddRemoveLots', (req, res) => {
+	res.redirect('/DOS72AddRemoveLots')
 })
 
 router.get('/DOS72OptInOut.html', (req, res) => {
