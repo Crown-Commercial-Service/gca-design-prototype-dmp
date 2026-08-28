@@ -27,6 +27,14 @@ router.get('/DOS72StartPage', (req, res) => {
 	res.render('DOS72StartPage')
 })
 
+router.get('/DOS72ReturningSupplier.html', (req, res) => {
+	res.render('DOS72ReturningSupplier')
+})
+
+router.get('/DOS72ReturningSupplier', (req, res) => {
+	res.render('DOS72ReturningSupplier')
+})
+
 router.get('/adminBulkUpload.html', (req, res) => {
 	res.render('adminBulkUpload')
 })
