@@ -13,44 +13,48 @@
       iconFallbackText: "Warning"
     }) }}
 
-    {{ govukRadios({
-      name: "returning-supplier-option",
-      fieldset: {
-        legend: {
-          text: "Select an option",
-          classes: "govuk-visually-hidden"
-        }
-      },
-      items: [
-        {
-          value: "option-1",
-          text: "Current supplier transferring to DOS 7.2 without any changes."
-        },
-        {
-          value: "option-2",
-          text: "Current supplier transferring to DOS 7.2 adding or removing Lot(s)"
-        },
-        {
-          value: "option-3",
-          text: "Current supplier who wants to come off DOS 7.2"
-        },
-        {
-          value: "option-4",
-          text: "Option 4"
-        }
-      ]
-    }) }}
+    <form method="post" action="/DOS72ReturningSupplier">
 
-    <div class="govuk-button-group">
-      {{ govukButton({
-        text: "Save and continue"
+      {{ govukRadios({
+        name: "returning-supplier-option",
+        fieldset: {
+          legend: {
+            text: "Select an option",
+            classes: "govuk-visually-hidden"
+          }
+        },
+        items: [
+          {
+            value: "option-1",
+            text: "Current supplier transferring to DOS 7.2 without any changes."
+          },
+          {
+            value: "option-2",
+            text: "Current supplier transferring to DOS 7.2 adding or removing Lot(s)"
+          },
+          {
+            value: "option-3",
+            text: "Current supplier who wants to come off DOS 7.2"
+          },
+          {
+            value: "option-4",
+            text: "Option 4"
+          }
+        ]
       }) }}
 
-      {{ govukButton({
-        text: "Cancel",
-        classes: "govuk-button--secondary"
-      }) }}
-    </div>
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Save and continue"
+        }) }}
+
+        {{ govukButton({
+          text: "Cancel",
+          href: "/DOS72StartPage",
+          classes: "govuk-button--secondary"
+        }) }}
+      </div>
+    </form>
 
     <p class="govuk-body">
       <a class="govuk-link" href="/DOS72StartPage">Back to DOS 72 start page</a>

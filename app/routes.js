@@ -35,6 +35,24 @@ router.get('/DOS72ReturningSupplier', (req, res) => {
 	res.render('DOS72ReturningSupplier')
 })
 
+router.post('/DOS72ReturningSupplier', (req, res) => {
+	const selectedOption = req.body['returning-supplier-option']
+
+	if (selectedOption === 'option-1') {
+		return res.redirect('/DOS72OptInOut')
+	}
+
+	res.redirect('/DOS72ReturningSupplier')
+})
+
+router.get('/DOS72OptInOut.html', (req, res) => {
+	res.render('DOS72OptInOut')
+})
+
+router.get('/DOS72OptInOut', (req, res) => {
+	res.render('DOS72OptInOut')
+})
+
 router.get('/adminBulkUpload.html', (req, res) => {
 	res.render('adminBulkUpload')
 })
