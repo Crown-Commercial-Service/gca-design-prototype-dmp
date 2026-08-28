@@ -19,6 +19,14 @@ router.get('/itaAssessmentToSign', (req, res) => {
 	res.render('itaAssessmentToSign')
 })
 
+router.get('/DOS72StartPage.html', (req, res) => {
+	res.render('DOS72StartPage')
+})
+
+router.get('/DOS72StartPage', (req, res) => {
+	res.render('DOS72StartPage')
+})
+
 router.get('/adminBulkUpload.html', (req, res) => {
 	res.render('adminBulkUpload')
 })
