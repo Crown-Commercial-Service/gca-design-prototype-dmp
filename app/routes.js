@@ -95,6 +95,20 @@ router.get('/DOS72AreYouSure', (req, res) => {
 	res.render('DOS72AreYouSure')
 })
 
+router.post('/DOS72AreYouSure', (req, res) => {
+	const confirmOptOut = req.body['dos72-opt-out-confirm']
+
+	if (confirmOptOut === 'yes') {
+		return res.redirect('/DOS72StartPage')
+	}
+
+	if (confirmOptOut === 'no') {
+		return res.redirect('/DOS72OptOutNarrative')
+	}
+
+	res.redirect('/DOS72AreYouSure')
+})
+
 router.get('/adminBulkUpload.html', (req, res) => {
 	res.render('adminBulkUpload')
 })
