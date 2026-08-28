@@ -5,8 +5,52 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">Returning supplier</h1>
-    <p class="govuk-body">This page is for suppliers returning to continue their DOS 72 application.</p>
+    <h1 class="govuk-heading-l">Returning supplier options for DOS 7.2</h1>
+    <p class="govuk-body">These are the options avaiable to a returning supplier for DOS 7.2.</p>
+
+    {{ govukWarningText({
+      text: "You can only choose one option.",
+      iconFallbackText: "Warning"
+    }) }}
+
+    {{ govukRadios({
+      name: "returning-supplier-option",
+      fieldset: {
+        legend: {
+          text: "Select an option",
+          classes: "govuk-visually-hidden"
+        }
+      },
+      items: [
+        {
+          value: "option-1",
+          text: "Option 1"
+        },
+        {
+          value: "option-2",
+          text: "Option 2"
+        },
+        {
+          value: "option-3",
+          text: "Option 3"
+        },
+        {
+          value: "option-4",
+          text: "Option 4"
+        }
+      ]
+    }) }}
+
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Save and continue"
+      }) }}
+
+      {{ govukButton({
+        text: "Cancel",
+        classes: "govuk-button--secondary"
+      }) }}
+    </div>
 
     <p class="govuk-body">
       <a class="govuk-link" href="/DOS72StartPage">Back to DOS 72 start page</a>
