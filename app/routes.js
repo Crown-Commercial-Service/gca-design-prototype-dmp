@@ -46,7 +46,19 @@ router.post('/DOS72ReturningSupplierOptions', (req, res) => {
 		return res.redirect('/DOS72AddRemoveLots')
 	}
 
+	if (selectedOption === 'option-3') {
+		return res.redirect('/DOS72NotOnFramework')
+	}
+
 	res.redirect('/DOS72ReturningSupplierOptions')
+})
+
+router.get('/DOS72NotOnFramework.html', (req, res) => {
+	res.render('DOS72NotOnFramework')
+})
+
+router.get('/DOS72NotOnFramework', (req, res) => {
+	res.render('DOS72NotOnFramework')
 })
 
 router.get('/DOS72AddRemoveLots.html', (req, res) => {
