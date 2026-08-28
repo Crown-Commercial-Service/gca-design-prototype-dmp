@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "DOS 72 returning supplier" %}
+{% set pageName = "DOS 72 returning supplier options" %}
 
 {% block content %}
 <div class="govuk-grid-row">
@@ -13,7 +13,7 @@
       iconFallbackText: "Warning"
     }) }}
 
-    <form method="post" action="/DOS72ReturningSupplier">
+    <form method="post" action="/DOS72ReturningSupplierOptions">
 
       {{ govukRadios({
         name: "returning-supplier-option",

@@ -27,22 +27,22 @@ router.get('/DOS72StartPage', (req, res) => {
 	res.render('DOS72StartPage')
 })
 
-router.get('/DOS72ReturningSupplier.html', (req, res) => {
-	res.render('DOS72ReturningSupplier')
+router.get('/DOS72ReturningSupplierOptions.html', (req, res) => {
+	res.render('DOS72ReturningSupplierOptions')
 })
 
-router.get('/DOS72ReturningSupplier', (req, res) => {
-	res.render('DOS72ReturningSupplier')
+router.get('/DOS72ReturningSupplierOptions', (req, res) => {
+	res.render('DOS72ReturningSupplierOptions')
 })
 
-router.post('/DOS72ReturningSupplier', (req, res) => {
+router.post('/DOS72ReturningSupplierOptions', (req, res) => {
 	const selectedOption = req.body['returning-supplier-option']
 
 	if (selectedOption === 'option-1') {
 		return res.redirect('/DOS72OptInOut')
 	}
 
-	res.redirect('/DOS72ReturningSupplier')
+	res.redirect('/DOS72ReturningSupplierOptions')
 })
 
 router.get('/DOS72OptInOut.html', (req, res) => {
