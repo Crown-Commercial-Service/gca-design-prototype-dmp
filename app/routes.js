@@ -60,6 +60,10 @@ router.post('/DOS72OptInOut', (req, res) => {
 		return res.redirect('/DOS72OptInOutSuccess')
 	}
 
+	if (selectedOption === 'opt-out') {
+		return res.redirect('/DOS72OptOutNarrative')
+	}
+
 	res.redirect('/DOS72OptInOut')
 })
 
@@ -69,6 +73,26 @@ router.get('/DOS72OptInOutSuccess.html', (req, res) => {
 
 router.get('/DOS72OptInOutSuccess', (req, res) => {
 	res.render('DOS72OptInOutSuccess')
+})
+
+router.get('/DOS72OptOutNarrative.html', (req, res) => {
+	res.render('DOS72OptOutNarrative')
+})
+
+router.get('/DOS72OptOutNarrative', (req, res) => {
+	res.render('DOS72OptOutNarrative')
+})
+
+router.post('/DOS72OptOutNarrative', (req, res) => {
+	res.redirect('/DOS72AreYouSure')
+})
+
+router.get('/DOS72AreYouSure.html', (req, res) => {
+	res.render('DOS72AreYouSure')
+})
+
+router.get('/DOS72AreYouSure', (req, res) => {
+	res.render('DOS72AreYouSure')
 })
 
 router.get('/adminBulkUpload.html', (req, res) => {
