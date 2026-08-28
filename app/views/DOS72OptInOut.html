@@ -6,7 +6,33 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">DOS 7.2 opt in or out</h1>
-    <p class="govuk-body">You selected the option for a current supplier transferring to DOS 7.2 without any changes.</p>
+    <p class="govuk-body">Choose one option below.</p>
+
+    <form method="post" action="/DOS72OptInOut">
+      {{ govukRadios({
+        name: "dos72-opt-choice",
+        fieldset: {
+          legend: {
+            text: "Select an option",
+            classes: "govuk-visually-hidden"
+          }
+        },
+        items: [
+          {
+            value: "opt-in",
+            text: "DOS 7.2 Opt In"
+          },
+          {
+            value: "opt-out",
+            text: "DOS 7.2 Opt out"
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Save and continue"
+      }) }}
+    </form>
 
     <p class="govuk-body">
       <a class="govuk-link" href="/DOS72ReturningSupplier">Back to returning supplier options</a>

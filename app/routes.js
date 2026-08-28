@@ -53,6 +53,10 @@ router.get('/DOS72OptInOut', (req, res) => {
 	res.render('DOS72OptInOut')
 })
 
+router.post('/DOS72OptInOut', (req, res) => {
+	res.redirect('/DOS72OptInOut')
+})
+
 router.get('/adminBulkUpload.html', (req, res) => {
 	res.render('adminBulkUpload')
 })
