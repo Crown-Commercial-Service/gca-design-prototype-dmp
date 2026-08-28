@@ -1,0 +1,28 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7.2 opt out success" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukPanel({
+      titleText: "Success",
+      html: "You have opted out of DOS 7.2"
+    }) }}
+
+    <p class="govuk-body">Your preference has been saved and your supplier account will remain on previous DOS versions.</p>
+
+    <p class="govuk-body">An email has been sent to confirm you have Opted out of DOS 7.2.</p>
+
+    {{ govukButton({
+      text: "Exit",
+      href: "/DOS72StartPage",
+      classes: "govuk-button--secondary"
+    }) }}
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="/DOS72ReturningSupplier">Back to returning supplier options</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
