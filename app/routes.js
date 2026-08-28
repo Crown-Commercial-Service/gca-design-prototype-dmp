@@ -54,7 +54,21 @@ router.get('/DOS72OptInOut', (req, res) => {
 })
 
 router.post('/DOS72OptInOut', (req, res) => {
+	const selectedOption = req.body['dos72-opt-choice']
+
+	if (selectedOption === 'opt-in') {
+		return res.redirect('/DOS72OptInOutSuccess')
+	}
+
 	res.redirect('/DOS72OptInOut')
+})
+
+router.get('/DOS72OptInOutSuccess.html', (req, res) => {
+	res.render('DOS72OptInOutSuccess')
+})
+
+router.get('/DOS72OptInOutSuccess', (req, res) => {
+	res.render('DOS72OptInOutSuccess')
 })
 
 router.get('/adminBulkUpload.html', (req, res) => {

@@ -1,0 +1,26 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7.2 opt in success" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukPanel({
+      titleText: "Success",
+      html: "You have opted in to DOS 7.2"
+    }) }}
+
+    <p class="govuk-body">An email has been sent to you confirming your opt-in to DOS 7.2 and inviting you to sign your Declaration.  You will not be able to start selling your services on DOS 7.2 until the Declaration is signed.</p>
+
+    {{ govukButton({
+      text: "Exit",
+      href: "/DOS72StartPage",
+      classes: "govuk-button--secondary"
+    }) }}
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="/DOS72ReturningSupplier">Back to returning supplier options</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
