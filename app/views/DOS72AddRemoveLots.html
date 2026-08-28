@@ -27,6 +27,14 @@
       {% set lot1ActionHtml = "<a class=\"govuk-link\" href=\"/DOS72Lot1Add\">Add</a>" %}
     {% endif %}
 
+    {% if lot2Active %}
+      {% set lot2Status = "Yes" %}
+      {% set lot2ActionHtml = "<a class=\"govuk-link\" href=\"#\">Remove</a>" %}
+    {% else %}
+      {% set lot2Status = "No" %}
+      {% set lot2ActionHtml = "<a class=\"govuk-link\" href=\"/DOS72AddLot\">Add</a>" %}
+    {% endif %}
+
     {{ govukTable({
       firstCellIsHeader: false,
       head: [
@@ -57,10 +65,10 @@
             html: "Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service<br>(PaaS) above OFFICIAL"
           },
           {
-            text: "No"
+            text: lot2Status
           },
           {
-            html: "<a class=\"govuk-link\" href=\"/DOS72AddLot\">Add</a>"
+            html: lot2ActionHtml
           }
         ],
         [

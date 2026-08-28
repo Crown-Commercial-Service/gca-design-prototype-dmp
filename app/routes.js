@@ -51,16 +51,18 @@ router.post('/DOS72ReturningSupplierOptions', (req, res) => {
 
 router.get('/DOS72AddRemoveLots.html', (req, res) => {
 	const lot1Active = req.session.data.dos72Lot1Active !== false
+	const lot2Active = req.session.data.dos72Lot2Active === true
 	const showSaveContinue = Boolean(req.session.data.dos72ActionMade)
 
-	res.render('DOS72AddRemoveLots', { lot1Active, showSaveContinue })
+	res.render('DOS72AddRemoveLots', { lot1Active, lot2Active, showSaveContinue })
 })
 
 router.get('/DOS72AddRemoveLots', (req, res) => {
 	const lot1Active = req.session.data.dos72Lot1Active !== false
+	const lot2Active = req.session.data.dos72Lot2Active === true
 	const showSaveContinue = Boolean(req.session.data.dos72ActionMade)
 
-	res.render('DOS72AddRemoveLots', { lot1Active, showSaveContinue })
+	res.render('DOS72AddRemoveLots', { lot1Active, lot2Active, showSaveContinue })
 })
 
 router.post('/DOS72AddRemoveLots', (req, res) => {
@@ -84,7 +86,9 @@ router.get('/DOS72LotServiceName', (req, res) => {
 })
 
 router.post('/DOS72LotServiceName', (req, res) => {
-	res.redirect('/DOS72LotServiceName')
+	req.session.data.dos72Lot2Active = true
+	req.session.data.dos72ActionMade = true
+	res.redirect('/DOS72AddRemoveLots')
 })
 
 router.get('/DOS72Lot1Add', (req, res) => {
