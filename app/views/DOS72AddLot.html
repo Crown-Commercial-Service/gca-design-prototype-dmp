@@ -1,0 +1,74 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7.2 add lot" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <p class="govuk-body-s govuk-!-margin-bottom-4">
+      <a class="govuk-link" href="#">Digital Marketplace</a>
+      &gt;
+      <a class="govuk-link" href="#">Your account</a>
+      &gt;
+      <a class="govuk-link" href="#">Add to G-Cloud 15</a>
+      &gt;
+      <a class="govuk-link" href="#">Your G-Cloud 15 services (Lot 1a to 3)</a>
+      &gt;
+      Add a service (Lot 2b)
+    </p>
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Software as a Service (SaaS) services</h1>
+
+    <p class="govuk-!-margin-bottom-6">
+      <a class="govuk-button govuk-!-margin-bottom-0" href="/DOS72LotServiceName" role="button" draggable="false">Add a service</a>
+    </p>
+
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Draft services</h2>
+    <p class="govuk-body govuk-!-margin-bottom-6">You have not added any services yet.</p>
+
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Complete services</h2>
+
+    {{ govukTable({
+      firstCellIsHeader: false,
+      head: [
+        {
+          text: "Service name"
+        },
+        {
+          text: ""
+        }
+      ],
+      rows: [
+        [
+          {
+            html: "<a class=\"govuk-link\" href=\"#\">Portfolio Insights - Strategy Execution Management</a>"
+          },
+          {
+            html: "<a class=\"govuk-button govuk-!-margin-bottom-0\" href=\"#\" role=\"button\" draggable=\"false\">Make a copy</a>"
+          }
+        ],
+        [
+          {
+            html: "<a class=\"govuk-link\" href=\"#\">Strategic Portfolio Management - Business Agility Software</a>"
+          },
+          {
+            html: "<a class=\"govuk-button govuk-!-margin-bottom-0\" href=\"#\" role=\"button\" draggable=\"false\">Make a copy</a>"
+          }
+        ],
+        [
+          {
+            html: "<a class=\"govuk-link\" href=\"#\">Enterprise Connect - Business and Enterprise Architecture Tool</a>"
+          },
+          {
+            html: "<a class=\"govuk-button govuk-!-margin-bottom-0\" href=\"#\" role=\"button\" draggable=\"false\">Make a copy</a>"
+          }
+        ]
+      ]
+    }) }}
+
+    <p class="govuk-body-s">
+      <a class="govuk-link" href="/DOS72AddRemoveLots">Back to your G-Cloud 15 services</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

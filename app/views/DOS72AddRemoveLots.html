@@ -17,44 +17,95 @@
       Choose a service type
     </p>
 
-    <form method="post" action="/DOS72AddRemoveLots">
-      {{ govukRadios({
-        name: "service-type-to-add",
-        fieldset: {
-          legend: {
-            text: "What type of service do you want to add?",
-            isPageHeading: true,
-            classes: "govuk-fieldset__legend--l"
-          }
+    <h1 class="govuk-heading-l">What type of service do you want to add or remove?</h1>
+
+    {% if lot1Active %}
+      {% set lot1Status = "Yes" %}
+      {% set lot1ActionHtml = "<a class=\"govuk-link\" href=\"/DOS72LotRemoveAreYouSure\">Remove</a>" %}
+    {% else %}
+      {% set lot1Status = "No" %}
+      {% set lot1ActionHtml = "<a class=\"govuk-link\" href=\"/DOS72Lot1Add\">Add</a>" %}
+    {% endif %}
+
+    {{ govukTable({
+      firstCellIsHeader: false,
+      head: [
+        {
+          text: "Service"
         },
-        items: [
+        {
+          text: "Is active?"
+        },
+        {
+          text: "Actions"
+        }
+      ],
+      rows: [
+        [
           {
-            value: "lot-1a-iaas-paas",
             html: "Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service<br>(PaaS)"
           },
           {
-            value: "lot-1b-iaas-paas-official",
+            text: lot1Status
+          },
+          {
+            html: lot1ActionHtml
+          }
+        ],
+        [
+          {
             html: "Lot 1b: Infrastructure as a Service (IaaS) and Platform as a Service<br>(PaaS) above OFFICIAL"
           },
           {
-            value: "lot-2-software",
+            text: "No"
+          },
+          {
+            html: "<a class=\"govuk-link\" href=\"/DOS72AddLot\">Add</a>"
+          }
+        ],
+        [
+          {
             text: "Lot 2a: Infrastructure Software as a Service (iSaaS)"
           },
           {
-            value: "lot-2-software-saas",
+            text: "Yes"
+          },
+          {
+            html: "<a class=\"govuk-link\" href=\"#\">Remove</a>"
+          }
+        ],
+        [
+          {
             text: "Lot 2b: Software as a Service (SaaS)"
           },
           {
-            value: "lot-3-cloud-support",
+            text: "No"
+          },
+          {
+            html: "<a class=\"govuk-link\" href=\"#\">Add</a>"
+          }
+        ],
+        [
+          {
             text: "Lot 3: Cloud Support"
+          },
+          {
+            text: "Yes"
+          },
+          {
+            html: "<a class=\"govuk-link\" href=\"#\">Remove</a>"
           }
         ]
-      }) }}
+      ]
+    }) }}
 
-      {{ govukButton({
-        text: "Save and continue"
-      }) }}
-    </form>
+    {% if showSaveContinue %}
+      <form method="post" action="/DOS72AddRemoveLots">
+        {{ govukButton({
+          text: "Save and continue"
+        }) }}
+      </form>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

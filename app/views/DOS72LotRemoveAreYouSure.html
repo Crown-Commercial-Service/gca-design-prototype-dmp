@@ -1,0 +1,31 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7.2 lot remove are you sure" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Are you sure you want to remove this lot?</h1>
+    <p class="govuk-body">You selected to remove Lot 1a: Infrastructure as a Service (IaaS) and Platform as a Service
+(PaaS).</p>
+
+    <form method="post" action="/DOS72LotRemoveAreYouSure">
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Save and continue"
+        }) }}
+
+        {{ govukButton({
+          text: "Cancel",
+          href: "/DOS72AddRemoveLots",
+          classes: "govuk-button--secondary"
+        }) }}
+      </div>
+    </form>
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="/DOS72AddRemoveLots">Back to add or remove lots</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

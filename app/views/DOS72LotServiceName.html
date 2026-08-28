@@ -1,0 +1,46 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7.2 lot service name" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body-s govuk-!-margin-bottom-4">
+      <a class="govuk-link" href="#">Digital Marketplace</a>
+      &gt;
+      <a class="govuk-link" href="#">Your account</a>
+      &gt;
+      <a class="govuk-link" href="#">Add to G-Cloud 15</a>
+      &gt;
+      <a class="govuk-link" href="#">Services</a>
+      &gt;
+      <a class="govuk-link" href="#">Software as a Service (SaaS)</a>
+      &gt;
+      Service name
+    </p>
+
+    <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">You must save these answers by 10:26am BST.</p>
+    <p class="govuk-body govuk-!-margin-bottom-6">If you do not save, your session will time out for security reasons. You'll lose any information you've entered on this page.</p>
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Service name</h1>
+
+    <form method="post" action="/DOS72LotServiceName">
+      {{ govukInput({
+        id: "service-name",
+        name: "service-name",
+        label: {
+          text: "What's your service called?",
+          classes: "govuk-label--m"
+        },
+        hint: {
+          text: "Include your service name only. Don't use extra keywords."
+        }
+      }) }}
+
+      {{ govukButton({
+        text: "Save and continue"
+      }) }}
+    </form>
+  </div>
+</div>
+{% endblock %}

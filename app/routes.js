@@ -50,14 +50,60 @@ router.post('/DOS72ReturningSupplierOptions', (req, res) => {
 })
 
 router.get('/DOS72AddRemoveLots.html', (req, res) => {
-	res.render('DOS72AddRemoveLots')
+	const lot1Active = req.session.data.dos72Lot1Active !== false
+	const showSaveContinue = Boolean(req.session.data.dos72ActionMade)
+
+	res.render('DOS72AddRemoveLots', { lot1Active, showSaveContinue })
 })
 
 router.get('/DOS72AddRemoveLots', (req, res) => {
-	res.render('DOS72AddRemoveLots')
+	const lot1Active = req.session.data.dos72Lot1Active !== false
+	const showSaveContinue = Boolean(req.session.data.dos72ActionMade)
+
+	res.render('DOS72AddRemoveLots', { lot1Active, showSaveContinue })
 })
 
 router.post('/DOS72AddRemoveLots', (req, res) => {
+	res.redirect('/DOS72AddRemoveLots')
+})
+
+router.get('/DOS72AddLot.html', (req, res) => {
+	res.render('DOS72AddLot')
+})
+
+router.get('/DOS72AddLot', (req, res) => {
+	res.render('DOS72AddLot')
+})
+
+router.get('/DOS72LotServiceName.html', (req, res) => {
+	res.render('DOS72LotServiceName')
+})
+
+router.get('/DOS72LotServiceName', (req, res) => {
+	res.render('DOS72LotServiceName')
+})
+
+router.post('/DOS72LotServiceName', (req, res) => {
+	res.redirect('/DOS72LotServiceName')
+})
+
+router.get('/DOS72Lot1Add', (req, res) => {
+	req.session.data.dos72Lot1Active = true
+	req.session.data.dos72ActionMade = true
+	res.redirect('/DOS72AddRemoveLots')
+})
+
+router.get('/DOS72LotRemoveAreYouSure.html', (req, res) => {
+	res.render('DOS72LotRemoveAreYouSure')
+})
+
+router.get('/DOS72LotRemoveAreYouSure', (req, res) => {
+	res.render('DOS72LotRemoveAreYouSure')
+})
+
+router.post('/DOS72LotRemoveAreYouSure', (req, res) => {
+	req.session.data.dos72Lot1Active = false
+	req.session.data.dos72ActionMade = true
 	res.redirect('/DOS72AddRemoveLots')
 })
 
