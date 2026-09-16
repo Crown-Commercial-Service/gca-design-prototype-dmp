@@ -98,11 +98,31 @@ router.get('/DOS72ExistingDeclaration', (req, res) => {
 })
 
 router.get('/DOS72ExistingServices.html', (req, res) => {
-	res.render('DOS72ExistingServices')
+	const lot4Removed = Boolean(req.session.data.dos72Lot4Removed)
+	const showLot4RemovedBanner = Boolean(req.session.data.dos72Lot4JustRemoved)
+	req.session.data.dos72Lot4JustRemoved = false
+	res.render('DOS72ExistingServices', { lot4Removed, showLot4RemovedBanner })
 })
 
 router.get('/DOS72ExistingServices', (req, res) => {
-	res.render('DOS72ExistingServices')
+	const lot4Removed = Boolean(req.session.data.dos72Lot4Removed)
+	const showLot4RemovedBanner = Boolean(req.session.data.dos72Lot4JustRemoved)
+	req.session.data.dos72Lot4JustRemoved = false
+	res.render('DOS72ExistingServices', { lot4Removed, showLot4RemovedBanner })
+})
+
+router.get('/DOS72ExistingAreYouSure.html', (req, res) => {
+	res.render('DOS72ExistingAreYouSure')
+})
+
+router.get('/DOS72ExistingAreYouSure', (req, res) => {
+	res.render('DOS72ExistingAreYouSure')
+})
+
+router.post('/DOS72ExistingAreYouSure', (req, res) => {
+	req.session.data.dos72Lot4Removed = true
+	req.session.data.dos72Lot4JustRemoved = true
+	res.redirect('/DOS72ExistingServices')
 })
 
 router.get('/DOS72ReturningSupplierOptions.html', (req, res) => {
