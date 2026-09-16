@@ -33,9 +33,28 @@
     </p>
 
     <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Drafts</h2>
+    {% if lot4Removed %}
     <p class="govuk-body govuk-!-margin-bottom-6">You haven't added any draft services yet.</p>
+    {% else %}
+    <table class="govuk-table govuk-!-margin-bottom-6">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Services</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Lot 4: User Research Studios and Participants</td>
+          <td class="govuk-table__cell">Draft</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href="#">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+    {% endif %}
 
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Ready for submission ({{ 3 - (1 if lot1Removed else 0) + (1 if not lot4Removed else 0) }})</h2>
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Ready for submission ({{ 3 - (1 if lot1Removed else 0) }})</h2>
     <p class="govuk-body govuk-!-margin-bottom-4">These services will be submitted and can be edited before the deadline</p>
 
     <table class="govuk-table">
@@ -64,13 +83,6 @@
           <td class="govuk-table__cell">Active</td>
           <td class="govuk-table__cell"><a class="govuk-link" href="#">View</a></td>
         </tr>
-        {% if not lot4Removed %}
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Lot 4: User Research Studios and Participants</td>
-          <td class="govuk-table__cell">Active</td>
-          <td class="govuk-table__cell"><a class="govuk-link" href="#">View</a></td>
-        </tr>
-        {% endif %}
       </tbody>
     </table>
 
