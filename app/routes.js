@@ -146,6 +146,7 @@ router.post('/DOS72ExistingAddService', (req, res) => {
 
 	if (selectedLot === 'lot-4') {
 		req.session.data.dos72Lot4Removed = false
+		req.session.data.dos72Lot4JustRemoved = false
 		req.session.data.dos72Lot4JustAdded = true
 	}
 
