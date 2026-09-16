@@ -97,6 +97,14 @@ router.get('/DOS72ExistingDeclaration', (req, res) => {
 	res.render('DOS72ExistingDeclaration')
 })
 
+router.get('/DOS72ExistingServices.html', (req, res) => {
+	res.render('DOS72ExistingServices')
+})
+
+router.get('/DOS72ExistingServices', (req, res) => {
+	res.render('DOS72ExistingServices')
+})
+
 router.get('/DOS72ReturningSupplierOptions.html', (req, res) => {
 	res.render('DOS72ReturningSupplierOptions')
 })
