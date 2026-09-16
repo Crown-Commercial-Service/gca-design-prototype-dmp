@@ -81,6 +81,22 @@ router.get('/DOS72ExisitngYourAccount', (req, res) => {
 	res.render('DOS72ExisitngYourAccount')
 })
 
+router.get('/DOS72ExistingProgress.html', (req, res) => {
+	res.render('DOS72ExistingProgress')
+})
+
+router.get('/DOS72ExistingProgress', (req, res) => {
+	res.render('DOS72ExistingProgress')
+})
+
+router.get('/DOS72ExistingDeclaration.html', (req, res) => {
+	res.render('DOS72ExistingDeclaration')
+})
+
+router.get('/DOS72ExistingDeclaration', (req, res) => {
+	res.render('DOS72ExistingDeclaration')
+})
+
 router.get('/DOS72ReturningSupplierOptions.html', (req, res) => {
 	res.render('DOS72ReturningSupplierOptions')
 })
