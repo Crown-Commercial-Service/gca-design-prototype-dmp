@@ -83,6 +83,14 @@ router.get('/DOS72FreshApplication', (req, res) => {
 	res.render('DOS72FreshApplication')
 })
 
+router.get('/DOS72FreshApplicationStart.html', (req, res) => {
+	res.render('DOS72FreshApplicationStart')
+})
+
+router.get('/DOS72FreshApplicationStart', (req, res) => {
+	res.render('DOS72FreshApplicationStart')
+})
+
 router.get('/DOS72ExisitngYourAccount.html', (req, res) => {
 	req.session.data.dos72Lot1Removed = false
 	req.session.data.dos72Lot1JustRemoved = false
