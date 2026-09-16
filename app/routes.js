@@ -27,6 +27,60 @@ router.get('/DOS72StartPage', (req, res) => {
 	res.render('DOS72StartPage')
 })
 
+router.get('/DOS72Options.html', (req, res) => {
+	res.render('DOS72Options')
+})
+
+router.get('/DOS72Options', (req, res) => {
+	res.render('DOS72Options')
+})
+
+router.post('/DOS72Options', (req, res) => {
+	const selectedOption = req.body['dos72-options-choice']
+
+	if (selectedOption === 'option-1') {
+		return res.redirect('/DOS72StartPage')
+	}
+
+	if (selectedOption === 'option-2') {
+		return res.redirect('/DOS72FlowOptions')
+	}
+
+	res.redirect('/DOS72Options')
+})
+
+router.get('/DOS72FlowOptions.html', (req, res) => {
+	res.render('DOS72FlowOptions')
+})
+
+router.get('/DOS72FlowOptions', (req, res) => {
+	res.render('DOS72FlowOptions')
+})
+
+router.get('/DOS72ExistingSupplierMigratedData.html', (req, res) => {
+	res.render('DOS72ExistingSupplierMigratedData')
+})
+
+router.get('/DOS72ExistingSupplierMigratedData', (req, res) => {
+	res.render('DOS72ExistingSupplierMigratedData')
+})
+
+router.get('/DOS72FreshApplication.html', (req, res) => {
+	res.render('DOS72FreshApplication')
+})
+
+router.get('/DOS72FreshApplication', (req, res) => {
+	res.render('DOS72FreshApplication')
+})
+
+router.get('/DOS72ExisitngYourAccount.html', (req, res) => {
+	res.render('DOS72ExisitngYourAccount')
+})
+
+router.get('/DOS72ExisitngYourAccount', (req, res) => {
+	res.render('DOS72ExisitngYourAccount')
+})
+
 router.get('/DOS72ReturningSupplierOptions.html', (req, res) => {
 	res.render('DOS72ReturningSupplierOptions')
 })

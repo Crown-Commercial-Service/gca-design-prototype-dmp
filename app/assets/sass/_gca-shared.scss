@@ -227,3 +227,48 @@
     overflow-x: auto;
   }
 }
+
+.gca-application-panel {
+  margin: 0 0 30px;
+  padding: 20px 25px;
+  background: #1d70b8;
+  color: #ffffff;
+}
+
+.gca-application-panel__title {
+  margin: 0 0 5px;
+  color: #ffffff;
+}
+
+.gca-application-panel__meta {
+  margin: 0 0 15px;
+  color: #ffffff;
+}
+
+.gca-application-panel__link,
+.gca-application-panel__link:link,
+.gca-application-panel__link:visited,
+.gca-application-panel__link:hover,
+.gca-application-panel__link:active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.gca-account-nav {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.gca-account-nav__section-title {
+  margin: 0 0 10px;
+}
+
+.gca-account-nav__item {
+  margin-bottom: 10px;
+}
+
+// Aligns the column with the top of the blue application panel
+.gca-account-column {
+  margin-top: 0;
+}

@@ -1,0 +1,50 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Your account" %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a></li>
+        <li class="govuk-breadcrumbs__list-item">Your account</li>
+      </ol>
+    </nav>
+
+    <p class="govuk-body govuk-!-margin-bottom-1">20030@user.marketplace.team</p>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">NEC SOFTWARE SOLUTIONS UK LIMITED-<br>Trading</h1>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="gca-application-panel">
+      <h2 class="govuk-heading-m gca-application-panel__title">Your Digital Outcomes and Specialists 7.2 application</h2>
+      <p class="govuk-body gca-application-panel__meta">Deadline: 3pm BST, Tuesday 11 August 2026</p>
+      <a class="govuk-link gca-application-panel__link" href="#">Continue your application</a>
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third gca-account-column">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Your company</h2>
+    <ul class="gca-account-nav">
+      <li class="gca-account-nav__item"><a class="govuk-link" href="#">Your company details</a></li>
+      <li class="gca-account-nav__item"><a class="govuk-link" href="#">Contributors</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Account settings</h2>
+  </div>
+</div>
+{% endblock %}
