@@ -77,9 +77,6 @@ router.get('/DOS72ExisitngYourAccount.html', (req, res) => {
 	req.session.data.dos72Lot1Removed = false
 	req.session.data.dos72Lot1JustRemoved = false
 	req.session.data.dos72Lot1JustAdded = false
-	req.session.data.dos72Lot3Removed = false
-	req.session.data.dos72Lot3JustRemoved = false
-	req.session.data.dos72Lot3JustAdded = false
 	res.render('DOS72ExisitngYourAccount')
 })
 
@@ -87,9 +84,6 @@ router.get('/DOS72ExisitngYourAccount', (req, res) => {
 	req.session.data.dos72Lot1Removed = false
 	req.session.data.dos72Lot1JustRemoved = false
 	req.session.data.dos72Lot1JustAdded = false
-	req.session.data.dos72Lot3Removed = false
-	req.session.data.dos72Lot3JustRemoved = false
-	req.session.data.dos72Lot3JustAdded = false
 	res.render('DOS72ExisitngYourAccount')
 })
 
@@ -110,36 +104,25 @@ router.get('/DOS72ExistingDeclaration', (req, res) => {
 })
 
 const dos72Lots = {
-	'1': { name: 'Lot 1: Digital Outcomes', slug: 'lot-1' },
-	'3': { name: 'Lot 3: Digital Specialists', slug: 'lot-3' }
+	'1': { name: 'Lot 1: Digital Outcomes', slug: 'lot-1' }
 }
 
 router.get('/DOS72ExistingServices.html', (req, res) => {
 	const lot1Removed = Boolean(req.session.data.dos72Lot1Removed)
 	const showLot1RemovedBanner = Boolean(req.session.data.dos72Lot1JustRemoved)
 	const showLot1AddedBanner = Boolean(req.session.data.dos72Lot1JustAdded)
-	const lot3Removed = Boolean(req.session.data.dos72Lot3Removed)
-	const showLot3RemovedBanner = Boolean(req.session.data.dos72Lot3JustRemoved)
-	const showLot3AddedBanner = Boolean(req.session.data.dos72Lot3JustAdded)
 	req.session.data.dos72Lot1JustRemoved = false
 	req.session.data.dos72Lot1JustAdded = false
-	req.session.data.dos72Lot3JustRemoved = false
-	req.session.data.dos72Lot3JustAdded = false
-	res.render('DOS72ExistingServices', { lot1Removed, showLot1RemovedBanner, showLot1AddedBanner, lot3Removed, showLot3RemovedBanner, showLot3AddedBanner })
+	res.render('DOS72ExistingServices', { lot1Removed, showLot1RemovedBanner, showLot1AddedBanner })
 })
 
 router.get('/DOS72ExistingServices', (req, res) => {
 	const lot1Removed = Boolean(req.session.data.dos72Lot1Removed)
 	const showLot1RemovedBanner = Boolean(req.session.data.dos72Lot1JustRemoved)
 	const showLot1AddedBanner = Boolean(req.session.data.dos72Lot1JustAdded)
-	const lot3Removed = Boolean(req.session.data.dos72Lot3Removed)
-	const showLot3RemovedBanner = Boolean(req.session.data.dos72Lot3JustRemoved)
-	const showLot3AddedBanner = Boolean(req.session.data.dos72Lot3JustAdded)
 	req.session.data.dos72Lot1JustRemoved = false
 	req.session.data.dos72Lot1JustAdded = false
-	req.session.data.dos72Lot3JustRemoved = false
-	req.session.data.dos72Lot3JustAdded = false
-	res.render('DOS72ExistingServices', { lot1Removed, showLot1RemovedBanner, showLot1AddedBanner, lot3Removed, showLot3RemovedBanner, showLot3AddedBanner })
+	res.render('DOS72ExistingServices', { lot1Removed, showLot1RemovedBanner, showLot1AddedBanner })
 })
 
 router.get('/DOS72ExistingAreYouSure.html', (req, res) => {
@@ -160,22 +143,15 @@ router.post('/DOS72ExistingAreYouSure', (req, res) => {
 		req.session.data.dos72Lot1JustRemoved = true
 	}
 
-	if (lot === '3') {
-		req.session.data.dos72Lot3Removed = true
-		req.session.data.dos72Lot3JustRemoved = true
-	}
-
 	res.redirect('/DOS72ExistingServices')
 })
 
 router.get('/DOS72ExistingAddService.html', (req, res) => {
-	const defaultLot = req.session.data.dos72Lot3Removed ? 'lot-3' : 'lot-1'
-	res.render('DOS72ExistingAddService', { defaultLot })
+	res.render('DOS72ExistingAddService', { defaultLot: 'lot-1' })
 })
 
 router.get('/DOS72ExistingAddService', (req, res) => {
-	const defaultLot = req.session.data.dos72Lot3Removed ? 'lot-3' : 'lot-1'
-	res.render('DOS72ExistingAddService', { defaultLot })
+	res.render('DOS72ExistingAddService', { defaultLot: 'lot-1' })
 })
 
 router.post('/DOS72ExistingAddService', (req, res) => {
@@ -184,11 +160,6 @@ router.post('/DOS72ExistingAddService', (req, res) => {
 	if (selectedLot === 'lot-1') {
 		req.session.data.dos72Lot1Removed = false
 		req.session.data.dos72Lot1JustAdded = true
-	}
-
-	if (selectedLot === 'lot-3') {
-		req.session.data.dos72Lot3Removed = false
-		req.session.data.dos72Lot3JustAdded = true
 	}
 
 	res.redirect('/DOS72ExistingServices')
