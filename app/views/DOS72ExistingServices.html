@@ -32,7 +32,7 @@
       <a class="govuk-button govuk-!-margin-bottom-0" href="/DOS72ExistingAddService" role="button" draggable="false">Add a service</a>
     </p>
 
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Drafts</h2>
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Drafts ({{ 0 if lot4Removed else 1 }})</h2>
     {% if lot4Removed %}
     <p class="govuk-body govuk-!-margin-bottom-6">You haven't added any draft services yet.</p>
     {% else %}
