@@ -1,0 +1,68 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Choose a service type" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExisitngYourAccount">Your account</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExistingProgress">Apply to Digital Outcomes and Specialists 7.2</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExistingServices">Your Digital Outcomes and Specialists 7.2 services</a></li>
+        <li class="govuk-breadcrumbs__list-item">Choose a service type</li>
+      </ol>
+    </nav>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-6">What type of service do you want to add?</h1>
+
+    <form method="post" action="/DOS72ExistingAddService">
+      {{ govukRadios({
+        name: "dos72-add-service-lot",
+        fieldset: {
+          legend: {
+            text: "What type of service do you want to add?",
+            classes: "govuk-visually-hidden"
+          }
+        },
+        items: [
+          {
+            value: "lot-1",
+            text: "Lot 1: Digital Outcomes"
+          },
+          {
+            value: "lot-2",
+            text: "Lot 2: Digital Capability and Delivery Partners"
+          },
+          {
+            value: "lot-3",
+            text: "Lot 3: Digital Specialists"
+          },
+          {
+            value: "lot-4",
+            text: "Lot 4: User Research Studios and Participants",
+            checked: true
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Save and continue"
+      }) }}
+    </form>
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="/DOS72ExistingServices">Back to your Digital Outcomes and Specialists 7.2 services</a>
+    </p>
+
+  </div>
+</div>
+{% endblock %}

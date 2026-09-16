@@ -12,12 +12,18 @@
         titleText: "Success",
         text: "User Research Studios and Participants was removed"
       }) }}
+    {% elif showLot4AddedBanner %}
+      {{ govukNotificationBanner({
+        type: "success",
+        titleText: "Success",
+        text: "User research and participants has been added"
+      }) }}
     {% endif %}
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Your Digital Outcomes and Specialists 7.2 services</h1>
 
     <p class="govuk-body govuk-!-margin-bottom-6">
-      <a class="govuk-button govuk-!-margin-bottom-0" href="#" role="button" draggable="false">Add a service</a>
+      <a class="govuk-button govuk-!-margin-bottom-0" href="/DOS72ExistingAddService" role="button" draggable="false">Add a service</a>
     </p>
 
     <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Drafts</h2>
