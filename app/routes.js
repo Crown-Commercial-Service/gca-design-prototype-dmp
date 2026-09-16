@@ -50,10 +50,20 @@ router.post('/DOS72Options', (req, res) => {
 })
 
 router.get('/DOS72FlowOptions.html', (req, res) => {
+	req.session.data.dos72Lot1Removed = false
+	req.session.data.dos72Lot1JustRemoved = false
+	req.session.data.dos72Lot1JustAdded = false
+	req.session.data.dos72Lot4Removed = true
+	req.session.data.dos72Lot4JustAdded = false
 	res.render('DOS72FlowOptions')
 })
 
 router.get('/DOS72FlowOptions', (req, res) => {
+	req.session.data.dos72Lot1Removed = false
+	req.session.data.dos72Lot1JustRemoved = false
+	req.session.data.dos72Lot1JustAdded = false
+	req.session.data.dos72Lot4Removed = true
+	req.session.data.dos72Lot4JustAdded = false
 	res.render('DOS72FlowOptions')
 })
 
