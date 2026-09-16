@@ -18,18 +18,6 @@
         titleText: "Success",
         text: "Lot 1: Digital Outcomes has been added"
       }) }}
-    {% elif showLot3RemovedBanner %}
-      {{ govukNotificationBanner({
-        type: "success",
-        titleText: "Success",
-        text: "Lot 3: Digital Specialists was removed"
-      }) }}
-    {% elif showLot3AddedBanner %}
-      {{ govukNotificationBanner({
-        type: "success",
-        titleText: "Success",
-        text: "Lot 3: Digital Specialists has been added"
-      }) }}
     {% endif %}
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Your Digital Outcomes and Specialists 7.2 services</h1>
@@ -41,7 +29,7 @@
     <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Drafts</h2>
     <p class="govuk-body govuk-!-margin-bottom-6">You haven't added any draft services yet.</p>
 
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Ready for submission ({{ 3 - (1 if lot1Removed else 0) - (1 if lot3Removed else 0) }})</h2>
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Ready for submission ({{ 3 - (1 if lot1Removed else 0) }})</h2>
     <p class="govuk-body govuk-!-margin-bottom-4">These services will be submitted and can be edited before the deadline</p>
 
     <table class="govuk-table">
@@ -65,13 +53,11 @@
           <td class="govuk-table__cell">Active</td>
           <td class="govuk-table__cell"><a class="govuk-link" href="#">View</a></td>
         </tr>
-        {% if not lot3Removed %}
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">Lot 3: Digital Specialists</td>
           <td class="govuk-table__cell">Active</td>
-          <td class="govuk-table__cell"><a class="govuk-link" href="/DOS72ExistingAreYouSure?lot=3">Remove</a></td>
+          <td class="govuk-table__cell"><a class="govuk-link" href="#">View</a></td>
         </tr>
-        {% endif %}
       </tbody>
     </table>
 
