@@ -1,52 +1,40 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName = "Remove draft service" %}
+{% set pageName = "DOS 7.2 are you sure" %}
 
 {% block content %}
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
-      <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a></li>
-        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExisitngYourAccount">Your account</a></li>
-        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExistingProgress">Apply to Digital Outcomes and Specialists 7</a></li>
-        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExistingServices">Services</a></li>
-        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExistingServices">{{ lotName }}</a></li>
-        <li class="govuk-breadcrumbs__list-item">Remove service</li>
-      </ol>
-    </nav>
-
-  </div>
-</div>
-
-<div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
-    <p class="govuk-body govuk-!-margin-bottom-2">{{ lotLabel }}</p>
-    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Are you sure you want to remove this service?</h1>
-
-    {{ govukWarningText({
-      text: "This action is final and cannot be undone.",
-      iconFallbackText: "Warning"
-    }) }}
-
     <form method="post" action="/DOS72ExistingAreYouSure">
-      <input type="hidden" name="lot" value="{{ lot }}">
-      <div class="govuk-button-group">
-        {{ govukButton({
-          text: "Yes, remove " + lotName | lower,
-          classes: "govuk-button--warning"
-        }) }}
+      {{ govukRadios({
+        name: "dos72-opt-out-confirm",
+        fieldset: {
+          legend: {
+            text: "Are you sure you want to start a fresh application for DOS 7.2?",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "yes",
+            text: "Yes"
+          },
+          {
+            value: "no",
+            text: "No"
+          }
+        ]
+      }) }}
 
-        {{ govukButton({
-          text: "Cancel",
-          href: "/DOS72ExistingServices",
-          classes: "govuk-button--secondary"
-        }) }}
-      </div>
+      {{ govukButton({
+        text: "Save and continue"
+      }) }}
     </form>
 
+    <p class="govuk-body">
+      <a class="govuk-link" href="/DOS72ExistingStartAgain">Back to start again narrative</a>
+    </p>
   </div>
 </div>
 {% endblock %}

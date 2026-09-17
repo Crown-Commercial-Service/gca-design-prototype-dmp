@@ -154,24 +154,25 @@ router.get('/DOS72ExistingServices', (req, res) => {
 })
 
 router.get('/DOS72ExistingAreYouSure.html', (req, res) => {
-	const lot = req.query.lot || '1'
-	res.render('DOS72ExistingAreYouSure', { lot, lotName: dos72Lots[lot].name, lotLabel: dos72Lots[lot].name })
+	res.render('DOS72ExistingAreYouSure')
 })
 
 router.get('/DOS72ExistingAreYouSure', (req, res) => {
-	const lot = req.query.lot || '1'
-	res.render('DOS72ExistingAreYouSure', { lot, lotName: dos72Lots[lot].name, lotLabel: dos72Lots[lot].name })
+	res.render('DOS72ExistingAreYouSure')
 })
 
 router.post('/DOS72ExistingAreYouSure', (req, res) => {
-	const lot = req.body.lot
+	const confirmOptOut = req.body['dos72-opt-out-confirm']
 
-	if (lot === '1') {
-		req.session.data.dos72Lot1Removed = true
-		req.session.data.dos72Lot1JustRemoved = true
+	if (confirmOptOut === 'yes') {
+		return res.redirect('/DOS72ExistingNewSuccess')
 	}
 
-	res.redirect('/DOS72ExistingServices')
+	if (confirmOptOut === 'no') {
+		return res.redirect('/DOS72ExistingStartAgain')
+	}
+
+	res.redirect('/DOS72ExistingAreYouSure')
 })
 
 router.get('/DOS72ExistingAddService.html', (req, res) => {
@@ -332,6 +333,18 @@ router.get('/DOS72OptOutNarrative', (req, res) => {
 	res.render('DOS72OptOutNarrative')
 })
 
+router.get('/DOS72ExistingStartAgain.html', (req, res) => {
+	res.render('DOS72ExistingStartAgain')
+})
+
+router.get('/DOS72ExistingStartAgain', (req, res) => {
+	res.render('DOS72ExistingStartAgain')
+})
+
+router.post('/DOS72ExistingStartAgain', (req, res) => {
+	res.redirect('/DOS72AreYouSure')
+})
+
 router.post('/DOS72OptOutNarrative', (req, res) => {
 	res.redirect('/DOS72AreYouSure')
 })
@@ -364,6 +377,14 @@ router.get('/DOS72OptOutSuccess.html', (req, res) => {
 
 router.get('/DOS72OptOutSuccess', (req, res) => {
 	res.render('DOS72OptOutSuccess')
+})
+
+router.get('/DOS72ExistingNewSuccess.html', (req, res) => {
+	res.render('DOS72ExistingNewSuccess')
+})
+
+router.get('/DOS72ExistingNewSuccess', (req, res) => {
+	res.render('DOS72ExistingNewSuccess')
 })
 
 router.get('/adminBulkUpload.html', (req, res) => {
