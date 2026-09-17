@@ -333,16 +333,16 @@ router.get('/DOS72OptOutNarrative', (req, res) => {
 	res.render('DOS72OptOutNarrative')
 })
 
-router.get('/DOS72ExistingStartAgain.html', (req, res) => {
-	res.render('DOS72ExistingStartAgain')
+router.get('/DOS72ExistingStartAgainNarrative.html', (req, res) => {
+	res.render('DOS72ExistingStartAgainNarrative')
 })
 
-router.get('/DOS72ExistingStartAgain', (req, res) => {
-	res.render('DOS72ExistingStartAgain')
+router.get('/DOS72ExistingStartAgainNarrative', (req, res) => {
+	res.render('DOS72ExistingStartAgainNarrative')
 })
 
-router.post('/DOS72ExistingStartAgain', (req, res) => {
-	res.redirect('/DOS72AreYouSure')
+router.post('/DOS72ExistingStartAgainNarrative', (req, res) => {
+	res.redirect('/DOS72ExistingAreYouSure')
 })
 
 router.post('/DOS72OptOutNarrative', (req, res) => {
