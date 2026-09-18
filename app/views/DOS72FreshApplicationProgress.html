@@ -9,7 +9,7 @@
     <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a></li>
-        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72ExisitngYourAccount">Your account</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72FreshApplication">Your account</a></li>
         <li class="govuk-breadcrumbs__list-item">Apply to Digital Outcomes and Specialists 7.2</li>
       </ol>
     </nav>
@@ -19,6 +19,11 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h2 class="govuk-panel__title">Success</h2>
+      <div class="govuk-panel__body">You have created a new application for DOS 7.2 Framework.</div>
+    </div>
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Apply to Digital Outcomes and Specialists 7.2</h1>
 
@@ -30,32 +35,32 @@
         <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">In progress</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="/DOS72ExistingDeclaration">Make your supplier declaration</a></p>
+        <p class="gca-row-table__key">Make your supplier declaration</p>
         <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">Not started</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="/DOS72ExistingServices">Add, remove, edit and complete services</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">3 services</strong></p>
+        <p class="gca-row-table__key"><a class="govuk-link" href="#">Add, remove, edit and complete services</a></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">0 Services</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="#">Financial Viability Risk Assessment (FVRA)</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+        <p class="gca-row-table__key">Financial Viability Risk Assessment (FVRA)</p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">Not started</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="#">Answer quality award questions</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+        <p class="gca-row-table__key">Answer quality award questions</p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">Not started</strong></p>
       </div>
     </div>
 
     <div class="govuk-button-group">
       {{ govukButton({
         text: "Save and continue",
-        href: "/DOS72Options"
+        href: "/DOS72FlowOptions"
       }) }}
 
       {{ govukButton({
         text: "Cancel",
-        href: "/DOS72Options",
+        href: "/DOS72FlowOptions",
         classes: "govuk-button--secondary"
       }) }}
     </div>

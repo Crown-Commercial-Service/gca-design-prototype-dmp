@@ -91,6 +91,14 @@ router.get('/DOS72FreshApplicationStart', (req, res) => {
 	res.render('DOS72FreshApplicationStart')
 })
 
+router.get('/DOS72FreshApplicationProgress.html', (req, res) => {
+	res.render('DOS72FreshApplicationProgress')
+})
+
+router.get('/DOS72FreshApplicationProgress', (req, res) => {
+	res.render('DOS72FreshApplicationProgress')
+})
+
 router.get('/DOS72ExisitngYourAccount.html', (req, res) => {
 	req.session.data.dos72Lot1Removed = false
 	req.session.data.dos72Lot1JustRemoved = false
@@ -165,11 +173,11 @@ router.post('/DOS72ExistingAreYouSure', (req, res) => {
 	const confirmOptOut = req.body['dos72-opt-out-confirm']
 
 	if (confirmOptOut === 'yes') {
-		return res.redirect('/DOS72ExistingNewSuccess')
+		return res.redirect('/DOS72FreshApplicationProgress')
 	}
 
 	if (confirmOptOut === 'no') {
-		return res.redirect('/DOS72ExistingStartAgain')
+		return res.redirect('/DOS72FlowOptions')
 	}
 
 	res.redirect('/DOS72ExistingAreYouSure')
