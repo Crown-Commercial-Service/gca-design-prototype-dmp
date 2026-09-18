@@ -1,0 +1,64 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Apply to Digital Outcomes and Specialists 7" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a></li>
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/DOS72FreshApplication">Your account</a></li>
+        <li class="govuk-breadcrumbs__list-item">Apply to Digital Outcomes and Specialists 7.2</li>
+      </ol>
+    </nav>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Apply to Digital Outcomes and Specialists 7.2</h1>
+
+    <p class="govuk-body govuk-!-margin-bottom-6">Deadline: 3pm BST, Tuesday 11 August 2026</p>
+
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Application progress</h2>
+
+    <div class="gca-row-table">
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a class="govuk-link" href="#">Confirm your company details</a></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">In progress</strong></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a class="govuk-link" href="#">Make your supplier declaration</a></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a class="govuk-link" href="#">Add, remove, edit and complete services</a></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">3 Services</strong></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a class="govuk-link" href="#">Financial Viability Risk Assessment (FVRA)</a></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a class="govuk-link" href="#">Answer quality award questions</a></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+      </div>
+    </div>
+
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Start again",
+        href: "/DOS72ExistingStartAgainNarrative",
+        classes: "govuk-button--warning"
+      }) }}
+
+      
+    </div>
+
+  </div>
+</div>
+{% endblock %}
