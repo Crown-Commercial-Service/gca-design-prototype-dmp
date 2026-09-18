@@ -4,7 +4,14 @@
 
 {% block content %}
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" style="background-color: #00703c; border: 0;">
+      <div class="govuk-notification-banner__content govuk-!-text-align-centre" style="background-color: #00703c; color: #ffffff;">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-2" style="color: #ffffff;">Success</h2>
+        <p class="govuk-body govuk-!-margin-bottom-0" style="color: #ffffff;">You have started a new application for DOS 7.2</p>
+      </div>
+    </div>
 
     <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
       <ol class="govuk-breadcrumbs__list">
@@ -29,34 +36,37 @@
     <div class="gca-row-table">
       <div class="gca-row-table__row">
         <p class="gca-row-table__key"><a class="govuk-link" href="#">Confirm your company details</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">In progress</strong></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">In progress</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="#">Make your supplier declaration</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+        <p class="gca-row-table__key" style="color: #0b0c0c; text-decoration: none;">Make your supplier declaration</p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">Not started</strong></p>
       </div>
       <div class="gca-row-table__row">
         <p class="gca-row-table__key"><a class="govuk-link" href="#">Add, remove, edit and complete services</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">3 Services</strong></p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">0 Services</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="#">Financial Viability Risk Assessment (FVRA)</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+        <p class="gca-row-table__key" style="color: #0b0c0c; text-decoration: none;">Financial Viability Risk Assessment (FVRA)</p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">Not started</strong></p>
       </div>
       <div class="gca-row-table__row">
-        <p class="gca-row-table__key"><a class="govuk-link" href="#">Answer quality award questions</a></p>
-        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--blue">Completed</strong></p>
+        <p class="gca-row-table__key" style="color: #0b0c0c; text-decoration: none;">Answer quality award questions</p>
+        <p class="gca-row-table__value"><strong class="govuk-tag govuk-tag--grey">Not started</strong></p>
       </div>
     </div>
 
     <div class="govuk-button-group">
       {{ govukButton({
-        text: "Start again",
-        href: "/DOS72ExistingStartAgainNarrative",
-        classes: "govuk-button--warning"
+        text: "Save and continue",
+        href: "/DOS72ExistingStartAgainNarrative"
       }) }}
 
-      
+      {{ govukButton({
+        text: "Cancel",
+        href: "/DOS72ExistingStartAgainNarrative",
+        classes: "govuk-button--secondary"
+      }) }}
     </div>
 
   </div>
