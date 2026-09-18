@@ -3,14 +3,19 @@
 {% set pageName = "DOS 7.2 are you sure" %}
 
 {% block content %}
+{% set confirmationQuestion = "Are you sure you want to start a fresh application for DOS 7.2?" %}
+{% if lot == '1' %}
+  {% set confirmationQuestion = "Are you sure you want to remove Lot 1: Digital Outcomes from your Services?" %}
+{% endif %}
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <form method="post" action="/DOS72ExistingAreYouSure">
+    <form method="post" action="/DOS72ExistingAreYouSure{% if lot %}?lot={{ lot }}{% endif %}">
       {{ govukRadios({
         name: "dos72-opt-out-confirm",
         fieldset: {
           legend: {
-            text: "Are you sure you want to start a fresh application for DOS 7.2?",
+            text: confirmationQuestion,
             isPageHeading: true,
             classes: "govuk-fieldset__legend--l"
           }

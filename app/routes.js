@@ -170,17 +170,24 @@ router.get('/DOS72ExistingServices', (req, res) => {
 })
 
 router.get('/DOS72ExistingAreYouSure.html', (req, res) => {
-	res.render('DOS72ExistingAreYouSure')
+	res.render('DOS72ExistingAreYouSure', { lot: req.query.lot })
 })
 
 router.get('/DOS72ExistingAreYouSure', (req, res) => {
-	res.render('DOS72ExistingAreYouSure')
+	res.render('DOS72ExistingAreYouSure', { lot: req.query.lot })
 })
 
 router.post('/DOS72ExistingAreYouSure', (req, res) => {
 	const confirmOptOut = req.body['dos72-opt-out-confirm']
+	const lot = req.query.lot
 
 	if (confirmOptOut === 'yes') {
+		if (lot === '1') {
+			req.session.data.dos72Lot1Removed = true
+			req.session.data.dos72Lot1JustRemoved = true
+			return res.redirect('/DOS72ExistingServices')
+		}
+
 		return res.redirect('/DOS72FreshApplicationProgress')
 	}
 
