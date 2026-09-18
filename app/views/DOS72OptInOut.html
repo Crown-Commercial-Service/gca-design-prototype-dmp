@@ -5,7 +5,7 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">DOS 7.2 opt in or out</h1>
+    <h1 class="govuk-heading-l">DOS 7.2 opt in or out use cases</h1>
     <p class="govuk-body">Choose one option below.</p>
 
     <form method="post" action="/DOS72OptInOut">
@@ -20,22 +20,22 @@
         items: [
           {
             value: "opt-in",
-            text: "DOS 7.2 Opt In"
+            text: "DOS 7.2 Opt In/Out - Current Supplier"
           },
           {
             value: "opt-out",
-            text: "DOS 7.2 Opt out"
+            text: "DOS 7.2 Opt In/Out - New Supplier"
           }
         ]
       }) }}
 
       {{ govukButton({
-        text: "Save and continue"
+        text: "Start"
       }) }}
     </form>
 
     <p class="govuk-body">
-      <a class="govuk-link" href="/DOS72ReturningSupplierOptions">Back to returning supplier options</a>
+      <a class="govuk-link" href="/DOS72Options">Back to supplier options</a>
     </p>
   </div>
 </div>

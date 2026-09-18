@@ -1,0 +1,57 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Your account" %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" style="margin-top: 0;">
+  <div class="govuk-grid-column-full" style="padding-left: 0; padding-right: 0;">
+
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb" style="margin: 0 0 10px; font-size: 1.1rem;">
+      <ol class="govuk-breadcrumbs__list" style="margin: 0; padding-left: 0;">
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Digital Marketplace</a></li>
+        <li class="govuk-breadcrumbs__list-item" style="padding-left: 8px;">Your account</li>
+      </ol>
+    </nav>
+
+    <p class="govuk-body govuk-!-margin-bottom-1">20030@user.marketplace.team</p>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">NEC SOFTWARE SOLUTIONS UK LIMITED-<br>Trading</h1>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="margin-top: 0;">
+  <div class="govuk-grid-column-two-thirds" style="padding-right: 25px;">
+
+    <div class="gca-application-panel" style="margin: 0; padding: 16px 18px 12px; background-color: #1d70b8; color: #fff; min-height: 120px; display: flex; flex-direction: column;">
+      <div class="govuk-grid-row govuk-!-margin-bottom-0" style="display: flex; align-items: flex-end;">
+        <div class="govuk-grid-column-full" style="padding-right: 0;">
+          <h2 class="govuk-heading-m gca-application-panel__title" style="margin: 0 0 8px; line-height: 1.08; font-size: 2.0rem; font-weight: 700; color: #fff; width: 100%; max-width: 100%;">The Digital Outcomes and Specialists 7.2<br>Framework is now Open</h2>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: auto; padding-top: 10px; flex-wrap: wrap;">
+        <a class="govuk-link gca-application-panel__link" href="/DOS72ExistingProgress" style="display: inline-block; color: #fff; font-weight: 700; text-decoration: underline; font-size: 1.05rem;">Continue your application</a>
+        <a class="govuk-link gca-application-panel__link" href="#" style="display: inline-block; color: #fff; font-weight: 700; text-decoration: underline; font-size: 1.05rem;">Opt in to DOS 7.2 Framework</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third gca-account-column" style="padding-left: 25px; margin-top: 8px;">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-2" style="font-size: 1.1rem; margin-top: 0;">Your company</h2>
+    <ul class="gca-account-nav" style="margin: 0 0 20px; padding: 0; list-style: none;">
+      <li class="gca-account-nav__item" style="margin-bottom: 8px;"><a class="govuk-link" href="#" style="font-size: 1.05rem;">Your company details</a></li>
+      <li class="gca-account-nav__item" style="margin-bottom: 8px;"><a class="govuk-link" href="#" style="font-size: 1.05rem;">Contributors</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-2" style="font-size: 1.1rem; margin-top: 0;">Account settings</h2>
+  </div>
+</div>
+{% endblock %}
