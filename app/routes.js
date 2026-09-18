@@ -117,6 +117,14 @@ router.get('/DOS72ExisitngYourAccount', (req, res) => {
 	res.render('DOS72ExisitngYourAccount')
 })
 
+router.get('/DOS72ExistingOptInOut.html', (req, res) => {
+	res.render('DOS72ExistingOptInOut')
+})
+
+router.get('/DOS72ExistingOptInOut', (req, res) => {
+	res.render('DOS72ExistingOptInOut')
+})
+
 router.get('/DOS72ExistingProgress.html', (req, res) => {
 	res.render('DOS72ExistingProgress')
 })
@@ -315,7 +323,7 @@ router.post('/DOS72OptInOut', (req, res) => {
 	const selectedOption = req.body['dos72-opt-choice']
 
 	if (selectedOption === 'opt-in') {
-		return res.redirect('/DOS72OptInOutSuccess')
+		return res.redirect('/DOS72ExistingOptInOut')
 	}
 
 	if (selectedOption === 'opt-out') {
