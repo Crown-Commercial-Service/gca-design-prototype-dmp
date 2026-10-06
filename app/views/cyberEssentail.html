@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-	Insurance – {{ serviceName }} – GOV.UK Prototype Kit
+	Cyber essentials – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block containerStart %}
@@ -16,31 +16,26 @@
 {% block content %}
 	<div class="govuk-grid-row">
 		<div class="govuk-grid-column-two-thirds">
-			<h1 class="govuk-heading-xl gca-page-title">Insurance</h1>
+			<h1 class="govuk-heading-xl gca-page-title">Cyber essentials</h1>
 
 			<table class="gca-table">
 				<thead>
 					<tr>
-						<th scope="col">Item</th>
+						<th scope="col">Part</th>
 						<th scope="col">Expiry date</th>
-						<th scope="col">Validated</th>
+						<th scope="col">Validated?</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Employers liability</td>
-						<td>31/08/27</td>
+						<td>Cyber essential (CE)</td>
+						<td>31/08/2027</td>
 						<td>Yes</td>
 					</tr>
 					<tr>
-						<td>Public liability</td>
-						<td></td>
-						<td><span class="gca-status">Not started</span></td>
-					</tr>
-					<tr>
-						<td>Professional indemnity</td>
-						<td></td>
-						<td><span class="gca-status">Not started</span></td>
+						<td>Cyber essential plus (CE+)</td>
+						<td>31/08/27</td>
+						<td>No</td>
 					</tr>
 				</tbody>
 			</table>
