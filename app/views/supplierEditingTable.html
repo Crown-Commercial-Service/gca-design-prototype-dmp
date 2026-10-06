@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G-Cloud 15 application</title>
+  <style>
+    :root {
+      --text: #0b0c0c;
+      --secondary: #505a5f;
+      --link: #1d70b8;
+      --border: #b1b4b6;
+      --green-bg: #cce2d8;
+      --green-text: #005a30;
+      --blue-bg: #bbd4ea;
+      --blue-text: #144e81;
+      --grey-bg: #e5e6e7;
+      --grey-text: #383f43;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "GDS Transport", arial, sans-serif;
+      font-size: 1.1875rem;
+      line-height: 1.3;
+      color: var(--text);
+      background: #fff;
+    }
+    main { max-width: 640px; margin: 0 auto; }
+    .caption {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.25;
+      color: var(--secondary);
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 30px;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+    h2 {
+      margin: 0 0 20px;
+      font-size: 1.5rem;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    .summary-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 0 40px;
+      padding: 0;
+      border-top: 1px solid var(--border);
+    }
+    .summary-list > div {
+      display: contents;
+    }
+    .summary-list dt, .summary-list dd {
+      margin: 0;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+    }
+    .summary-list dd { justify-content: flex-end; }
+    .summary-list dt.bold { font-weight: 700; }
+    .summary-list a { color: var(--link); }
+    .summary-list a:hover { color: #003078; }
+    .summary-list a:focus {
+      outline: 3px solid transparent;
+      background: #fd0;
+      color: var(--text);
+      box-shadow: 0 -2px #fd0, 0 4px var(--text);
+      text-decoration: none;
+    }
+    .tag {
+      display: inline-block;
+      max-width: 100%;
+      padding: 3px 8px 4px;
+      font-size: 1rem;
+      line-height: 1.25;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    .tag--green { background: var(--green-bg); color: var(--green-text); }
+    .tag--blue { background: var(--blue-bg); color: var(--blue-text); }
+    .tag--grey { background: var(--grey-bg); color: var(--grey-text); }
+    .tag--min { min-width: 5.5em; }
+    .notification-banner {
+      margin: 0 0 30px;
+      border: 5px solid var(--link);
+      background: var(--link);
+    }
+    .notification-banner__header {
+      padding: 2px 20px 5px;
+    }
+    .notification-banner__title {
+      margin: 0;
+      font-size: 1.125rem;
+      line-height: 1.25;
+      font-weight: 700;
+      color: #fff;
+    }
+    .notification-banner__content {
+      padding: 20px;
+      background: #fff;
+      color: var(--text);
+    }
+    .notification-banner__content p { margin: 0 0 15px; }
+    .notification-banner__content p:last-child { margin-bottom: 0; }
+    .back-link {
+      display: inline-block;
+      position: relative;
+      margin: 0 0 20px;
+      padding-left: 14px;
+      font-size: 1rem;
+      line-height: 1.25;
+      color: var(--text);
+    }
+    .back-link::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 1px;
+      left: 0;
+      margin: auto;
+      width: 7px;
+      height: 7px;
+      border: solid;
+      border-width: 1px 0 0 1px;
+      transform: rotate(-45deg);
+    }
+    .back-link:focus {
+      outline: 3px solid transparent;
+      background: #fd0;
+      box-shadow: 0 -2px #fd0, 0 4px var(--text);
+      text-decoration: none;
+    }
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+      margin: 0 0 30px;
+    }
+    .button {
+      display: inline-block;
+      margin: 0;
+      padding: 8px 10px 7px;
+      border: 2px solid transparent;
+      border-radius: 0;
+      font: inherit;
+      font-size: 1.1875rem;
+      line-height: 1;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button--green {
+      background: #00703c;
+      color: #fff;
+      box-shadow: 0 2px 0 #002d18;
+    }
+    .button--green:hover { background: #005a30; }
+    .button--grey {
+      background: #f3f2f1;
+      color: var(--text);
+      box-shadow: 0 2px 0 #929191;
+    }
+    .button--grey:hover { background: #dbdad9; }
+    .button:focus {
+      outline: 3px solid transparent;
+      background: #fd0;
+      color: var(--text);
+      border-color: #fd0;
+      box-shadow: 0 2px 0 var(--text);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="javascript:window.history.back()" class="back-link">Back</a>
+    <p class="caption">Leidos Innovations UK Ltd</p>
+    <h1>G-Cloud 15 application</h1>
+
+    <div class="notification-banner" role="region" aria-labelledby="banner-title">
+      <div class="notification-banner__header">
+        <h2 class="notification-banner__title" id="banner-title">Important</h2>
+      </div>
+      <div class="notification-banner__content">
+        <p><strong>This framework is Live.</strong></p>
+        <p>Any amendments may need GCA approval before Buyers can view the amended information.</p>
+        <p>GCA may reject your amendments but we will supply an explanation of why, and how you can rectify the issue.</p>
+        <p>If editing the Supplier declaration, you may need to resign the declaration before Buyers can see your amendments.</p>
+      </div>
+    </div>
+
+    <h2>Application parts</h2>
+    <dl class="summary-list">
+      <div>
+        <dt><a href="#">Your company details for the framework</a></dt>
+      </div>
+      <div>
+        <dt><a href="#">Your supplier declaration</a></dt>
+      </div>
+      <div>
+        <dt><a href="#">Your Technical Ability Certificate (TAC)</a></dt>
+      </div>
+      <div>
+        <dt><a href="#">Your quality award questions</a></dt>
+      </div>
+      <div>
+        <dt><a href="#">Your pricing</a></dt>
+      </div>
+    </dl>
+
+    <div class="button-group">
+      <a href="#" role="button" class="button button--green">Continue</a>
+      <a href="#" role="button" class="button button--grey">Cancel</a>
+    </div>
+  </main>
+</body>
+</html>
