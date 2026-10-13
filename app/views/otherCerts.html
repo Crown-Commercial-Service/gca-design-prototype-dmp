@@ -1,0 +1,44 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	Other certificates – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	<div class="gca-back-link">
+		{{ govukBackLink({
+			text: "Back",
+			href: "/applicationStatusPage"
+		}) }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl gca-page-title">Other certificates</h1>
+
+			<table class="gca-table">
+				<thead>
+					<tr>
+						<th scope="col">Certificate</th>
+						<th scope="col">Expiry date</th>
+						<th scope="col">Validated?</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>CSA STAR</td>
+						<td>31/10/2029</td>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<td>PCI</td>
+						<td>31/08/2026</td>
+						<td>No</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}

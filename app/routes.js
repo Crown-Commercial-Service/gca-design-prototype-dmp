@@ -19,6 +19,18 @@ router.get('/itaAssessmentToSign', (req, res) => {
 	res.render('itaAssessmentToSign')
 })
 
+router.post('/supplierComplianceOptions', (req, res) => {
+	if (req.body['supplier-compliance-choice'] === 'cert-reqs-by-lot') {
+		return res.redirect('/certReqsByLot')
+	}
+
+	if (req.body['supplier-compliance-choice'] === 'application-certificate-parts') {
+		return res.redirect('/applicationStatusPage')
+	}
+
+	res.redirect('/supplierComplianceOptions')
+})
+
 router.get('/DOS72StartPage.html', (req, res) => {
 	res.render('DOS72StartPage')
 })

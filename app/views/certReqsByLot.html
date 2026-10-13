@@ -1,0 +1,387 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	G-Cloud 15 Certificate requirements by Lot – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	{{ govukBackLink({
+		text: "Back",
+		href: "javascript:window.history.back()"
+	}) }}
+{% endblock %}
+
+{% block content %}
+	<style>
+		.cert-reqs,
+		.cert-reqs * {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+
+		.cert-reqs {
+			color: #0b0c0c;
+			font-size: 16px;
+		}
+
+		.cert-reqs__title {
+			margin: 0 0 10px;
+			font-size: 30px;
+			line-height: 1.2;
+			font-weight: 400;
+		}
+
+		.cert-reqs__notes {
+			margin-bottom: 20px;
+		}
+
+		.cert-reqs__notes p {
+			margin: 0;
+			line-height: 1.3;
+		}
+
+		.cert-reqs__mandatory {
+			background: #f4cccc;
+		}
+
+		.cert-reqs__in-date {
+			background: #d9ead3;
+		}
+
+		.cert-reqs__expired {
+			background: #fce5cd;
+		}
+
+		.cert-reqs__table-wrap {
+			position: relative;
+			left: 50%;
+			width: calc(100vw - 32px);
+			overflow-x: auto;
+			transform: translateX(-50%);
+		}
+
+		.cert-reqs__table {
+			width: 100%;
+			min-width: 1050px;
+			margin: 0;
+			border-collapse: collapse;
+			table-layout: fixed;
+			font-size: 14px;
+			line-height: 1.25;
+		}
+
+		.cert-reqs__table th,
+		.cert-reqs__table td {
+			padding: 8px 7px;
+			border: 1px solid #0b0c0c;
+			text-align: left;
+			vertical-align: middle;
+			font-weight: 400;
+		}
+
+		.cert-reqs__table thead th {
+			white-space: nowrap;
+		}
+
+		.cert-reqs__table thead tr:first-child th {
+			text-align: center;
+		}
+
+		.cert-reqs__table thead tr:first-child th:first-child {
+			border-top: 0;
+			border-left: 0;
+		}
+
+		.cert-reqs__table thead tr:nth-child(2) th:not(:first-child) {
+			text-align: center;
+		}
+
+		.cert-reqs__table tbody th {
+			font-weight: 700;
+		}
+
+		.cert-reqs__table .cert-reqs__blank-row th,
+		.cert-reqs__table .cert-reqs__blank-row td {
+			height: 35px;
+		}
+
+		.cert-reqs__table .cert-reqs__not-required {
+			background: #d0d0d0;
+		}
+
+		.cert-reqs__table .cert-reqs__lot {
+			width: 5.8%;
+		}
+
+		.cert-reqs__table .cert-reqs__cyber {
+			width: 4.8%;
+		}
+
+		.cert-reqs__table .cert-reqs__iso {
+			width: 4.6%;
+		}
+
+		.cert-reqs__table .cert-reqs__iso-long {
+			width: 6%;
+		}
+
+		.cert-reqs__table .cert-reqs__other {
+			width: 7.1%;
+		}
+
+		.cert-reqs__table .cert-reqs__insurance {
+			width: 11.2%;
+		}
+
+		.cert-reqs__table thead th.cert-reqs__insurance {
+			text-align: center;
+			white-space: normal;
+		}
+
+		@media (max-width: 40.0625em) {
+			.cert-reqs__title {
+				font-size: 24px;
+			}
+
+			.cert-reqs__table {
+				font-size: 13px;
+			}
+		}
+	</style>
+
+	<div class="govuk-grid-row cert-reqs">
+		<div class="govuk-grid-column-full">
+			<h1 class="cert-reqs__title">G-Cloud 15 Certificate requirements by Lot</h1>
+
+			<div class="cert-reqs__notes">
+				<p><span class="cert-reqs__mandatory">M = Mandatory</span></p>
+				<p>NM = Non-Mandatory</p>
+				<p>N/R = Not Required</p>
+				<p><span class="cert-reqs__in-date">Green = In date</span></p>
+				<p><span class="cert-reqs__expired">Orange = Expired</span></p>
+				<p>M* = For Lot 1a and 1b ISO 27017 and ISO14001 - Mandatory, Sellers to provide, Resellers can rely on Cloud Service Provider</p>
+				<p>M** = For Lot 1a and 1b ISO 27018 - Mandatory if providing public cloud services, Sellers to provide, Resellers can rely on Cloud Service Provider</p>
+			</div>
+
+			<div class="cert-reqs__table-wrap">
+				<table class="cert-reqs__table">
+					<thead>
+						<tr>
+							<th class="cert-reqs__lot"></th>
+							<th colspan="2">Cyber Essentials</th>
+							<th colspan="6">ISO Certs</th>
+							<th class="cert-reqs__iso"></th>
+							<th colspan="2">Other Certs</th>
+							<th colspan="3">Insurance</th>
+						</tr>
+						<tr>
+							<th scope="col">Lot</th>
+							<th scope="col" class="cert-reqs__cyber">CE</th>
+							<th scope="col" class="cert-reqs__cyber">CE+</th>
+							<th scope="col" class="cert-reqs__iso">9001</th>
+							<th scope="col" class="cert-reqs__iso">27001</th>
+							<th scope="col" class="cert-reqs__iso-long">20000-1</th>
+							<th scope="col" class="cert-reqs__iso">14001</th>
+							<th scope="col" class="cert-reqs__iso">27017</th>
+							<th scope="col" class="cert-reqs__iso">27018</th>
+							<th scope="col" class="cert-reqs__iso">28000</th>
+							<th scope="col" class="cert-reqs__other">CSA STAR</th>
+							<th scope="col" class="cert-reqs__other">PCI</th>
+							<th scope="col" class="cert-reqs__insurance">Employers<br>Liability</th>
+							<th scope="col" class="cert-reqs__insurance">Public<br>Liability</th>
+							<th scope="col" class="cert-reqs__insurance">Professional<br>Indemnity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cert-reqs__blank-row">
+							<th scope="row">Accreditation length</th>
+							<td>12 months</td>
+							<td>12 months</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>3 years</td>
+							<td>12 months</td>
+							<td>12 months</td>
+							<td>12 months</td>
+							<td>12 months</td>
+						</tr>
+						<tr>
+							<th scope="row">1a</th>
+							<td class="cert-reqs__not-required">N/R</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M*</td>
+							<td class="cert-reqs__mandatory">M*</td>
+							<td class="cert-reqs__mandatory">M**</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td class="cert-reqs__mandatory">M £5,000,000</td>
+							<td>£1,000,000 At call off</td>
+							<td>£1,000,000 At call off</td>
+						</tr>
+						<tr class="cert-reqs__blank-row">
+							<th scope="row">Expiry date</th>
+							<td class="cert-reqs__not-required">N/R</td>
+							<td class="cert-reqs__in-date">31 October 2027</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__in-date">31 October 2029</td>
+							<td class="cert-reqs__expired">31 August 2026</td>
+							<td class="cert-reqs__in-date">31 October 2027</td>
+							<td class="cert-reqs__in-date">31 October 2027</td>
+							<td class="cert-reqs__in-date">31 October 2027</td>
+						</tr>
+						<tr>
+							<th scope="row">1b</th>
+							<td class="cert-reqs__not-required">N/R</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M</td>
+							<td class="cert-reqs__mandatory">M*</td>
+							<td class="cert-reqs__mandatory">M*</td>
+							<td class="cert-reqs__mandatory">M**</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td class="cert-reqs__mandatory">M £5,000,000</td>
+							<td>£50,000,000 At call off</td>
+							<td>£20,000,000 At call off</td>
+						</tr>
+						<tr class="cert-reqs__blank-row">
+							<th scope="row">Expiry date</th>
+							<td></td>
+							<td class="cert-reqs__in-date">30 November 2026</td>
+							<td class="cert-reqs__expired">31 August 2026</td>
+							<td class="cert-reqs__in-date">31 October 2028</td>
+							<td class="cert-reqs__expired">30 September 2026</td>
+							<td class="cert-reqs__in-date">31 December 2026</td>
+							<td class="cert-reqs__expired">31 July 2026</td>
+							<td class="cert-reqs__in-date">31 October 2027</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="cert-reqs__in-date">31 January 2027</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2a</th>
+							<td class="cert-reqs__mandatory">M</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td class="cert-reqs__mandatory">M £5,000,000</td>
+							<td>£1,000,000 At call off</td>
+							<td>£1,000,000 At call off</td>
+						</tr>
+						<tr class="cert-reqs__blank-row">
+							<th scope="row">Expiry date</th>
+							<td class="cert-reqs__expired">30 September 2026</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="cert-reqs__in-date">31 December 2026</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2b</th>
+							<td class="cert-reqs__mandatory">M</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td class="cert-reqs__mandatory">M £5,000,000</td>
+							<td>£1,000,000 At call off</td>
+							<td>£1,000,000 At call off</td>
+						</tr>
+						<tr class="cert-reqs__blank-row">
+							<th scope="row">Expiry date</th>
+							<td class="cert-reqs__in-date">31 October 2027</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="cert-reqs__expired">31 August 2026</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td class="cert-reqs__mandatory">M</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td>NM</td>
+							<td class="cert-reqs__mandatory">M £5,000,000</td>
+							<td>£1,000,000 At call off</td>
+							<td>£1,000,000 At call off</td>
+						</tr>
+						<tr class="cert-reqs__blank-row">
+							<th scope="row">Expiry date</th>
+							<td class="cert-reqs__in-date">31 December 2026</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="cert-reqs__expired">30 September 2026</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+{% endblock %}
