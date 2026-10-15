@@ -28,7 +28,15 @@ router.post('/supplierComplianceOptions', (req, res) => {
 		return res.redirect('/applicationStatusPage')
 	}
 
+	if (req.body['supplier-compliance-choice'] === 'supplier-hybrid-certs') {
+		return res.redirect('/supplierHybridCerts')
+	}
+
 	res.redirect('/supplierComplianceOptions')
+})
+
+router.get('/supplierHybridCerts', (req, res) => {
+	res.render('supplierHybridCerts')
 })
 
 router.get('/DOS72StartPage.html', (req, res) => {
