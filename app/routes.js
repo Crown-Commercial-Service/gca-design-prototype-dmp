@@ -19,6 +19,39 @@ router.get('/itaAssessmentToSign', (req, res) => {
 	res.render('itaAssessmentToSign')
 })
 
+router.get('/ISO9001.html', (req, res) => {
+	res.render('ISO9001')
+})
+
+const isoDetailRoutes = {
+	'/ISO27001.html': {
+		isoName: 'ISO 27001',
+		isoTitle: 'Information Security Management Systems'
+	},
+	'/ISO20000-1.html': {
+		isoName: 'ISO 20000-1',
+		isoTitle: 'IT Service Management Systems'
+	},
+	'/ISO14001.html': {
+		isoName: 'ISO 14001',
+		isoTitle: 'Environmental Management Systems'
+	},
+	'/ISO270017.html': {
+		isoName: 'ISO 270017',
+		isoTitle: 'Information security controls for cloud services'
+	},
+	'/ISO270018.html': {
+		isoName: 'ISO 270018',
+		isoTitle: 'Protection of personal information in public clouds'
+	}
+}
+
+Object.entries(isoDetailRoutes).forEach(([path, isoDetails]) => {
+	router.get(path, (req, res) => {
+		res.render('isoCertificationDetails', isoDetails)
+	})
+})
+
 router.post('/supplierComplianceOptions', (req, res) => {
 	if (req.body['supplier-compliance-choice'] === 'cert-reqs-by-lot') {
 		return res.redirect('/supplierCertsOption1')

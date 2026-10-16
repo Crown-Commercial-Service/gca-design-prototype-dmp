@@ -1,0 +1,52 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	{{ isoName }} – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	<div class="gca-back-link">
+		{{ govukBackLink({
+			text: "Back",
+			href: "/isoParts"
+		}) }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl gca-page-title">{{ isoName }}</h1>
+			<h2 class="govuk-heading-m gca-page-subtitle">{{ isoTitle }}</h2>
+
+			<p class="govuk-body">
+				This page shows certification information for {{ isoName }}.
+			</p>
+
+			<p class="govuk-body">
+				This table shows the annual re-evaluations or audits for {{ isoName }}.
+			</p>
+
+			<table class="govuk-table">
+				<thead class="govuk-table__head">
+					<tr class="govuk-table__row">
+						<th scope="col" class="govuk-table__header">Year</th>
+						<th scope="col" class="govuk-table__header">Re-evaluation date</th>
+						<th scope="col" class="govuk-table__header">Audit date</th>
+						<th scope="col" class="govuk-table__header">Accreditor</th>
+					</tr>
+				</thead>
+				<tbody class="govuk-table__body">
+					{% for year in ["2027", "2028", "2029", "2030"] %}
+						<tr class="govuk-table__row">
+							<th scope="row" class="govuk-table__header">{{ year }}</th>
+							<td class="govuk-table__cell">TBC</td>
+							<td class="govuk-table__cell">TBC</td>
+							<td class="govuk-table__cell">TBC</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}
