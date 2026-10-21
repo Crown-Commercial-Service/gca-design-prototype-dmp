@@ -515,6 +515,30 @@ router.get('/adminBulkUpload', (req, res) => {
 	res.render('adminBulkUpload')
 })
 
+router.get('/manageApplications.html', (req, res) => {
+	res.render('manageApplications')
+})
+
+router.get('/manageApplications', (req, res) => {
+	res.render('manageApplications')
+})
+
+router.get('/supplierPricingChanges.html', (req, res) => {
+	res.render('supplierPricingChanges')
+})
+
+router.get('/supplierPricingChanges', (req, res) => {
+	res.render('supplierPricingChanges')
+})
+
+router.get('/supplierPricingAcceptReject.html', (req, res) => {
+	res.render('supplierPricingAcceptReject')
+})
+
+router.get('/supplierPricingAcceptReject', (req, res) => {
+	res.render('supplierPricingAcceptReject')
+})
+
 router.get('/suspend-all-cloud-software', (req, res) => {
 	res.redirect('/suspendLotsSuspended.html')
 })

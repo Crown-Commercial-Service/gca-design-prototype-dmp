@@ -1,0 +1,259 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Admin new service name - {{ serviceName }} - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "/supplierPricingChanges"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .pricing-review {
+      max-width: 720px;
+      font-size: 16px;
+      font-family: "GDS Transport", arial, sans-serif;
+    }
+
+    .pricing-review * {
+      font-family: inherit;
+    }
+
+    .pricing-review__supplier {
+      color: #505a5f;
+      margin: 0;
+    }
+
+    .pricing-review__heading {
+      font-size: 28px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .pricing-review__links {
+      margin-bottom: 16px;
+    }
+
+    .pricing-review__links a {
+      display: block;
+    }
+
+    .pricing-review__events {
+      margin: 0 0 16px;
+      padding-left: 15px;
+    }
+
+    .pricing-review__version-headings,
+    .pricing-review__comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+    }
+
+    .pricing-review__version-headings {
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .pricing-review__version-headings p {
+      margin: 0;
+    }
+
+    .pricing-review__section-heading {
+      font-size: 18px;
+      line-height: 1.25;
+      margin: 0 0 16px;
+    }
+
+    .pricing-review__comparison {
+      margin-bottom: 26px;
+    }
+
+    .pricing-review__version {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      min-height: 34px;
+      padding: 8px 7px;
+    }
+
+    .pricing-review__version--current {
+      background: #fde5e5;
+    }
+
+    .pricing-review__version--pending {
+      background: #e2ffe2;
+    }
+
+    .pricing-review__number {
+      flex: 0 0 auto;
+    }
+
+    .pricing-review__version--current .pricing-review__number {
+      text-decoration: line-through;
+    }
+
+    .pricing-review__change--removed {
+      background: #f7a6a6;
+      text-decoration: line-through;
+    }
+
+    .pricing-review__change--added {
+      background: #80f780;
+    }
+
+    .pricing-review__decision {
+      max-width: 473px;
+      margin-top: 30px;
+    }
+
+    .pricing-review__decision-email {
+      margin-bottom: 16px;
+    }
+
+    .pricing-review__decision-question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .pricing-review__decision-option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .pricing-review__decision-option input {
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      accent-color: #0b0c0c;
+    }
+
+    .pricing-review__rejection {
+      margin: 8px 0 38px 15px;
+      padding-left: 26px;
+      border-left: 3px solid #b1b4b6;
+    }
+
+    .pricing-review__rejection label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .pricing-review__rejection textarea {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100px;
+      padding: 6px;
+      border: 1px solid #0b0c0c;
+      font: inherit;
+    }
+
+    .pricing-review__word-count {
+      margin: 4px 0 0;
+      color: #505a5f;
+      font-size: 14px;
+    }
+
+    .pricing-review__save {
+      border: 0;
+      padding: 6px 8px;
+      background: #00703c;
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+      .pricing-review__version-headings,
+      .pricing-review__comparison {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="pricing-review">
+    <p class="govuk-body pricing-review__supplier">Q-SOLUTION LIMITED</p>
+    <h1 class="govuk-heading-l pricing-review__heading">Admin new service name</h1>
+
+    <div class="pricing-review__links">
+      <a class="govuk-link govuk-link--no-visited-state" href="#">View current service</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="#">View service with pending changes</a>
+    </div>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">Change events since last approval:</p>
+    <ul class="govuk-list pricing-review__events">
+      <li>12665@user.marketplace.team made updates between Thursday 23 April 2026 at 1:43pm BST and Thursday 23 April 2026 at 1:56pm BST</li>
+      <li>82296@user.marketplace.team made updates between Thursday 23 April 2026 at 3:49pm BST and Thursday 23 April 2026 at 3:50pm BST</li>
+    </ul>
+
+    <div class="pricing-review__version-headings">
+      <p>Current version</p>
+      <p>Pending version</p>
+    </div>
+
+    <section aria-labelledby="minimum-discount-heading">
+      <h2 class="govuk-heading-m pricing-review__section-heading" id="minimum-discount-heading">Provide your minimum discount applicable to your baseline prices</h2>
+      <div class="pricing-review__comparison">
+        <div class="pricing-review__version pricing-review__version--current">
+          <span class="pricing-review__number">1</span>
+          <span class="pricing-review__change--removed">1%</span>
+        </div>
+        <div class="pricing-review__version pricing-review__version--pending">
+          <span class="pricing-review__number">1</span>
+          <span class="pricing-review__change--added">3%</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="price-certainty-heading">
+      <h2 class="govuk-heading-m pricing-review__section-heading" id="price-certainty-heading">Price certainty</h2>
+      <div class="pricing-review__comparison">
+        <div class="pricing-review__version pricing-review__version--current">
+          <span class="pricing-review__number">1</span>
+          <span class="pricing-review__change--removed">To provide realistic, reasonable direct labour rates that reflect the salaries required to attract and retain the necessary talent, Leidos bases our direct labour rate estimates on a defined hierarchy of methods. We use actual salaries or letters of intent for key personnel and named personnel when we have a high degree of certainty, at the time of proposal estimating, that such known or named personnel will execute the proposed contract work. We use forward pricing labour rates (FPLRs) for unnamed personnel. These consistent methodologies for proposing direct labour enable Leidos to provide reasonable, realistic estimates that we base on actual salary data for Leidos personnel. When assessing the costs associated with varying terms, the direct labour costs assume current economic conditions and the impact of inflation as a compounded rate based on the current ONS CPI or the most recent CPI Forecast Evaluation Report from the Office of Budget Responsibility.</span>
+        </div>
+        <div class="pricing-review__version pricing-review__version--pending">
+          <span class="pricing-review__number">1</span>
+          <span class="pricing-review__change--added">Because this is a test</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-review__decision" aria-labelledby="approval-heading">
+      <p class="govuk-body pricing-review__decision-email">
+        <strong>Contact supplier:</strong><br>
+        <a class="govuk-link govuk-link--no-visited-state" href="mailto:simulate-delivered@notifications.service.gov.uk">simulate-delivered@notifications.service.gov.uk</a>
+      </p>
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m pricing-review__decision-question" id="approval-heading">Do you approve the changes to this service?</legend>
+        <label class="pricing-review__decision-option">
+          <input type="radio" name="approve-changes" value="yes">
+          <span>Yes</span>
+        </label>
+        <label class="pricing-review__decision-option">
+          <input type="radio" name="approve-changes" value="no" checked>
+          <span>No</span>
+        </label>
+      </fieldset>
+
+      <div class="pricing-review__rejection">
+        <label for="rejection-reason">Enter the reason for rejecting these changes</label>
+        <textarea id="rejection-reason" name="rejection-reason"></textarea>
+        <p class="pricing-review__word-count">You have 500 words remaining</p>
+      </div>
+
+      <button class="pricing-review__save" type="button">Save and return</button>
+    </section>
+
+  </div>
+{% endblock %}

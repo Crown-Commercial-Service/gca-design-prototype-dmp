@@ -1,0 +1,38 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Manage applications - {{ serviceName }} - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "/content"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .manage-applications .govuk-link:link,
+    .manage-applications .govuk-link:visited {
+      color: #1d70b8;
+    }
+  </style>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full manage-applications">
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Manage applications</h1>
+
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-3">G-Cloud 15</h2>
+
+      <ul class="govuk-list govuk-!-margin-bottom-0">
+        <li><a class="govuk-link" href="#">View supplier service changes (0)</a></li>
+        <li><a class="govuk-link" href="/supplierPricingChanges">View Lot pricing and Quality Award responses (4)</a></li>
+        <li><a class="govuk-link" href="#">View supplier framework agreements</a></li>
+        <li><a class="govuk-link" href="#">View application messages</a></li>
+        <li><a class="govuk-link" href="#">View reports</a></li>
+        <li><a class="govuk-link" href="#">Contact suppliers</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

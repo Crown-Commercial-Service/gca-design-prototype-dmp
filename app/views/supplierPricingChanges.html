@@ -1,0 +1,133 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  G-Cloud 15 - Supplier Lot pricing and Quality Award responses - {{ serviceName }} - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "/manageApplications"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    .supplier-changes .govuk-grid-column-full {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .supplier-changes__heading,
+    .supplier-changes__notification {
+      max-width: 473px;
+    }
+
+    .supplier-changes__heading {
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    .supplier-changes__notification {
+      display: grid;
+      grid-template-columns: 1fr 1.65fr auto;
+      align-items: center;
+      border-top: 1px solid #b1b4b6;
+      border-bottom: 1px solid #b1b4b6;
+      padding: 8px 0;
+      font-size: 16px;
+      font-family: "GDS Transport", arial, sans-serif;
+    }
+
+    .supplier-changes__notification-label {
+      font-weight: 700;
+    }
+
+    .supplier-changes__table {
+      width: calc(100% + 15px);
+      table-layout: fixed;
+      border-top: 1px solid #b1b4b6;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .supplier-changes__table .govuk-table__header,
+    .supplier-changes__table .govuk-table__cell {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    .supplier-changes__table col:nth-child(1) {
+      width: 30%;
+    }
+
+    .supplier-changes__table col:nth-child(2) {
+      width: 26%;
+    }
+
+    .supplier-changes__table col:nth-child(3) {
+      width: 29%;
+    }
+
+    .supplier-changes__table col:nth-child(4) {
+      width: 15%;
+    }
+  </style>
+
+  <div class="govuk-grid-row supplier-changes">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l supplier-changes__heading govuk-!-margin-bottom-5">G-Cloud 15 - Supplier Lot pricing and Quality Award responses</h1>
+
+      <div class="supplier-changes__notification govuk-!-margin-bottom-5">
+        <span class="supplier-changes__notification-label">Notification email</span>
+        <span>Not set</span>
+        <a class="govuk-link govuk-link--no-visited-state" href="#">Change</a>
+      </div>
+
+      <p class="govuk-body govuk-!-margin-bottom-6">4 edited services</p>
+
+      <table class="govuk-table supplier-changes__table">
+        <colgroup>
+          <col>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Supplier</th>
+            <th scope="col" class="govuk-table__header">Service ID</th>
+            <th scope="col" class="govuk-table__header">Edited</th>
+            <th scope="col" class="govuk-visually-hidden">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Q-SOLUTION LIMITED</td>
+            <td class="govuk-table__cell">675316780397095</td>
+            <td class="govuk-table__cell">Thursday 23 April 2026<br>at 1:43pm BST</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="/supplierPricingAcceptReject">View changes</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">VERSEONE GROUP LTD</td>
+            <td class="govuk-table__cell">270236760396456</td>
+            <td class="govuk-table__cell">Thursday 23 April 2026<br>at 3:04pm BST</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">View changes</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">KPMG LLP</td>
+            <td class="govuk-table__cell">176475322334871</td>
+            <td class="govuk-table__cell">Thursday 23 April 2026<br>at 3:11pm BST</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">View changes</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">CreateFuture</td>
+            <td class="govuk-table__cell">312449916633824</td>
+            <td class="govuk-table__cell">Monday 27 April 2026<br>at 4:08pm BST</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">View changes</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}
