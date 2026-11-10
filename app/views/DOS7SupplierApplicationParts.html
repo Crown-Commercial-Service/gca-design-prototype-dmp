@@ -1,0 +1,76 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "DOS 7 supplier application parts" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukBreadcrumbs({
+      classes: "gca-breadcrumbs",
+      items: [
+        {
+          text: "Admin home",
+          href: "/content"
+        },
+        {
+          text: "CAPGEMINI UK PLC",
+          href: "/adminSupplierApplications"
+        },
+        {
+          text: "Digital Outcomes and Specialists 7 application"
+        }
+      ]
+    }) }}
+
+    <h2 class="govuk-heading-s gca-eyebrow gca-eyebrow--muted">CAPGEMINI UK PLC</h2>
+    <h1 class="govuk-heading-xl gca-page-title">Digital Outcomes and Specialists 7 application</h1>
+
+    <div class="gca-row-table">
+      <div class="gca-row-table__row gca-row-table__row--title">
+        <p class="gca-row-table__key">Application status</p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--active">Application made</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key">Assessment summary results</p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--coming">Coming</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key">Framework agreement</p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--coming">Coming</span></p>
+      </div>
+    </div>
+
+    <h3 class="govuk-heading-s gca-section-title">Application parts</h3>
+    <div class="gca-row-table">
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Company details for framework application</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Supplier declaration</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Draft services</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">3 draft services</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Financial Viability Risk Assessment (FVRA)</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="#">Quality award questions</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Completed</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="/DOS7CyberEssentail">Cyber security certificates</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Compliant</span></p>
+      </div>
+      <div class="gca-row-table__row">
+        <p class="gca-row-table__key"><a href="/DOS7Insurance">Insurance</a></p>
+        <p class="gca-row-table__value"><span class="gca-status gca-status--complete">Compliant</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

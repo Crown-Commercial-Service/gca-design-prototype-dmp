@@ -19,6 +19,14 @@ router.get('/itaAssessmentToSign', (req, res) => {
 	res.render('itaAssessmentToSign')
 })
 
+router.get('/DOS7SupplierApplicationParts.html', (req, res) => {
+	res.render('DOS7SupplierApplicationParts')
+})
+
+router.get('/DOS7SupplierApplicationParts', (req, res) => {
+	res.render('DOS7SupplierApplicationParts')
+})
+
 router.get('/ISO9001.html', (req, res) => {
 	res.render('ISO9001')
 })

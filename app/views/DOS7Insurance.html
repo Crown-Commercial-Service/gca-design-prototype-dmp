@@ -1,0 +1,59 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+	Insurance – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block containerStart %}
+	<div class="gca-back-link">
+		{{ govukBackLink({
+			text: "Back",
+			href: "javascript:window.history.back()"
+		}) }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl gca-page-title">Insurance</h1>
+
+			<table class="gca-table">
+				<thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Policy reference<br>number</th>
+						<th scope="col">Renewal date</th>
+						<th scope="col">Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Employers liability</td>
+						<td></td>
+						<td>31/08/27</td>
+						<td><span class="gca-status gca-status--complete">Compliant</span></td>
+					</tr>
+					<tr>
+						<td>Public liability (£1m)</td>
+						<td></td>
+						<td>10/10/26</td>
+						<td><span class="gca-status gca-status--complete">Compliant</span></td>
+					</tr>
+					<tr>
+						<td>Public liability (£2m)</td>
+						<td></td>
+						<td></td>
+						<td><span class="gca-status">Not required</span></td>
+					</tr>
+					<tr>
+						<td>Professional indemnity</td>
+						<td></td>
+						<td></td>
+						<td><span class="gca-status">Not required</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}
